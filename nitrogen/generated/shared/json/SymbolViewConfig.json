@@ -1,0 +1,16 @@
+{
+  "uiViewClassName": "SymbolView",
+  "supportsRawText": false,
+  "bubblingEventTypes": {},
+  "directEventTypes": {},
+  "validAttributes": {
+    "symbolName": true,
+    "pointSize": true,
+    "weight": true,
+    "tintColor": true,
+    "isAnimating": true,
+    "scale": true,
+    "effect": true,
+    "hybridRef": true
+  }
+}
