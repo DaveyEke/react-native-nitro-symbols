@@ -7,8 +7,8 @@
 
 #include "JHybridSymbolViewSpec.hpp"
 
-// Forward declaration of `SFSymbols6_0` to properly resolve imports.
-namespace margelo::nitro::nitrosymbols { enum class SFSymbols6_0; }
+// Forward declaration of `SafeSFSymbol` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SafeSFSymbol; }
 // Forward declaration of `SymbolWeight` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SymbolWeight; }
 // Forward declaration of `SymbolScale` to properly resolve imports.
@@ -20,8 +20,8 @@ namespace margelo::nitro::nitrosymbols { enum class SymbolVariant; }
 // Forward declaration of `SymbolRenderingMode` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SymbolRenderingMode; }
 
-#include "SFSymbols6_0.hpp"
-#include "JSFSymbols6_0.hpp"
+#include "SafeSFSymbol.hpp"
+#include "JSafeSFSymbol.hpp"
 #include <optional>
 #include "SymbolWeight.hpp"
 #include "JSymbolWeight.hpp"
@@ -65,14 +65,14 @@ namespace margelo::nitro::nitrosymbols {
   }
 
   // Properties
-  SFSymbols6_0 JHybridSymbolViewSpec::getSymbolName() {
-    static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSFSymbols6_0>()>("getSymbolName");
+  SafeSFSymbol JHybridSymbolViewSpec::getSymbolName() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSafeSFSymbol>()>("getSymbolName");
     auto __result = method(_javaPart);
     return __result->toCpp();
   }
-  void JHybridSymbolViewSpec::setSymbolName(SFSymbols6_0 symbolName) {
-    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSFSymbols6_0> /* symbolName */)>("setSymbolName");
-    method(_javaPart, JSFSymbols6_0::fromCpp(symbolName));
+  void JHybridSymbolViewSpec::setSymbolName(SafeSFSymbol symbolName) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSafeSFSymbol> /* symbolName */)>("setSymbolName");
+    method(_javaPart, JSafeSFSymbol::fromCpp(symbolName));
   }
   std::optional<double> JHybridSymbolViewSpec::getPointSize() {
     static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JDouble>()>("getPointSize");

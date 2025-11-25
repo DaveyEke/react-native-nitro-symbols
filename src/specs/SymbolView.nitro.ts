@@ -4,13 +4,13 @@ import type { HybridView, HybridViewProps, HybridViewMethods } from 'react-nativ
 
 import type { SymbolWeight, SymbolScale, SFSymbolEffect, SymbolRenderingMode, SymbolVariant } from '../types';
 
-import type { SFSymbol } from 'sf-symbols-typescript';
+import type { SafeSFSymbol } from '../types';
 
 /**
  * Defines the properties for the RNSymbolView component.
  */
 export interface SymbolProps extends HybridViewProps {
-  symbolName: SFSymbol;
+  symbolName: SafeSFSymbol;
   pointSize?: number;
   weight?: SymbolWeight;
   tintColor?: string;

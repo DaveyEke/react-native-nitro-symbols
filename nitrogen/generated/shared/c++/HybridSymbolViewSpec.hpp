@@ -13,8 +13,8 @@
 #error NitroModules cannot be found! Are you sure you installed NitroModules properly?
 #endif
 
-// Forward declaration of `SFSymbols6_0` to properly resolve imports.
-namespace margelo::nitro::nitrosymbols { enum class SFSymbols6_0; }
+// Forward declaration of `SafeSFSymbol` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SafeSFSymbol; }
 // Forward declaration of `SymbolWeight` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SymbolWeight; }
 // Forward declaration of `SymbolScale` to properly resolve imports.
@@ -26,7 +26,7 @@ namespace margelo::nitro::nitrosymbols { enum class SymbolVariant; }
 // Forward declaration of `SymbolRenderingMode` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SymbolRenderingMode; }
 
-#include "SFSymbols6_0.hpp"
+#include "SafeSFSymbol.hpp"
 #include <optional>
 #include "SymbolWeight.hpp"
 #include <string>
@@ -63,8 +63,8 @@ namespace margelo::nitro::nitrosymbols {
 
     public:
       // Properties
-      virtual SFSymbols6_0 getSymbolName() = 0;
-      virtual void setSymbolName(SFSymbols6_0 symbolName) = 0;
+      virtual SafeSFSymbol getSymbolName() = 0;
+      virtual void setSymbolName(SafeSFSymbol symbolName) = 0;
       virtual std::optional<double> getPointSize() = 0;
       virtual void setPointSize(std::optional<double> pointSize) = 0;
       virtual std::optional<SymbolWeight> getWeight() = 0;

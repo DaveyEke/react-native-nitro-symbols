@@ -121,7 +121,7 @@ open class HybridSymbolViewSpec_cxx {
     }
     @inline(__always)
     set {
-      self.__implementation.symbolName = margelo.nitro.nitrosymbols.SFSymbols6_0(rawValue: newValue)!
+      self.__implementation.symbolName = margelo.nitro.nitrosymbols.SafeSFSymbol(rawValue: newValue)!
     }
   }
   

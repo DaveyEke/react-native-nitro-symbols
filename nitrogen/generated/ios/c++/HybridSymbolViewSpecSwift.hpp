@@ -12,8 +12,8 @@
 // Forward declaration of `HybridSymbolViewSpec_cxx` to properly resolve imports.
 namespace NitroSymbols { class HybridSymbolViewSpec_cxx; }
 
-// Forward declaration of `SFSymbols6_0` to properly resolve imports.
-namespace margelo::nitro::nitrosymbols { enum class SFSymbols6_0; }
+// Forward declaration of `SafeSFSymbol` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SafeSFSymbol; }
 // Forward declaration of `SymbolWeight` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SymbolWeight; }
 // Forward declaration of `SymbolScale` to properly resolve imports.
@@ -25,7 +25,7 @@ namespace margelo::nitro::nitrosymbols { enum class SymbolVariant; }
 // Forward declaration of `SymbolRenderingMode` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SymbolRenderingMode; }
 
-#include "SFSymbols6_0.hpp"
+#include "SafeSFSymbol.hpp"
 #include <optional>
 #include "SymbolWeight.hpp"
 #include <string>
@@ -75,11 +75,11 @@ namespace margelo::nitro::nitrosymbols {
 
   public:
     // Properties
-    inline SFSymbols6_0 getSymbolName() noexcept override {
+    inline SafeSFSymbol getSymbolName() noexcept override {
       auto __result = _swiftPart.getSymbolName();
-      return static_cast<SFSymbols6_0>(__result);
+      return static_cast<SafeSFSymbol>(__result);
     }
-    inline void setSymbolName(SFSymbols6_0 symbolName) noexcept override {
+    inline void setSymbolName(SafeSFSymbol symbolName) noexcept override {
       _swiftPart.setSymbolName(static_cast<int>(symbolName));
     }
     inline std::optional<double> getPointSize() noexcept override {

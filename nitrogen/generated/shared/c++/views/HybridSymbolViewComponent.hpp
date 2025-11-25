@@ -16,7 +16,7 @@
 #include <react/renderer/components/view/ConcreteViewShadowNode.h>
 #include <react/renderer/components/view/ViewProps.h>
 
-#include "SFSymbols6_0.hpp"
+#include "SafeSFSymbol.hpp"
 #include <optional>
 #include "SymbolWeight.hpp"
 #include <string>
@@ -50,7 +50,7 @@ namespace margelo::nitro::nitrosymbols::views {
                           const react::RawProps& rawProps);
 
   public:
-    CachedProp<SFSymbols6_0> symbolName;
+    CachedProp<SafeSFSymbol> symbolName;
     CachedProp<std::optional<double>> pointSize;
     CachedProp<std::optional<SymbolWeight>> weight;
     CachedProp<std::optional<std::string>> tintColor;
