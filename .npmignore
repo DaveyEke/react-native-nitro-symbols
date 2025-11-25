@@ -1,0 +1,34 @@
+# Development files
+example/
+.github/
+.vscode/
+.idea/
+
+# Test files
+__tests__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Build artifacts
+*.tgz
+.DS_Store
+*.log
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (keep README.md)
+docs/
+
+# Config files
+.eslintrc*
+.prettierrc*
+tsconfig.json
+babel.config.js
+
+# Artifacts
+.gemini/

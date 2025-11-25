@@ -275,7 +275,6 @@ This library provides full TypeScript autocomplete for all SF Symbol names. When
 
 You can also browse symbols at:
 - [SF Symbols App](https://developer.apple.com/sf-symbols/) (macOS)
-- [SF Symbols Browser](https://hotpot.ai/free-icons?s=sfSymbols) (Web)
 
 ---
 
