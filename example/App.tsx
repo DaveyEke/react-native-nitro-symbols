@@ -4,83 +4,116 @@ import { useState } from 'react';
 import { SymbolView } from 'react-native-nitro-symbols';
 
 export default function App() {
-  const [isSigned, setIsSigned] = useState(false);
-  const [isBouncing, setIsBouncing] = useState(true);
+  const [isPulsing, setIsPulsing] = useState(true);
+  const [isScaling, setIsScaling] = useState(false);
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <Text style={styles.header}>Nitro Symbols ⚡️</Text>
 
-        {/* 1. Static Styled Example */}
+        {/* 1. Palette Rendering Mode - Theater Masks */}
         <View style={styles.card}>
-          {/* 1. The Name */}
-          <Text style={styles.label}>Static Styling</Text>
-
-          {/* 2. The Symbol */}
+          <Text style={styles.label}>Palette Rendering</Text>
           <View style={styles.symbolWrapper}>
-            {/* <SymbolView
-              symbolName="fish"
-              tintColor="#FF3B30"
-              pointSize={60}
-              weight="black"
-              scale="large"
-            /> */}
             <SymbolView
-              symbolName="heart.fill"
+              symbolName="theatermasks"
               renderingMode="palette"
-              colors={["#800080", "#808080"]}
+              colors={["#AF52DE", "#8E8E93"]}
+              pointSize={60}
+              weight="bold"
+              scale="large"
             />
           </View>
-
-          {/* 3. The Caption/Button */}
-          <Text style={styles.caption}>Red Heart (Black Weight)</Text>
+          <Text style={styles.caption}>Purple & gray palette</Text>
         </View>
 
-        {/* 2. Drawing Animation Example */}
+        {/* 2. Palette with 3 Colors - Battery */}
         <View style={styles.card}>
-          {/* 1. The Name */}
-          <Text style={styles.label}>Drawing Animation</Text>
-
-          {/* 2. The Symbol */}
+          <Text style={styles.label}>3-Color Palette</Text>
           <View style={styles.symbolWrapper}>
             <SymbolView
-              symbolName="chineseyuanrenminbisign.arrow.trianglehead.counterclockwise.rotate.90"
+              symbolName="battery.100percent.bolt"
+              renderingMode="palette"
+              colors={["#34C759", "#FFD60A", "#FF453A"]}
+              pointSize={70}
+              weight="semibold"
+              scale="medium"
+            />
+          </View>
+          <Text style={styles.caption}>Green, yellow & red palette</Text>
+        </View>
+
+        {/* 3. Pulse Animation */}
+        <View style={styles.card}>
+          <Text style={styles.label}>Pulse Effect</Text>
+          <View style={styles.symbolWrapper}>
+            <SymbolView
+              symbolName="wifi"
               tintColor="#007AFF"
-              pointSize={80}
-              isAnimating={isSigned}
+              pointSize={60}
+              weight="medium"
+              isAnimating={isPulsing}
+              effect="pulse"
+            />
+          </View>
+          <Button
+            title={isPulsing ? "Stop Pulse" : "Start Pulse"}
+            onPress={() => setIsPulsing(!isPulsing)}
+          />
+        </View>
+
+        {/* 4. Draw On Animation - Signature */}
+        <View style={styles.card}>
+          <Text style={styles.label}>Draw On Effect</Text>
+          <View style={styles.symbolWrapper}>
+            <SymbolView
+              symbolName="signature"
+              tintColor="#007AFF"
+              pointSize={65}
+              weight="medium"
+              scale="large"
+              isAnimating={isScaling}
               effect="drawon"
             />
           </View>
-
-          {/* 3. The Button */}
           <Button
-            title={isSigned ? "Reset Signature" : "Sign Document"}
-            onPress={() => setIsSigned(!isSigned)}
+            title={isScaling ? "Reset" : "Draw Signature"}
+            onPress={() => setIsScaling(!isScaling)}
           />
         </View>
 
-        {/* 3. Bounce Animation Example */}
+        {/* 5. Variable Color Effect */}
         <View style={styles.card}>
-          {/* 1. The Name */}
-          <Text style={styles.label}>Bounce Effect</Text>
-
-          {/* 2. The Symbol */}
+          <Text style={styles.label}>Variable Color Effect</Text>
           <View style={styles.symbolWrapper}>
             <SymbolView
-              symbolName="heart.fill"
-              tintColor="#FF3B30"
-              pointSize={50}
-              isAnimating={isBouncing}
-              effect="bounce"
+              symbolName="battery.100percent"
+              tintColor="#34C759"
+              pointSize={80}
+              weight="regular"
+              scale="large"
+              isAnimating={true}
+              effect="variablecolor"
             />
           </View>
+          <Text style={styles.caption}>Continuously animating battery</Text>
+        </View>
 
-          {/* 3. The Button */}
-          <Button
-            title={isBouncing ? "Stop Bouncing" : "Start Bouncing"}
-            onPress={() => setIsBouncing(!isBouncing)}
-          />
+        {/* 6. Slash Variant with Monochrome */}
+        <View style={styles.card}>
+          <Text style={styles.label}>Slash Variant</Text>
+          <View style={styles.symbolWrapper}>
+            <SymbolView
+              symbolName="bell"
+              variant="slash"
+              renderingMode="monochrome"
+              tintColor="#8E8E93"
+              pointSize={55}
+              weight="light"
+            />
+          </View>
+          <Text style={styles.caption}>Muted notification (slashed)</Text>
         </View>
 
       </ScrollView>
@@ -92,7 +125,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F2F2F7', // System Gray 6
+    backgroundColor: '#F2F2F7',
   },
   scrollContent: {
     alignItems: 'center',
@@ -106,14 +139,12 @@ const styles = StyleSheet.create({
     color: '#000',
     marginTop: 20,
   },
-  // The Card now holds EVERYTHING: Label, Icon, and Button
   card: {
     backgroundColor: 'white',
     padding: 24,
     borderRadius: 20,
     alignItems: 'center',
     width: '90%',
-    // Shadows
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.1,
@@ -126,12 +157,11 @@ const styles = StyleSheet.create({
     color: '#1C1C1E',
     marginBottom: 5,
   },
-  // Wrapper creates specific space for the icon so it doesn't overlap
   symbolWrapper: {
-    marginVertical: 25, // Push Text up and Button down
+    marginVertical: 25,
     alignItems: 'center',
     justifyContent: 'center',
-    minHeight: 80, // Ensures space is reserved even if icon loads late
+    minHeight: 80,
   },
   caption: {
     fontSize: 14,

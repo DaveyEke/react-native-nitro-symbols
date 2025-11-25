@@ -1,149 +1,366 @@
 # ⚡️ React Native Nitro Symbols
 
-**A high‑performance, native SF Symbols library for React Native, built with Nitro Modules and SwiftUI.**
+**A high-performance, type-safe SF Symbols library for React Native, built with Nitro Modules and SwiftUI.**
+
+Render native iOS SF Symbols with full animation support, multiple rendering modes, and complete TypeScript autocomplete.
 
 ---
 
-## Overview
-`react-native-nitro-symbols` bridges generic React Native props directly to iOS's modern `SymbolEffect` APIs, supporting native animations such as **bounce**, **pulse**, and **drawOn** (writing animation).
+## ✨ Features
+
+- 🚀 **Nitro Powered** – Near-zero-overhead JSI bridging for maximum performance
+- 🎨 **Multiple Rendering Modes** – Monochrome, hierarchical, palette, and multicolor
+- ✨ **Native Animations** – Bounce, pulse, draw-on, scale, and variable color effects
+- 🎭 **Symbol Variants** – Fill, slash, circle, square, and rectangle variants
+- 🔤 **Typography Control** – Full control over weight (9 options) and scale (3 options)
+- 🎨 **Multi-Color Support** – Use up to 3 colors with palette rendering mode
+- 📝 **Full TypeScript Support** – Complete autocomplete for all SF Symbol names and props
+- ⚡️ **Type-Safe** – Enum-based props at both TypeScript and Swift layers
 
 ---
 
-## Platform Support
-- **iOS only** – relies on Apple’s proprietary SF Symbols and SwiftUI frameworks.
-- Android is **not** supported.
+## 📋 Requirements
+
+- **iOS 17.0+** for core functionality
+- **iOS 18.0+** for bounce, scale, and variable color effects
+- **iOS 26.0+** for the draw-on effect
+- **New arch only** 
+
+> **IMPORTANT**
+> This library **cannot be used with Expo Go** due to custom native Swift code. You must use a [development build](https://docs.expo.dev/develop/development-builds/introduction/#what-is-an-expo-dev-client).
 
 ---
 
-## Requirements
-- **iOS 17.0+** for core functionality.
-- **iOS 26.0+** for the advanced `drawOn` effect.
-- Running on an older iOS version will result in a static symbol or an empty view.
-
----
-
-## Development Status
-- Active development – core features are stable, and more complex animations and configuration options are being added.
-
----
-
-## Features
-- **Nitro Powered** – near‑zero‑overhead JSI bridging.
-- **Hex Colors** – standard hex strings (e.g., `"#FF0000"`).
-- **Native Animations** – discrete and indefinite animations (`bounce`, `pulse`, `drawOn`).
-- **Typography Control** – full control over Symbol **weight** and **scale**.
-- **SwiftUI Rendering** – uses `UIHostingController` to render SwiftUI views inside React Native Fabric.
-
----
-
-## Installation
-Since the library is under active development, install it locally and ensure peer dependencies are satisfied.
+## 📦 Installation
 
 ```bash
-# 1️⃣ Install the required peer dependency
-npm install react-native-nitro-modules   # or
-yarn add react-native-nitro-modules
+# Install the library
+npm install react-native-nitro-symbols
 
-# 2️⃣ Install this library locally (adjust the path as needed)
-# Assuming your app lives in `example/` and this repo is a sibling folder
-npm install ../path/to/react-native-nitro-symbols   # or
-yarn add ../path/to/react-native-nitro-symbols
+# Install required peer dependency
+npm install react-native-nitro-modules
 
-# 3️⃣ Install iOS pods
-cd ios && pod install
+# For Expo projects
+npx expo prebuild
 
-# 4️⃣ Rebuild the app
-npx expo run:ios   # or
+# Install iOS pods
+cd ios && pod install && cd ..
+
+# Run the app
+npx expo run:ios
+# or
 npx react-native run-ios
 ```
 
 ---
 
-## Usage
-```tsx
-import React from 'react';
-import { SymbolView } from 'react-native-nitro-symbols';
-
-// Basic usage
-export const SimpleIcon = () => (
-  <SymbolView
-    symbolName="heart.fill"
-    tintColor="#FF3B30"
-    pointSize={50}
-  />
-);
-```
-
-### Animations
-Control animations with the `effect` and `isAnimating` props. Core effects (`bounce`, `pulse`) require iOS 17; `drawOn` requires iOS 26.
+## 🚀 Quick Start
 
 ```tsx
-import React, { useState } from 'react';
-import { View, Button } from 'react-native';
 import { SymbolView } from 'react-native-nitro-symbols';
 
-export const AnimatedIcon = () => {
-  const [active, setActive] = useState(false);
+export default function App() {
   return (
-    <View>
-      <SymbolView
-        symbolName="signature"
-        pointSize={80}
-        tintColor="#000000"
-        effect="drawOn"
-        isAnimating={active}
-      />
-      <Button title="Sign" onPress={() => setActive(!active)} />
-    </View>
+    <SymbolView
+      symbolName="heart.fill"
+      tintColor="#FF3B30"
+      pointSize={50}
+      weight="bold"
+    />
   );
-};
+}
 ```
 
 ---
 
-## API Reference
+## 📚 API Reference
+
+### Props
+
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `symbolName` | `string` | **required** | Name of the SF Symbol (e.g., `"house"`, `"bell.fill"`). |
-| `tintColor` | `string` | `undefined` | Hex color for the symbol (e.g., `"#FF0000"`). |
-| `pointSize` | `number` | `24` | Font size of the symbol. |
-| `weight` | `string` | `"regular"` | Symbol weight – `ultralight`, `thin`, `light`, `regular`, `medium`, `semibold`, `bold`, `heavy`, `black`. |
-| `scale` | `string` | `"medium"` | Image scale – `small`, `medium`, `large`. |
-| `effect` | `string` | `"none"` | Animation effect – `bounce`, `pulse`, `drawOn`. |
-| `isAnimating` | `boolean` | `false` | When `true`, the selected effect runs. |
+| `symbolName` | `SFSymbol` | **required** | Name of the SF Symbol with full autocomplete support |
+| `pointSize` | `number` | `24` | Font size of the symbol in points |
+| `weight` | `SymbolWeight` | `"regular"` | Symbol weight: `ultralight`, `thin`, `light`, `regular`, `medium`, `semibold`, `bold`, `heavy`, `black` |
+| `scale` | `SymbolScale` | `"medium"` | Image scale: `small`, `medium`, `large` |
+| `tintColor` | `string` | `undefined` | Hex color for monochrome rendering (e.g., `"#FF0000"`) |
+| `colors` | `string[]` | `undefined` | Array of hex colors for palette rendering (up to 3 colors) |
+| `renderingMode` | `SymbolRenderingMode` | `"monochrome"` | Rendering mode: `monochrome`, `hierarchical`, `palette`, `multicolor` |
+| `variant` | `SymbolVariant` | `undefined` | Symbol variant: `fill`, `slash`, `circle`, `square`, `rectangle` |
+| `effect` | `SFSymbolEffect` | `undefined` | Animation effect: `bounce`, `pulse`, `drawon`, `scale`, `variablecolor` |
+| `isAnimating` | `boolean` | `false` | Controls whether the animation effect is active |
 
----
+### Type Definitions
 
-## Troubleshooting
-- **"Invariant Violation: View config getter callback... received undefined"**
-  - This occurs when the native view is registered against a different React Native instance. Ensure the module does **not** list `react-native` as a dependency; it should resolve to the host app’s instance.
-- **Symbols not animating or showing fallback view**
-  - The library checks for iOS 17 at runtime. On iOS 16 or lower the view falls back to an empty placeholder and logs a warning.
+All prop types are exported for use in your code:
 
----
-
-## Contributing & Contact
-I’m actively adding features! If you need a specific animation, have a bug report, or want to contribute, feel free to reach out.
-
-- **Twitter**: [@1804davey](https://twitter.com/1804davey)
-- **GitHub**: Open issues or pull requests.
-
-### How to Contribute
-1. Run `npx nitrogen` to generate Nitro code.
-2. Open `example/ios/NitroSymbolsExample.xcworkspace` for native work.
-3. Edit `src/index.ts` for JavaScript/TypeScript changes.
-4. Submit a PR with a clear description of your changes.
-## Example App
-
-An example Expo app demonstrating the library lives in the `example/` folder. To try it out:
-
-```bash
-cd example
-npx expo start
+```tsx
+import type { 
+  SymbolWeight, 
+  SymbolScale, 
+  SFSymbolEffect, 
+  SymbolRenderingMode, 
+  SymbolVariant,
+  SymbolViewProps 
+} from 'react-native-nitro-symbols';
 ```
 
-The example is **not** published to npm; it is excluded via `.npmignore`.
+---
+
+## 💡 Examples
+
+### Basic Symbol
+
+```tsx
+<SymbolView
+  symbolName="star.fill"
+  tintColor="#FFD700"
+  pointSize={60}
+  weight="bold"
+/>
+```
+
+### Palette Rendering (Multi-Color)
+
+```tsx
+<SymbolView
+  symbolName="theatermasks"
+  renderingMode="palette"
+  colors={["#AF52DE", "#8E8E93"]}
+  pointSize={60}
+  weight="bold"
+/>
+```
+
+### Hierarchical Rendering
+
+```tsx
+<SymbolView
+  symbolName="battery.100percent"
+  renderingMode="hierarchical"
+  tintColor="#34C759"
+  pointSize={70}
+  weight="semibold"
+/>
+```
+
+### Animated Symbol
+
+```tsx
+import { useState } from 'react';
+
+export function AnimatedHeart() {
+  const [isAnimating, setIsAnimating] = useState(false);
+  
+  return (
+    <>
+      <SymbolView
+        symbolName="heart.fill"
+        tintColor="#FF3B30"
+        pointSize={80}
+        effect="pulse"
+        isAnimating={isAnimating}
+      />
+      <Button 
+        title={isAnimating ? "Stop" : "Start"} 
+        onPress={() => setIsAnimating(!isAnimating)} 
+      />
+    </>
+  );
+}
+```
+
+### Draw-On Effect (Signature)
+
+```tsx
+import { useState } from 'react';
+
+export function Signature() {
+  const [isSigning, setIsSigning] = useState(false);
+  
+  return (
+    <>
+      <SymbolView
+        symbolName="signature"
+        tintColor="#007AFF"
+        pointSize={80}
+        weight="medium"
+        effect="drawon"
+        isAnimating={isSigning}
+      />
+      <Button 
+        title="Sign" 
+        onPress={() => setIsSigning(!isSigning)} 
+      />
+    </>
+  );
+}
+```
+
+### Symbol with Variant
+
+```tsx
+<SymbolView
+  symbolName="bell"
+  variant="slash"
+  tintColor="#8E8E93"
+  pointSize={55}
+  weight="light"
+/>
+```
 
 ---
-## License
-`react-native-nitro-symbols` is released under the MIT License. See the `LICENSE` file for details.
+
+## 🎨 Rendering Modes
+
+### Monochrome
+Single color rendering using `tintColor`:
+```tsx
+<SymbolView
+  symbolName="star.fill"
+  renderingMode="monochrome"
+  tintColor="#FFD700"
+/>
+```
+
+### Hierarchical
+Automatic depth-based opacity variations:
+```tsx
+<SymbolView
+  symbolName="battery.100percent"
+  renderingMode="hierarchical"
+  tintColor="#34C759"
+/>
+```
+
+### Palette
+Custom colors for different symbol layers (up to 3):
+```tsx
+<SymbolView
+  symbolName="battery.100percent.bolt"
+  renderingMode="palette"
+  colors={["#34C759", "#FFD60A", "#FF453A"]}
+/>
+```
+
+### Multicolor
+Uses the symbol's predefined colors:
+```tsx
+<SymbolView
+  symbolName="checkmark.circle"
+  renderingMode="multicolor"
+/>
+```
+
+---
+
+## ✨ Animation Effects
+
+| Effect | iOS Version | Description |
+|--------|-------------|-------------|
+| `bounce` | 18.0+ | Bouncing animation |
+| `pulse` | 17.0+ | Pulsing scale animation |
+| `drawon` | 26.0+ | Drawing/writing animation |
+| `scale` | 18.0+ | Scale up/down animation |
+| `variablecolor` | 18.0+ | Color variation animation |
+
+> **NOTE**
+> Effects gracefully degrade on older iOS versions - the symbol will still render but without animation.
+
+---
+
+## 🔍 Symbol Discovery
+
+This library provides full TypeScript autocomplete for all SF Symbol names. When you type `symbolName="`, your IDE will suggest all available symbols.
+
+You can also browse symbols at:
+- [SF Symbols App](https://developer.apple.com/sf-symbols/) (macOS)
+- [SF Symbols Browser](https://hotpot.ai/free-icons?s=sfSymbols) (Web)
+
+---
+
+## 🛠️ Troubleshooting
+
+### "Cannot be used with Expo Go"
+
+This library requires custom native code and cannot run in Expo Go. Create a [development build](https://docs.expo.dev/develop/development-builds/introduction/#what-is-an-expo-dev-client):
+
+```bash
+npx expo prebuild
+npx expo run:ios
+```
+
+### "Invariant Violation: View config getter callback..."
+
+Ensure `react-native-nitro-modules` is installed and the app has been rebuilt:
+
+```bash
+npm install react-native-nitro-modules
+cd ios && pod install && cd ..
+npx expo run:ios
+```
+
+### Symbols not animating
+
+Check your iOS version:
+- Most effects require iOS 17.0+
+- Bounce, scale, and variable color require iOS 18.0+
+- Draw-on effect requires iOS 26.0+
+
+The library will log warnings and fall back gracefully on unsupported versions.
+
+---
+
+## 📱 Platform Support
+
+- ✅ **iOS 17.0+** – Full support
+- ❌ **Android** – Not supported (SF Symbols are Apple-exclusive)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
+### Development Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/react-native-nitro-symbols.git
+cd react-native-nitro-symbols
+
+# Install dependencies
+npm install
+
+# Generate Nitro bindings
+npx nitrogen
+
+# Run the example app
+cd example
+npx expo run:ios
+```
+
+---
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Built with [Nitro Modules](https://github.com/mrousavy/nitro) by [@mrousavy](https://github.com/mrousavy)
+- SF Symbols by Apple Inc.
+- Type definitions from [sf-symbols-typescript](https://github.com/birkir/sf-symbols-typescript)
+
+---
+
+## 📞 Contact
+
+- **Twitter**: [@1804davey](https://twitter.com/1804davey)
+- **GitHub**: [Issues](https://github.com/yourusername/react-native-nitro-symbols/issues)
+
+---
+
+**Made with ❤️ by Davey Eke for the React Native community**
