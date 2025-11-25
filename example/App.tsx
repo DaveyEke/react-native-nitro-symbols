@@ -16,7 +16,7 @@ export default function App() {
         <View style={styles.card}>
           {/* 1. The Name */}
           <Text style={styles.label}>Static Styling</Text>
-          
+
           {/* 2. The Symbol */}
           <View style={styles.symbolWrapper}>
             {/* <SymbolView
@@ -26,10 +26,10 @@ export default function App() {
               weight="black"
               scale="large"
             /> */}
-            <SymbolView 
+            <SymbolView
               symbolName="heart.fill"
               renderingMode="palette"
-             colors={["#800080", "#808080"]}
+              colors={["#800080", "#808080"]}
             />
           </View>
 
@@ -41,7 +41,7 @@ export default function App() {
         <View style={styles.card}>
           {/* 1. The Name */}
           <Text style={styles.label}>Drawing Animation</Text>
-          
+
           {/* 2. The Symbol */}
           <View style={styles.symbolWrapper}>
             <SymbolView
@@ -49,7 +49,7 @@ export default function App() {
               tintColor="#007AFF"
               pointSize={80}
               isAnimating={isSigned}
-              effect="drawOn"
+              effect="drawon"
             />
           </View>
 
@@ -64,7 +64,7 @@ export default function App() {
         <View style={styles.card}>
           {/* 1. The Name */}
           <Text style={styles.label}>Bounce Effect</Text>
-          
+
           {/* 2. The Symbol */}
           <View style={styles.symbolWrapper}>
             <SymbolView

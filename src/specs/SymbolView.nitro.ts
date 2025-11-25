@@ -10,7 +10,7 @@ import type { SymbolWeight, SymbolScale, SFSymbolEffect, SymbolRenderingMode, Sy
  * Defines the properties for the RNSymbolView component.
  */
 export interface SymbolProps extends HybridViewProps {
-  symbolName: string; //TODO: use sf-symbols-typescript once nitro modules error code gen error is fixed
+  symbolName: string; // proper type is used in src/index.ts. "string" is used here for the sake of nitrogen. 
   pointSize?: number;
   weight?: SymbolWeight;
   tintColor?: string;
