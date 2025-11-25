@@ -19,12 +19,17 @@ export default function App() {
           
           {/* 2. The Symbol */}
           <View style={styles.symbolWrapper}>
-            <SymbolView
-              symbolName="heart.fill"
+            {/* <SymbolView
+              symbolName="fish"
               tintColor="#FF3B30"
               pointSize={60}
               weight="black"
               scale="large"
+            /> */}
+            <SymbolView 
+              symbolName="heart.fill"
+              renderingMode="palette"
+             colors={["#800080", "#808080"]}
             />
           </View>
 
@@ -40,7 +45,7 @@ export default function App() {
           {/* 2. The Symbol */}
           <View style={styles.symbolWrapper}>
             <SymbolView
-              symbolName="signature"
+              symbolName="chineseyuanrenminbisign.arrow.trianglehead.counterclockwise.rotate.90"
               tintColor="#007AFF"
               pointSize={80}
               isAnimating={isSigned}
@@ -63,8 +68,8 @@ export default function App() {
           {/* 2. The Symbol */}
           <View style={styles.symbolWrapper}>
             <SymbolView
-              symbolName="bell.fill"
-              tintColor="#FF9500"
+              symbolName="heart.fill"
+              tintColor="#FF3B30"
               pointSize={50}
               isAnimating={isBouncing}
               effect="bounce"
