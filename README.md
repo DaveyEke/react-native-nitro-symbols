@@ -349,16 +349,16 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- Built with [Nitro Modules](https://github.com/mrousavy/nitro) by [@mrousavy](https://github.com/mrousavy)
+- Built with [Nitro Modules](https://github.com/mrousavy/nitro) by [@mrousavy](https://x.com/mrousavy)
 - SF Symbols by Apple Inc.
-- Type definitions from [sf-symbols-typescript](https://github.com/birkir/sf-symbols-typescript)
+- Type definitions from [sf-symbols-typescript](https://github.com/nandorojo/sf-symbols-typescript)
 
 ---
 
 ## 📞 Contact
 
-- **Twitter**: [@1804davey](https://twitter.com/1804davey)
-- **GitHub**: [Issues](https://github.com/yourusername/react-native-nitro-symbols/issues)
+- **Twitter**: [Davey](https://x.com/1804davey)
+- **GitHub**: [Issues](https://github.com/daveyeke/react-native-nitro-symbols/issues)
 
 ---
 
