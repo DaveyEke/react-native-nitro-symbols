@@ -1,6 +1,6 @@
 {
   "name": "react-native-nitro-symbols",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react-native-nitro-symbols",
   "main": "lib/index",
   "module": "lib/index",
@@ -42,14 +42,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrousavy/nitro.git"
+    "url": "git+https://github.com/DaveyEke/react-native-nitro-symbols.git"
   },
-  "author": "Marc Rousavy <me@mrousavy.com> (https://github.com/mrousavy)",
+  "author": "Dave Mkpa Eke <daveydenco@gmail.com> (https://github.com/daveyeke)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrousavy/nitro/issues"
+    "url": "https://github.com/DaveyEke/react-native-nitro-symbols/issues"
   },
-  "homepage": "https://github.com/mrousavy/nitro#readme",
+  "homepage": "https://github.com/DaveyEke/react-native-nitro-symbols#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
