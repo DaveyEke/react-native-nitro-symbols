@@ -13,6 +13,8 @@ func mapEffect(_ value: String?) -> SymbolEffectType {
     case "bounce": return .bounce
     case "pulse": return .pulse
     case "drawon": return .drawOn
+    case "scale": return .scale
+    case "variablecolor": return .variableColor
     default: return .none
     }
 }
@@ -40,12 +42,36 @@ func mapScale(_ value: String?) -> Image.Scale {
     }
 }
 
+func mapRenderingMode(_ value: String?) -> SymbolRenderingMode {
+    switch value?.lowercased() {
+    case "monochrome": return .monochrome
+    case "hierarchical": return .hierarchical
+    case "palette": return .palette
+    case "multicolor": return .multicolor
+    default: return .monochrome
+    }
+}
+
+func mapVariant(_ value: String?) -> SymbolVariants {
+    switch value?.lowercased() {
+    case "fill": return .fill
+    case "slash": return .slash
+    case "rectangle": return .rectangle
+    case "circle": return .circle
+    case "square": return .square
+    default: return .none
+    }
+}
+
+func mapColors(_ values: [String]?) -> [Color] {
+    guard let values = values else { return [] }
+    return values.compactMap { mapHexToColor(hex: $0) }
+}
+
 // Simple Hex String to SwiftUI Color Mapper
 func mapHexToColor(hex: String?) -> Color? {
     guard let hex = hex else { return nil }
-    // Simple shim to convert hex string.
-    // In a real app, you might use a robust UIColor(hex:) extension
-    // For now, let's assume standard React Native colors or use UIColor logic
+    // Simple shim to convert hex string
     if let uiColor = UIColor(hexString: hex) {
         return Color(uiColor)
     }

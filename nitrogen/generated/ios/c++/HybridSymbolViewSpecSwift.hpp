@@ -12,10 +12,28 @@
 // Forward declaration of `HybridSymbolViewSpec_cxx` to properly resolve imports.
 namespace NitroSymbols { class HybridSymbolViewSpec_cxx; }
 
+// Forward declaration of `SFSymbols6_0` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SFSymbols6_0; }
+// Forward declaration of `SymbolWeight` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolWeight; }
+// Forward declaration of `SymbolScale` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolScale; }
+// Forward declaration of `SFSymbolEffect` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SFSymbolEffect; }
+// Forward declaration of `SymbolVariant` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolVariant; }
+// Forward declaration of `SymbolRenderingMode` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolRenderingMode; }
 
-
-#include <string>
+#include "SFSymbols6_0.hpp"
 #include <optional>
+#include "SymbolWeight.hpp"
+#include <string>
+#include "SymbolScale.hpp"
+#include "SFSymbolEffect.hpp"
+#include <vector>
+#include "SymbolVariant.hpp"
+#include "SymbolRenderingMode.hpp"
 
 #include "NitroSymbols-Swift-Cxx-Umbrella.hpp"
 
@@ -57,12 +75,12 @@ namespace margelo::nitro::nitrosymbols {
 
   public:
     // Properties
-    inline std::string getSymbolName() noexcept override {
+    inline SFSymbols6_0 getSymbolName() noexcept override {
       auto __result = _swiftPart.getSymbolName();
-      return __result;
+      return static_cast<SFSymbols6_0>(__result);
     }
-    inline void setSymbolName(const std::string& symbolName) noexcept override {
-      _swiftPart.setSymbolName(symbolName);
+    inline void setSymbolName(SFSymbols6_0 symbolName) noexcept override {
+      _swiftPart.setSymbolName(static_cast<int>(symbolName));
     }
     inline std::optional<double> getPointSize() noexcept override {
       auto __result = _swiftPart.getPointSize();
@@ -71,11 +89,11 @@ namespace margelo::nitro::nitrosymbols {
     inline void setPointSize(std::optional<double> pointSize) noexcept override {
       _swiftPart.setPointSize(pointSize);
     }
-    inline std::optional<std::string> getWeight() noexcept override {
+    inline std::optional<SymbolWeight> getWeight() noexcept override {
       auto __result = _swiftPart.getWeight();
       return __result;
     }
-    inline void setWeight(const std::optional<std::string>& weight) noexcept override {
+    inline void setWeight(std::optional<SymbolWeight> weight) noexcept override {
       _swiftPart.setWeight(weight);
     }
     inline std::optional<std::string> getTintColor() noexcept override {
@@ -92,19 +110,40 @@ namespace margelo::nitro::nitrosymbols {
     inline void setIsAnimating(std::optional<bool> isAnimating) noexcept override {
       _swiftPart.setIsAnimating(isAnimating);
     }
-    inline std::optional<std::string> getScale() noexcept override {
+    inline std::optional<SymbolScale> getScale() noexcept override {
       auto __result = _swiftPart.getScale();
       return __result;
     }
-    inline void setScale(const std::optional<std::string>& scale) noexcept override {
+    inline void setScale(std::optional<SymbolScale> scale) noexcept override {
       _swiftPart.setScale(scale);
     }
-    inline std::optional<std::string> getEffect() noexcept override {
+    inline std::optional<SFSymbolEffect> getEffect() noexcept override {
       auto __result = _swiftPart.getEffect();
       return __result;
     }
-    inline void setEffect(const std::optional<std::string>& effect) noexcept override {
+    inline void setEffect(std::optional<SFSymbolEffect> effect) noexcept override {
       _swiftPart.setEffect(effect);
+    }
+    inline std::optional<std::vector<std::string>> getColors() noexcept override {
+      auto __result = _swiftPart.getColors();
+      return __result;
+    }
+    inline void setColors(const std::optional<std::vector<std::string>>& colors) noexcept override {
+      _swiftPart.setColors(colors);
+    }
+    inline std::optional<SymbolVariant> getVariant() noexcept override {
+      auto __result = _swiftPart.getVariant();
+      return __result;
+    }
+    inline void setVariant(std::optional<SymbolVariant> variant) noexcept override {
+      _swiftPart.setVariant(variant);
+    }
+    inline std::optional<SymbolRenderingMode> getRenderingMode() noexcept override {
+      auto __result = _swiftPart.getRenderingMode();
+      return __result;
+    }
+    inline void setRenderingMode(std::optional<SymbolRenderingMode> renderingMode) noexcept override {
+      _swiftPart.setRenderingMode(renderingMode);
     }
 
   public:

@@ -105,5 +105,8 @@
     "trailingComma": "es5",
     "useTabs": false,
     "semi": false
+  },
+  "dependencies": {
+    "sf-symbols-typescript": "^2.1.0"
   }
 }

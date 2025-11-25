@@ -25,12 +25,12 @@ namespace margelo::nitro::nitrosymbols::views {
                                                const HybridSymbolViewProps& sourceProps,
                                                const react::RawProps& rawProps):
     react::ViewProps(context, sourceProps, rawProps, filterObjectKeys),
-    symbolName([&]() -> CachedProp<std::string> {
+    symbolName([&]() -> CachedProp<SFSymbols6_0> {
       try {
         const react::RawValue* rawValue = rawProps.at("symbolName", nullptr, nullptr);
         if (rawValue == nullptr) return sourceProps.symbolName;
         const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
-        return CachedProp<std::string>::fromRawValue(*runtime, value, sourceProps.symbolName);
+        return CachedProp<SFSymbols6_0>::fromRawValue(*runtime, value, sourceProps.symbolName);
       } catch (const std::exception& exc) {
         throw std::runtime_error(std::string("SymbolView.symbolName: ") + exc.what());
       }
@@ -45,12 +45,12 @@ namespace margelo::nitro::nitrosymbols::views {
         throw std::runtime_error(std::string("SymbolView.pointSize: ") + exc.what());
       }
     }()),
-    weight([&]() -> CachedProp<std::optional<std::string>> {
+    weight([&]() -> CachedProp<std::optional<SymbolWeight>> {
       try {
         const react::RawValue* rawValue = rawProps.at("weight", nullptr, nullptr);
         if (rawValue == nullptr) return sourceProps.weight;
         const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
-        return CachedProp<std::optional<std::string>>::fromRawValue(*runtime, value, sourceProps.weight);
+        return CachedProp<std::optional<SymbolWeight>>::fromRawValue(*runtime, value, sourceProps.weight);
       } catch (const std::exception& exc) {
         throw std::runtime_error(std::string("SymbolView.weight: ") + exc.what());
       }
@@ -75,24 +75,54 @@ namespace margelo::nitro::nitrosymbols::views {
         throw std::runtime_error(std::string("SymbolView.isAnimating: ") + exc.what());
       }
     }()),
-    scale([&]() -> CachedProp<std::optional<std::string>> {
+    scale([&]() -> CachedProp<std::optional<SymbolScale>> {
       try {
         const react::RawValue* rawValue = rawProps.at("scale", nullptr, nullptr);
         if (rawValue == nullptr) return sourceProps.scale;
         const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
-        return CachedProp<std::optional<std::string>>::fromRawValue(*runtime, value, sourceProps.scale);
+        return CachedProp<std::optional<SymbolScale>>::fromRawValue(*runtime, value, sourceProps.scale);
       } catch (const std::exception& exc) {
         throw std::runtime_error(std::string("SymbolView.scale: ") + exc.what());
       }
     }()),
-    effect([&]() -> CachedProp<std::optional<std::string>> {
+    effect([&]() -> CachedProp<std::optional<SFSymbolEffect>> {
       try {
         const react::RawValue* rawValue = rawProps.at("effect", nullptr, nullptr);
         if (rawValue == nullptr) return sourceProps.effect;
         const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
-        return CachedProp<std::optional<std::string>>::fromRawValue(*runtime, value, sourceProps.effect);
+        return CachedProp<std::optional<SFSymbolEffect>>::fromRawValue(*runtime, value, sourceProps.effect);
       } catch (const std::exception& exc) {
         throw std::runtime_error(std::string("SymbolView.effect: ") + exc.what());
+      }
+    }()),
+    colors([&]() -> CachedProp<std::optional<std::vector<std::string>>> {
+      try {
+        const react::RawValue* rawValue = rawProps.at("colors", nullptr, nullptr);
+        if (rawValue == nullptr) return sourceProps.colors;
+        const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
+        return CachedProp<std::optional<std::vector<std::string>>>::fromRawValue(*runtime, value, sourceProps.colors);
+      } catch (const std::exception& exc) {
+        throw std::runtime_error(std::string("SymbolView.colors: ") + exc.what());
+      }
+    }()),
+    variant([&]() -> CachedProp<std::optional<SymbolVariant>> {
+      try {
+        const react::RawValue* rawValue = rawProps.at("variant", nullptr, nullptr);
+        if (rawValue == nullptr) return sourceProps.variant;
+        const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
+        return CachedProp<std::optional<SymbolVariant>>::fromRawValue(*runtime, value, sourceProps.variant);
+      } catch (const std::exception& exc) {
+        throw std::runtime_error(std::string("SymbolView.variant: ") + exc.what());
+      }
+    }()),
+    renderingMode([&]() -> CachedProp<std::optional<SymbolRenderingMode>> {
+      try {
+        const react::RawValue* rawValue = rawProps.at("renderingMode", nullptr, nullptr);
+        if (rawValue == nullptr) return sourceProps.renderingMode;
+        const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
+        return CachedProp<std::optional<SymbolRenderingMode>>::fromRawValue(*runtime, value, sourceProps.renderingMode);
+      } catch (const std::exception& exc) {
+        throw std::runtime_error(std::string("SymbolView.renderingMode: ") + exc.what());
       }
     }()),
     hybridRef([&]() -> CachedProp<std::optional<std::function<void(const std::shared_ptr<HybridSymbolViewSpec>& /* ref */)>>> {
@@ -115,6 +145,9 @@ namespace margelo::nitro::nitrosymbols::views {
     isAnimating(other.isAnimating),
     scale(other.scale),
     effect(other.effect),
+    colors(other.colors),
+    variant(other.variant),
+    renderingMode(other.renderingMode),
     hybridRef(other.hybridRef) { }
 
   bool HybridSymbolViewProps::filterObjectKeys(const std::string& propName) {
@@ -126,6 +159,9 @@ namespace margelo::nitro::nitrosymbols::views {
       case hashString("isAnimating"): return true;
       case hashString("scale"): return true;
       case hashString("effect"): return true;
+      case hashString("colors"): return true;
+      case hashString("variant"): return true;
+      case hashString("renderingMode"): return true;
       case hashString("hybridRef"): return true;
       default: return false;
     }

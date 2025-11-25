@@ -50,20 +50,26 @@ namespace margelo::nitro::nitrosymbols {
 
   public:
     // Properties
-    std::string getSymbolName() override;
-    void setSymbolName(const std::string& symbolName) override;
+    SFSymbols6_0 getSymbolName() override;
+    void setSymbolName(SFSymbols6_0 symbolName) override;
     std::optional<double> getPointSize() override;
     void setPointSize(std::optional<double> pointSize) override;
-    std::optional<std::string> getWeight() override;
-    void setWeight(const std::optional<std::string>& weight) override;
+    std::optional<SymbolWeight> getWeight() override;
+    void setWeight(std::optional<SymbolWeight> weight) override;
     std::optional<std::string> getTintColor() override;
     void setTintColor(const std::optional<std::string>& tintColor) override;
     std::optional<bool> getIsAnimating() override;
     void setIsAnimating(std::optional<bool> isAnimating) override;
-    std::optional<std::string> getScale() override;
-    void setScale(const std::optional<std::string>& scale) override;
-    std::optional<std::string> getEffect() override;
-    void setEffect(const std::optional<std::string>& effect) override;
+    std::optional<SymbolScale> getScale() override;
+    void setScale(std::optional<SymbolScale> scale) override;
+    std::optional<SFSymbolEffect> getEffect() override;
+    void setEffect(std::optional<SFSymbolEffect> effect) override;
+    std::optional<std::vector<std::string>> getColors() override;
+    void setColors(const std::optional<std::vector<std::string>>& colors) override;
+    std::optional<SymbolVariant> getVariant() override;
+    void setVariant(std::optional<SymbolVariant> variant) override;
+    std::optional<SymbolRenderingMode> getRenderingMode() override;
+    void setRenderingMode(std::optional<SymbolRenderingMode> renderingMode) override;
 
   public:
     // Methods

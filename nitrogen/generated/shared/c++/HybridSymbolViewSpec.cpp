@@ -28,6 +28,12 @@ namespace margelo::nitro::nitrosymbols {
       prototype.registerHybridSetter("scale", &HybridSymbolViewSpec::setScale);
       prototype.registerHybridGetter("effect", &HybridSymbolViewSpec::getEffect);
       prototype.registerHybridSetter("effect", &HybridSymbolViewSpec::setEffect);
+      prototype.registerHybridGetter("colors", &HybridSymbolViewSpec::getColors);
+      prototype.registerHybridSetter("colors", &HybridSymbolViewSpec::setColors);
+      prototype.registerHybridGetter("variant", &HybridSymbolViewSpec::getVariant);
+      prototype.registerHybridSetter("variant", &HybridSymbolViewSpec::setVariant);
+      prototype.registerHybridGetter("renderingMode", &HybridSymbolViewSpec::getRenderingMode);
+      prototype.registerHybridSetter("renderingMode", &HybridSymbolViewSpec::setRenderingMode);
     });
   }
 

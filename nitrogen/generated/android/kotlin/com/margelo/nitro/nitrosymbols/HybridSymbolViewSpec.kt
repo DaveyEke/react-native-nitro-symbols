@@ -46,7 +46,7 @@ abstract class HybridSymbolViewSpec: HybridView() {
   @get:Keep
   @set:DoNotStrip
   @set:Keep
-  abstract var symbolName: String
+  abstract var symbolName: SFSymbols6_0
   
   @get:DoNotStrip
   @get:Keep
@@ -58,7 +58,7 @@ abstract class HybridSymbolViewSpec: HybridView() {
   @get:Keep
   @set:DoNotStrip
   @set:Keep
-  abstract var weight: String?
+  abstract var weight: SymbolWeight?
   
   @get:DoNotStrip
   @get:Keep
@@ -76,13 +76,31 @@ abstract class HybridSymbolViewSpec: HybridView() {
   @get:Keep
   @set:DoNotStrip
   @set:Keep
-  abstract var scale: String?
+  abstract var scale: SymbolScale?
   
   @get:DoNotStrip
   @get:Keep
   @set:DoNotStrip
   @set:Keep
-  abstract var effect: String?
+  abstract var effect: SFSymbolEffect?
+  
+  @get:DoNotStrip
+  @get:Keep
+  @set:DoNotStrip
+  @set:Keep
+  abstract var colors: Array<String>?
+  
+  @get:DoNotStrip
+  @get:Keep
+  @set:DoNotStrip
+  @set:Keep
+  abstract var variant: SymbolVariant?
+  
+  @get:DoNotStrip
+  @get:Keep
+  @set:DoNotStrip
+  @set:Keep
+  abstract var renderingMode: SymbolRenderingMode?
 
   // Methods
   

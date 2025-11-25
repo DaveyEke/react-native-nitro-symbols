@@ -71,9 +71,9 @@ using namespace margelo::nitro::nitrosymbols::views;
   // 2. Update each prop individually
   swiftPart.beforeUpdate();
 
-  // symbolName: string
+  // symbolName: enum
   if (newViewProps.symbolName.isDirty) {
-    swiftPart.setSymbolName(newViewProps.symbolName.value);
+    swiftPart.setSymbolName(static_cast<int>(newViewProps.symbolName.value));
     newViewProps.symbolName.isDirty = false;
   }
   // pointSize: optional
@@ -105,6 +105,21 @@ using namespace margelo::nitro::nitrosymbols::views;
   if (newViewProps.effect.isDirty) {
     swiftPart.setEffect(newViewProps.effect.value);
     newViewProps.effect.isDirty = false;
+  }
+  // colors: optional
+  if (newViewProps.colors.isDirty) {
+    swiftPart.setColors(newViewProps.colors.value);
+    newViewProps.colors.isDirty = false;
+  }
+  // variant: optional
+  if (newViewProps.variant.isDirty) {
+    swiftPart.setVariant(newViewProps.variant.value);
+    newViewProps.variant.isDirty = false;
+  }
+  // renderingMode: optional
+  if (newViewProps.renderingMode.isDirty) {
+    swiftPart.setRenderingMode(newViewProps.renderingMode.value);
+    newViewProps.renderingMode.isDirty = false;
   }
 
   swiftPart.afterUpdate();

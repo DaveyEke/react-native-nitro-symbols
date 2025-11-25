@@ -7,10 +7,34 @@
 
 #include "JHybridSymbolViewSpec.hpp"
 
+// Forward declaration of `SFSymbols6_0` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SFSymbols6_0; }
+// Forward declaration of `SymbolWeight` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolWeight; }
+// Forward declaration of `SymbolScale` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolScale; }
+// Forward declaration of `SFSymbolEffect` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SFSymbolEffect; }
+// Forward declaration of `SymbolVariant` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolVariant; }
+// Forward declaration of `SymbolRenderingMode` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolRenderingMode; }
 
-
-#include <string>
+#include "SFSymbols6_0.hpp"
+#include "JSFSymbols6_0.hpp"
 #include <optional>
+#include "SymbolWeight.hpp"
+#include "JSymbolWeight.hpp"
+#include <string>
+#include "SymbolScale.hpp"
+#include "JSymbolScale.hpp"
+#include "SFSymbolEffect.hpp"
+#include "JSFSymbolEffect.hpp"
+#include <vector>
+#include "SymbolVariant.hpp"
+#include "JSymbolVariant.hpp"
+#include "SymbolRenderingMode.hpp"
+#include "JSymbolRenderingMode.hpp"
 
 namespace margelo::nitro::nitrosymbols {
 
@@ -41,14 +65,14 @@ namespace margelo::nitro::nitrosymbols {
   }
 
   // Properties
-  std::string JHybridSymbolViewSpec::getSymbolName() {
-    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JString>()>("getSymbolName");
+  SFSymbols6_0 JHybridSymbolViewSpec::getSymbolName() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSFSymbols6_0>()>("getSymbolName");
     auto __result = method(_javaPart);
-    return __result->toStdString();
+    return __result->toCpp();
   }
-  void JHybridSymbolViewSpec::setSymbolName(const std::string& symbolName) {
-    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JString> /* symbolName */)>("setSymbolName");
-    method(_javaPart, jni::make_jstring(symbolName));
+  void JHybridSymbolViewSpec::setSymbolName(SFSymbols6_0 symbolName) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSFSymbols6_0> /* symbolName */)>("setSymbolName");
+    method(_javaPart, JSFSymbols6_0::fromCpp(symbolName));
   }
   std::optional<double> JHybridSymbolViewSpec::getPointSize() {
     static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JDouble>()>("getPointSize");
@@ -59,14 +83,14 @@ namespace margelo::nitro::nitrosymbols {
     static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JDouble> /* pointSize */)>("setPointSize");
     method(_javaPart, pointSize.has_value() ? jni::JDouble::valueOf(pointSize.value()) : nullptr);
   }
-  std::optional<std::string> JHybridSymbolViewSpec::getWeight() {
-    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JString>()>("getWeight");
+  std::optional<SymbolWeight> JHybridSymbolViewSpec::getWeight() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSymbolWeight>()>("getWeight");
     auto __result = method(_javaPart);
-    return __result != nullptr ? std::make_optional(__result->toStdString()) : std::nullopt;
+    return __result != nullptr ? std::make_optional(__result->toCpp()) : std::nullopt;
   }
-  void JHybridSymbolViewSpec::setWeight(const std::optional<std::string>& weight) {
-    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JString> /* weight */)>("setWeight");
-    method(_javaPart, weight.has_value() ? jni::make_jstring(weight.value()) : nullptr);
+  void JHybridSymbolViewSpec::setWeight(std::optional<SymbolWeight> weight) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSymbolWeight> /* weight */)>("setWeight");
+    method(_javaPart, weight.has_value() ? JSymbolWeight::fromCpp(weight.value()) : nullptr);
   }
   std::optional<std::string> JHybridSymbolViewSpec::getTintColor() {
     static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JString>()>("getTintColor");
@@ -86,23 +110,68 @@ namespace margelo::nitro::nitrosymbols {
     static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JBoolean> /* isAnimating */)>("setIsAnimating");
     method(_javaPart, isAnimating.has_value() ? jni::JBoolean::valueOf(isAnimating.value()) : nullptr);
   }
-  std::optional<std::string> JHybridSymbolViewSpec::getScale() {
-    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JString>()>("getScale");
+  std::optional<SymbolScale> JHybridSymbolViewSpec::getScale() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSymbolScale>()>("getScale");
     auto __result = method(_javaPart);
-    return __result != nullptr ? std::make_optional(__result->toStdString()) : std::nullopt;
+    return __result != nullptr ? std::make_optional(__result->toCpp()) : std::nullopt;
   }
-  void JHybridSymbolViewSpec::setScale(const std::optional<std::string>& scale) {
-    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JString> /* scale */)>("setScale");
-    method(_javaPart, scale.has_value() ? jni::make_jstring(scale.value()) : nullptr);
+  void JHybridSymbolViewSpec::setScale(std::optional<SymbolScale> scale) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSymbolScale> /* scale */)>("setScale");
+    method(_javaPart, scale.has_value() ? JSymbolScale::fromCpp(scale.value()) : nullptr);
   }
-  std::optional<std::string> JHybridSymbolViewSpec::getEffect() {
-    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JString>()>("getEffect");
+  std::optional<SFSymbolEffect> JHybridSymbolViewSpec::getEffect() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSFSymbolEffect>()>("getEffect");
     auto __result = method(_javaPart);
-    return __result != nullptr ? std::make_optional(__result->toStdString()) : std::nullopt;
+    return __result != nullptr ? std::make_optional(__result->toCpp()) : std::nullopt;
   }
-  void JHybridSymbolViewSpec::setEffect(const std::optional<std::string>& effect) {
-    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JString> /* effect */)>("setEffect");
-    method(_javaPart, effect.has_value() ? jni::make_jstring(effect.value()) : nullptr);
+  void JHybridSymbolViewSpec::setEffect(std::optional<SFSymbolEffect> effect) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSFSymbolEffect> /* effect */)>("setEffect");
+    method(_javaPart, effect.has_value() ? JSFSymbolEffect::fromCpp(effect.value()) : nullptr);
+  }
+  std::optional<std::vector<std::string>> JHybridSymbolViewSpec::getColors() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JArrayClass<jni::JString>>()>("getColors");
+    auto __result = method(_javaPart);
+    return __result != nullptr ? std::make_optional([&]() {
+      size_t __size = __result->size();
+      std::vector<std::string> __vector;
+      __vector.reserve(__size);
+      for (size_t __i = 0; __i < __size; __i++) {
+        auto __element = __result->getElement(__i);
+        __vector.push_back(__element->toStdString());
+      }
+      return __vector;
+    }()) : std::nullopt;
+  }
+  void JHybridSymbolViewSpec::setColors(const std::optional<std::vector<std::string>>& colors) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JArrayClass<jni::JString>> /* colors */)>("setColors");
+    method(_javaPart, colors.has_value() ? [&]() {
+      size_t __size = colors.value().size();
+      jni::local_ref<jni::JArrayClass<jni::JString>> __array = jni::JArrayClass<jni::JString>::newArray(__size);
+      for (size_t __i = 0; __i < __size; __i++) {
+        const auto& __element = colors.value()[__i];
+        auto __elementJni = jni::make_jstring(__element);
+        __array->setElement(__i, *__elementJni);
+      }
+      return __array;
+    }() : nullptr);
+  }
+  std::optional<SymbolVariant> JHybridSymbolViewSpec::getVariant() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSymbolVariant>()>("getVariant");
+    auto __result = method(_javaPart);
+    return __result != nullptr ? std::make_optional(__result->toCpp()) : std::nullopt;
+  }
+  void JHybridSymbolViewSpec::setVariant(std::optional<SymbolVariant> variant) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSymbolVariant> /* variant */)>("setVariant");
+    method(_javaPart, variant.has_value() ? JSymbolVariant::fromCpp(variant.value()) : nullptr);
+  }
+  std::optional<SymbolRenderingMode> JHybridSymbolViewSpec::getRenderingMode() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSymbolRenderingMode>()>("getRenderingMode");
+    auto __result = method(_javaPart);
+    return __result != nullptr ? std::make_optional(__result->toCpp()) : std::nullopt;
+  }
+  void JHybridSymbolViewSpec::setRenderingMode(std::optional<SymbolRenderingMode> renderingMode) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSymbolRenderingMode> /* renderingMode */)>("setRenderingMode");
+    method(_javaPart, renderingMode.has_value() ? JSymbolRenderingMode::fromCpp(renderingMode.value()) : nullptr);
   }
 
   // Methods

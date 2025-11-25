@@ -16,8 +16,15 @@
 #include <react/renderer/components/view/ConcreteViewShadowNode.h>
 #include <react/renderer/components/view/ViewProps.h>
 
-#include <string>
+#include "SFSymbols6_0.hpp"
 #include <optional>
+#include "SymbolWeight.hpp"
+#include <string>
+#include "SymbolScale.hpp"
+#include "SFSymbolEffect.hpp"
+#include <vector>
+#include "SymbolVariant.hpp"
+#include "SymbolRenderingMode.hpp"
 #include <memory>
 #include "HybridSymbolViewSpec.hpp"
 #include <functional>
@@ -43,13 +50,16 @@ namespace margelo::nitro::nitrosymbols::views {
                           const react::RawProps& rawProps);
 
   public:
-    CachedProp<std::string> symbolName;
+    CachedProp<SFSymbols6_0> symbolName;
     CachedProp<std::optional<double>> pointSize;
-    CachedProp<std::optional<std::string>> weight;
+    CachedProp<std::optional<SymbolWeight>> weight;
     CachedProp<std::optional<std::string>> tintColor;
     CachedProp<std::optional<bool>> isAnimating;
-    CachedProp<std::optional<std::string>> scale;
-    CachedProp<std::optional<std::string>> effect;
+    CachedProp<std::optional<SymbolScale>> scale;
+    CachedProp<std::optional<SFSymbolEffect>> effect;
+    CachedProp<std::optional<std::vector<std::string>>> colors;
+    CachedProp<std::optional<SymbolVariant>> variant;
+    CachedProp<std::optional<SymbolRenderingMode>> renderingMode;
     CachedProp<std::optional<std::function<void(const std::shared_ptr<HybridSymbolViewSpec>& /* ref */)>>> hybridRef;
 
   private:

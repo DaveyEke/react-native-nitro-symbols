@@ -11,13 +11,16 @@ import NitroModules
 /// See ``HybridSymbolViewSpec``
 public protocol HybridSymbolViewSpec_protocol: HybridObject, HybridView {
   // Properties
-  var symbolName: String { get set }
+  var symbolName: SFSymbols6_0 { get set }
   var pointSize: Double? { get set }
-  var weight: String? { get set }
+  var weight: SymbolWeight? { get set }
   var tintColor: String? { get set }
   var isAnimating: Bool? { get set }
-  var scale: String? { get set }
-  var effect: String? { get set }
+  var scale: SymbolScale? { get set }
+  var effect: SFSymbolEffect? { get set }
+  var colors: [String]? { get set }
+  var variant: SymbolVariant? { get set }
+  var renderingMode: SymbolRenderingMode? { get set }
 
   // Methods
   

@@ -13,10 +13,28 @@
 #error NitroModules cannot be found! Are you sure you installed NitroModules properly?
 #endif
 
+// Forward declaration of `SFSymbols6_0` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SFSymbols6_0; }
+// Forward declaration of `SymbolWeight` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolWeight; }
+// Forward declaration of `SymbolScale` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolScale; }
+// Forward declaration of `SFSymbolEffect` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SFSymbolEffect; }
+// Forward declaration of `SymbolVariant` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolVariant; }
+// Forward declaration of `SymbolRenderingMode` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolRenderingMode; }
 
-
-#include <string>
+#include "SFSymbols6_0.hpp"
 #include <optional>
+#include "SymbolWeight.hpp"
+#include <string>
+#include "SymbolScale.hpp"
+#include "SFSymbolEffect.hpp"
+#include <vector>
+#include "SymbolVariant.hpp"
+#include "SymbolRenderingMode.hpp"
 
 namespace margelo::nitro::nitrosymbols {
 
@@ -45,20 +63,26 @@ namespace margelo::nitro::nitrosymbols {
 
     public:
       // Properties
-      virtual std::string getSymbolName() = 0;
-      virtual void setSymbolName(const std::string& symbolName) = 0;
+      virtual SFSymbols6_0 getSymbolName() = 0;
+      virtual void setSymbolName(SFSymbols6_0 symbolName) = 0;
       virtual std::optional<double> getPointSize() = 0;
       virtual void setPointSize(std::optional<double> pointSize) = 0;
-      virtual std::optional<std::string> getWeight() = 0;
-      virtual void setWeight(const std::optional<std::string>& weight) = 0;
+      virtual std::optional<SymbolWeight> getWeight() = 0;
+      virtual void setWeight(std::optional<SymbolWeight> weight) = 0;
       virtual std::optional<std::string> getTintColor() = 0;
       virtual void setTintColor(const std::optional<std::string>& tintColor) = 0;
       virtual std::optional<bool> getIsAnimating() = 0;
       virtual void setIsAnimating(std::optional<bool> isAnimating) = 0;
-      virtual std::optional<std::string> getScale() = 0;
-      virtual void setScale(const std::optional<std::string>& scale) = 0;
-      virtual std::optional<std::string> getEffect() = 0;
-      virtual void setEffect(const std::optional<std::string>& effect) = 0;
+      virtual std::optional<SymbolScale> getScale() = 0;
+      virtual void setScale(std::optional<SymbolScale> scale) = 0;
+      virtual std::optional<SFSymbolEffect> getEffect() = 0;
+      virtual void setEffect(std::optional<SFSymbolEffect> effect) = 0;
+      virtual std::optional<std::vector<std::string>> getColors() = 0;
+      virtual void setColors(const std::optional<std::vector<std::string>>& colors) = 0;
+      virtual std::optional<SymbolVariant> getVariant() = 0;
+      virtual void setVariant(std::optional<SymbolVariant> variant) = 0;
+      virtual std::optional<SymbolRenderingMode> getRenderingMode() = 0;
+      virtual void setRenderingMode(std::optional<SymbolRenderingMode> renderingMode) = 0;
 
     public:
       // Methods

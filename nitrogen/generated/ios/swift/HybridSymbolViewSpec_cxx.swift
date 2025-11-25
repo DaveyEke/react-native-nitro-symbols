@@ -114,14 +114,14 @@ open class HybridSymbolViewSpec_cxx {
   }
 
   // Properties
-  public final var symbolName: std.string {
+  public final var symbolName: Int32 {
     @inline(__always)
     get {
-      return std.string(self.__implementation.symbolName)
+      return self.__implementation.symbolName.rawValue
     }
     @inline(__always)
     set {
-      self.__implementation.symbolName = String(newValue)
+      self.__implementation.symbolName = margelo.nitro.nitrosymbols.SFSymbols6_0(rawValue: newValue)!
     }
   }
   
@@ -142,12 +142,12 @@ open class HybridSymbolViewSpec_cxx {
     }
   }
   
-  public final var weight: bridge.std__optional_std__string_ {
+  public final var weight: bridge.std__optional_SymbolWeight_ {
     @inline(__always)
     get {
-      return { () -> bridge.std__optional_std__string_ in
+      return { () -> bridge.std__optional_SymbolWeight_ in
         if let __unwrappedValue = self.__implementation.weight {
-          return bridge.create_std__optional_std__string_(std.string(__unwrappedValue))
+          return bridge.create_std__optional_SymbolWeight_(__unwrappedValue)
         } else {
           return .init()
         }
@@ -155,14 +155,7 @@ open class HybridSymbolViewSpec_cxx {
     }
     @inline(__always)
     set {
-      self.__implementation.weight = { () -> String? in
-        if bridge.has_value_std__optional_std__string_(newValue) {
-          let __unwrapped = bridge.get_std__optional_std__string_(newValue)
-          return String(__unwrapped)
-        } else {
-          return nil
-        }
-      }()
+      self.__implementation.weight = newValue.value
     }
   }
   
@@ -214,12 +207,12 @@ open class HybridSymbolViewSpec_cxx {
     }
   }
   
-  public final var scale: bridge.std__optional_std__string_ {
+  public final var scale: bridge.std__optional_SymbolScale_ {
     @inline(__always)
     get {
-      return { () -> bridge.std__optional_std__string_ in
+      return { () -> bridge.std__optional_SymbolScale_ in
         if let __unwrappedValue = self.__implementation.scale {
-          return bridge.create_std__optional_std__string_(std.string(__unwrappedValue))
+          return bridge.create_std__optional_SymbolScale_(__unwrappedValue)
         } else {
           return .init()
         }
@@ -227,10 +220,50 @@ open class HybridSymbolViewSpec_cxx {
     }
     @inline(__always)
     set {
-      self.__implementation.scale = { () -> String? in
-        if bridge.has_value_std__optional_std__string_(newValue) {
-          let __unwrapped = bridge.get_std__optional_std__string_(newValue)
-          return String(__unwrapped)
+      self.__implementation.scale = newValue.value
+    }
+  }
+  
+  public final var effect: bridge.std__optional_SFSymbolEffect_ {
+    @inline(__always)
+    get {
+      return { () -> bridge.std__optional_SFSymbolEffect_ in
+        if let __unwrappedValue = self.__implementation.effect {
+          return bridge.create_std__optional_SFSymbolEffect_(__unwrappedValue)
+        } else {
+          return .init()
+        }
+      }()
+    }
+    @inline(__always)
+    set {
+      self.__implementation.effect = newValue.value
+    }
+  }
+  
+  public final var colors: bridge.std__optional_std__vector_std__string__ {
+    @inline(__always)
+    get {
+      return { () -> bridge.std__optional_std__vector_std__string__ in
+        if let __unwrappedValue = self.__implementation.colors {
+          return bridge.create_std__optional_std__vector_std__string__({ () -> bridge.std__vector_std__string_ in
+            var __vector = bridge.create_std__vector_std__string_(__unwrappedValue.count)
+            for __item in __unwrappedValue {
+              __vector.push_back(std.string(__item))
+            }
+            return __vector
+          }())
+        } else {
+          return .init()
+        }
+      }()
+    }
+    @inline(__always)
+    set {
+      self.__implementation.colors = { () -> [String]? in
+        if bridge.has_value_std__optional_std__vector_std__string__(newValue) {
+          let __unwrapped = bridge.get_std__optional_std__vector_std__string__(newValue)
+          return __unwrapped.map({ __item in String(__item) })
         } else {
           return nil
         }
@@ -238,12 +271,12 @@ open class HybridSymbolViewSpec_cxx {
     }
   }
   
-  public final var effect: bridge.std__optional_std__string_ {
+  public final var variant: bridge.std__optional_SymbolVariant_ {
     @inline(__always)
     get {
-      return { () -> bridge.std__optional_std__string_ in
-        if let __unwrappedValue = self.__implementation.effect {
-          return bridge.create_std__optional_std__string_(std.string(__unwrappedValue))
+      return { () -> bridge.std__optional_SymbolVariant_ in
+        if let __unwrappedValue = self.__implementation.variant {
+          return bridge.create_std__optional_SymbolVariant_(__unwrappedValue)
         } else {
           return .init()
         }
@@ -251,14 +284,24 @@ open class HybridSymbolViewSpec_cxx {
     }
     @inline(__always)
     set {
-      self.__implementation.effect = { () -> String? in
-        if bridge.has_value_std__optional_std__string_(newValue) {
-          let __unwrapped = bridge.get_std__optional_std__string_(newValue)
-          return String(__unwrapped)
+      self.__implementation.variant = newValue.value
+    }
+  }
+  
+  public final var renderingMode: bridge.std__optional_SymbolRenderingMode_ {
+    @inline(__always)
+    get {
+      return { () -> bridge.std__optional_SymbolRenderingMode_ in
+        if let __unwrappedValue = self.__implementation.renderingMode {
+          return bridge.create_std__optional_SymbolRenderingMode_(__unwrappedValue)
         } else {
-          return nil
+          return .init()
         }
       }()
+    }
+    @inline(__always)
+    set {
+      self.__implementation.renderingMode = newValue.value
     }
   }
 

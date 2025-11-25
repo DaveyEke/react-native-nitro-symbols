@@ -13,6 +13,9 @@ enum SymbolEffectType {
     case bounce
     case pulse
     case drawOn
+    case scale
+    case variableColor
+    //case replace
     // TO-DO: Add others as needed
 }
 
@@ -20,6 +23,9 @@ enum SymbolEffectType {
 struct NativeSymbolSwiftUIView: View {
     let symbolName: String
     let tintColor: Color?
+    let colors: [Color]
+    let renderingMode: SymbolRenderingMode
+    let variant: SymbolVariants
     let pointSize: CGFloat
     let weight: Font.Weight
     let scale: Image.Scale
@@ -27,36 +33,67 @@ struct NativeSymbolSwiftUIView: View {
     let effect: SymbolEffectType
     
     var body: some View {
-            let baseImage = Image(systemName: symbolName)
-                 .font(.system(size: pointSize, weight: weight))
-                 .imageScale(scale)
-                 .foregroundColor(tintColor)
-              // Apply the effect based on the enum
-             applyEffect(to: baseImage)
+        let baseImage = Image(systemName: symbolName)
+            .font(.system(size: pointSize, weight: weight))
+            .imageScale(scale)
+            .symbolRenderingMode(renderingMode)
+            .symbolVariant(variant)
+            .applyForegroundStyle(colors: colors, tintColor: tintColor)
+        applyEffect(to: baseImage)
     }
     
     @ViewBuilder
-        func applyEffect(to view: some View) -> some View {
-            switch effect {
-            case .bounce:
-                if #available(iOS 18.0, *) {
-                    view.symbolEffect(.bounce, isActive: isAnimating)
-                } else {
-                    // Fallback on earlier versions
-                }
-            case .pulse:
-                view.symbolEffect(.pulse, isActive: isAnimating)
-            case .drawOn:
-                if #available(iOS 26.0, *) {
-                    view.symbolEffect(.drawOn, isActive: isAnimating)
-                } else {
-                    // Fallback on earlier versions
-                }
-            case .none:
-                view
+    func applyEffect(to view: some View) -> some View {
+        switch effect {
+        case .bounce:
+            if #available(iOS 18.0, *) {
+                view.symbolEffect(.bounce, isActive: isAnimating)
+            } else {
+                // Fallback on earlier versions
             }
+        case .pulse:
+            view.symbolEffect(.pulse, isActive: isAnimating) //.pulse
+        case .drawOn:
+            if #available(iOS 26.0, *) {
+                view.symbolEffect(.drawOn, isActive: isAnimating)
+            } else {
+                // Fallback on earlier versions
+            }
+        case .variableColor:
+            if #available(iOS 18.0, *) {
+                view.symbolEffect(.variableColor, isActive: isAnimating)
+            } else {
+                // Fallback on earlier versions
+            }
+        case .scale:
+            if #available(iOS 18.0, *) {
+                view.symbolEffect(.scale, isActive: isAnimating)
+            }
+        case .none:
+            view
         }
     }
+}
+
+
+extension View {
+    @ViewBuilder
+    func applyForegroundStyle(colors: [Color], tintColor: Color?) -> some View {
+        if !colors.isEmpty {
+            if colors.count == 1 {
+                self.foregroundStyle(colors[0])
+            } else if colors.count == 2 {
+                self.foregroundStyle(colors[0], colors[1])
+            } else {
+                self.foregroundStyle(colors[0], colors[1], colors[2])
+            }
+        } else if let tintColor = tintColor {
+            self.foregroundStyle(tintColor)
+        } else {
+            self
+        }
+    }
+}
 
 
 

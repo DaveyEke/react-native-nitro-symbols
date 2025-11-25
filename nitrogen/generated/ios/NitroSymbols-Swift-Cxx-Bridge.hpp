@@ -10,6 +10,16 @@
 // Forward declarations of C++ defined types
 // Forward declaration of `HybridSymbolViewSpec` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { class HybridSymbolViewSpec; }
+// Forward declaration of `SFSymbolEffect` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SFSymbolEffect; }
+// Forward declaration of `SymbolRenderingMode` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolRenderingMode; }
+// Forward declaration of `SymbolScale` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolScale; }
+// Forward declaration of `SymbolVariant` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolVariant; }
+// Forward declaration of `SymbolWeight` to properly resolve imports.
+namespace margelo::nitro::nitrosymbols { enum class SymbolWeight; }
 
 // Forward declarations of Swift defined types
 // Forward declaration of `HybridSymbolViewSpec_cxx` to properly resolve imports.
@@ -17,9 +27,15 @@ namespace NitroSymbols { class HybridSymbolViewSpec_cxx; }
 
 // Include C++ defined types
 #include "HybridSymbolViewSpec.hpp"
+#include "SFSymbolEffect.hpp"
+#include "SymbolRenderingMode.hpp"
+#include "SymbolScale.hpp"
+#include "SymbolVariant.hpp"
+#include "SymbolWeight.hpp"
 #include <memory>
 #include <optional>
 #include <string>
+#include <vector>
 
 /**
  * Contains specialized versions of C++ templated types so they can be accessed from Swift,
@@ -39,6 +55,21 @@ namespace margelo::nitro::nitrosymbols::bridge::swift {
     return optional.has_value();
   }
   inline double get_std__optional_double_(const std::optional<double>& optional) noexcept {
+    return *optional;
+  }
+  
+  // pragma MARK: std::optional<SymbolWeight>
+  /**
+   * Specialized version of `std::optional<SymbolWeight>`.
+   */
+  using std__optional_SymbolWeight_ = std::optional<SymbolWeight>;
+  inline std::optional<SymbolWeight> create_std__optional_SymbolWeight_(const SymbolWeight& value) noexcept {
+    return std::optional<SymbolWeight>(value);
+  }
+  inline bool has_value_std__optional_SymbolWeight_(const std::optional<SymbolWeight>& optional) noexcept {
+    return optional.has_value();
+  }
+  inline SymbolWeight get_std__optional_SymbolWeight_(const std::optional<SymbolWeight>& optional) noexcept {
     return *optional;
   }
   
@@ -69,6 +100,92 @@ namespace margelo::nitro::nitrosymbols::bridge::swift {
     return optional.has_value();
   }
   inline bool get_std__optional_bool_(const std::optional<bool>& optional) noexcept {
+    return *optional;
+  }
+  
+  // pragma MARK: std::optional<SymbolScale>
+  /**
+   * Specialized version of `std::optional<SymbolScale>`.
+   */
+  using std__optional_SymbolScale_ = std::optional<SymbolScale>;
+  inline std::optional<SymbolScale> create_std__optional_SymbolScale_(const SymbolScale& value) noexcept {
+    return std::optional<SymbolScale>(value);
+  }
+  inline bool has_value_std__optional_SymbolScale_(const std::optional<SymbolScale>& optional) noexcept {
+    return optional.has_value();
+  }
+  inline SymbolScale get_std__optional_SymbolScale_(const std::optional<SymbolScale>& optional) noexcept {
+    return *optional;
+  }
+  
+  // pragma MARK: std::optional<SFSymbolEffect>
+  /**
+   * Specialized version of `std::optional<SFSymbolEffect>`.
+   */
+  using std__optional_SFSymbolEffect_ = std::optional<SFSymbolEffect>;
+  inline std::optional<SFSymbolEffect> create_std__optional_SFSymbolEffect_(const SFSymbolEffect& value) noexcept {
+    return std::optional<SFSymbolEffect>(value);
+  }
+  inline bool has_value_std__optional_SFSymbolEffect_(const std::optional<SFSymbolEffect>& optional) noexcept {
+    return optional.has_value();
+  }
+  inline SFSymbolEffect get_std__optional_SFSymbolEffect_(const std::optional<SFSymbolEffect>& optional) noexcept {
+    return *optional;
+  }
+  
+  // pragma MARK: std::vector<std::string>
+  /**
+   * Specialized version of `std::vector<std::string>`.
+   */
+  using std__vector_std__string_ = std::vector<std::string>;
+  inline std::vector<std::string> create_std__vector_std__string_(size_t size) noexcept {
+    std::vector<std::string> vector;
+    vector.reserve(size);
+    return vector;
+  }
+  
+  // pragma MARK: std::optional<std::vector<std::string>>
+  /**
+   * Specialized version of `std::optional<std::vector<std::string>>`.
+   */
+  using std__optional_std__vector_std__string__ = std::optional<std::vector<std::string>>;
+  inline std::optional<std::vector<std::string>> create_std__optional_std__vector_std__string__(const std::vector<std::string>& value) noexcept {
+    return std::optional<std::vector<std::string>>(value);
+  }
+  inline bool has_value_std__optional_std__vector_std__string__(const std::optional<std::vector<std::string>>& optional) noexcept {
+    return optional.has_value();
+  }
+  inline std::vector<std::string> get_std__optional_std__vector_std__string__(const std::optional<std::vector<std::string>>& optional) noexcept {
+    return *optional;
+  }
+  
+  // pragma MARK: std::optional<SymbolVariant>
+  /**
+   * Specialized version of `std::optional<SymbolVariant>`.
+   */
+  using std__optional_SymbolVariant_ = std::optional<SymbolVariant>;
+  inline std::optional<SymbolVariant> create_std__optional_SymbolVariant_(const SymbolVariant& value) noexcept {
+    return std::optional<SymbolVariant>(value);
+  }
+  inline bool has_value_std__optional_SymbolVariant_(const std::optional<SymbolVariant>& optional) noexcept {
+    return optional.has_value();
+  }
+  inline SymbolVariant get_std__optional_SymbolVariant_(const std::optional<SymbolVariant>& optional) noexcept {
+    return *optional;
+  }
+  
+  // pragma MARK: std::optional<SymbolRenderingMode>
+  /**
+   * Specialized version of `std::optional<SymbolRenderingMode>`.
+   */
+  using std__optional_SymbolRenderingMode_ = std::optional<SymbolRenderingMode>;
+  inline std::optional<SymbolRenderingMode> create_std__optional_SymbolRenderingMode_(const SymbolRenderingMode& value) noexcept {
+    return std::optional<SymbolRenderingMode>(value);
+  }
+  inline bool has_value_std__optional_SymbolRenderingMode_(const std::optional<SymbolRenderingMode>& optional) noexcept {
+    return optional.has_value();
+  }
+  inline SymbolRenderingMode get_std__optional_SymbolRenderingMode_(const std::optional<SymbolRenderingMode>& optional) noexcept {
     return *optional;
   }
   

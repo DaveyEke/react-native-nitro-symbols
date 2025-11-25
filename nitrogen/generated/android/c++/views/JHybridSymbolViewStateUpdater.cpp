@@ -64,6 +64,18 @@ void JHybridSymbolViewStateUpdater::updateViewProps(jni::alias_ref<jni::JClass> 
     view->setEffect(props.effect.value);
     // TODO: Set isDirty = false
   }
+  if (props.colors.isDirty) {
+    view->setColors(props.colors.value);
+    // TODO: Set isDirty = false
+  }
+  if (props.variant.isDirty) {
+    view->setVariant(props.variant.value);
+    // TODO: Set isDirty = false
+  }
+  if (props.renderingMode.isDirty) {
+    view->setRenderingMode(props.renderingMode.value);
+    // TODO: Set isDirty = false
+  }
 
   // Update hybridRef if it changed
   if (props.hybridRef.isDirty) {

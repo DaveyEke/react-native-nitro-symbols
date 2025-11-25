@@ -25,6 +25,9 @@ class HybridSymbolView: HybridSymbolViewSpec {
             let initialView = NativeSymbolSwiftUIView(
                 symbolName: "",
                 tintColor: nil,
+                colors: [],
+                renderingMode: .monochrome,
+                variant: .none,
                 pointSize: 20.0,
                 weight: .regular,
                 scale: .medium,
@@ -71,6 +74,18 @@ class HybridSymbolView: HybridSymbolViewSpec {
         didSet { if oldValue != effect { updateSwiftUIView() } }
     }
     
+    var colors: [String]? {
+        didSet { if oldValue != colors { updateSwiftUIView() } }
+    }
+    
+    var variant: String? {
+        didSet { if oldValue != variant { updateSwiftUIView() } }
+    }
+    
+    var renderingMode: String? {
+        didSet { if oldValue != renderingMode { updateSwiftUIView() } }
+    }
+    
     private func updateSwiftUIView() {
         if #available(iOS 17.0, *) {
             guard let hosting = controller as? UIHostingController<NativeSymbolSwiftUIView> else { return }
@@ -78,6 +93,9 @@ class HybridSymbolView: HybridSymbolViewSpec {
             let newRootView = NativeSymbolSwiftUIView(
                 symbolName: symbolName,
                 tintColor: mapHexToColor(hex: tintColor),
+                colors: mapColors(colors),
+                renderingMode: mapRenderingMode(renderingMode),
+                variant: mapVariant(variant),
                 pointSize: CGFloat(pointSize ?? 24.0),
                 weight: mapWeight(weight),
                 scale: mapScale(scale),

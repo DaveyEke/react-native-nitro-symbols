@@ -11,6 +11,9 @@
     "isAnimating": true,
     "scale": true,
     "effect": true,
+    "colors": true,
+    "variant": true,
+    "renderingMode": true,
     "hybridRef": true
   }
 }
