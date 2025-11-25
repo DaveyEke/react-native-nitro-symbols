@@ -17,16 +17,16 @@ public extension SymbolVariant {
    */
   init?(fromString string: String) {
     switch string {
-      case "circle":
-        self = .circle
-      case "rectangle":
-        self = .rectangle
-      case "square":
-        self = .square
       case "fill":
         self = .fill
       case "slash":
         self = .slash
+      case "rectangle":
+        self = .rectangle
+      case "circle":
+        self = .circle
+      case "square":
+        self = .square
       default:
         return nil
     }
@@ -37,16 +37,16 @@ public extension SymbolVariant {
    */
   var stringValue: String {
     switch self {
-      case .circle:
-        return "circle"
-      case .rectangle:
-        return "rectangle"
-      case .square:
-        return "square"
       case .fill:
         return "fill"
       case .slash:
         return "slash"
+      case .rectangle:
+        return "rectangle"
+      case .circle:
+        return "circle"
+      case .square:
+        return "square"
     }
   }
 }

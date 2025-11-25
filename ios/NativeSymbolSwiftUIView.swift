@@ -24,7 +24,7 @@ struct NativeSymbolSwiftUIView: View {
     let symbolName: String
     let tintColor: Color?
     let colors: [Color]
-    let renderingMode: SymbolRenderingMode
+    let renderingMode: SwiftUI.SymbolRenderingMode
     let variant: SymbolVariants
     let pointSize: CGFloat
     let weight: Font.Weight

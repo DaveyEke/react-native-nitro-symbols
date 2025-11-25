@@ -25,12 +25,12 @@ namespace margelo::nitro::nitrosymbols::views {
                                                const HybridSymbolViewProps& sourceProps,
                                                const react::RawProps& rawProps):
     react::ViewProps(context, sourceProps, rawProps, filterObjectKeys),
-    symbolName([&]() -> CachedProp<SafeSFSymbol> {
+    symbolName([&]() -> CachedProp<std::string> {
       try {
         const react::RawValue* rawValue = rawProps.at("symbolName", nullptr, nullptr);
         if (rawValue == nullptr) return sourceProps.symbolName;
         const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
-        return CachedProp<SafeSFSymbol>::fromRawValue(*runtime, value, sourceProps.symbolName);
+        return CachedProp<std::string>::fromRawValue(*runtime, value, sourceProps.symbolName);
       } catch (const std::exception& exc) {
         throw std::runtime_error(std::string("SymbolView.symbolName: ") + exc.what());
       }

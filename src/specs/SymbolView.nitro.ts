@@ -4,13 +4,13 @@ import type { HybridView, HybridViewProps, HybridViewMethods } from 'react-nativ
 
 import type { SymbolWeight, SymbolScale, SFSymbolEffect, SymbolRenderingMode, SymbolVariant } from '../types';
 
-import type { SafeSFSymbol } from '../types';
+
 
 /**
  * Defines the properties for the RNSymbolView component.
  */
 export interface SymbolProps extends HybridViewProps {
-  symbolName: SafeSFSymbol;
+  symbolName: string; //TODO: use sf-symbols-typescript once nitro modules error code gen error is fixed
   pointSize?: number;
   weight?: SymbolWeight;
   tintColor?: string;

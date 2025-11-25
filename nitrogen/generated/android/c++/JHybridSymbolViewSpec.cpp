@@ -7,8 +7,6 @@
 
 #include "JHybridSymbolViewSpec.hpp"
 
-// Forward declaration of `SafeSFSymbol` to properly resolve imports.
-namespace margelo::nitro::nitrosymbols { enum class SafeSFSymbol; }
 // Forward declaration of `SymbolWeight` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SymbolWeight; }
 // Forward declaration of `SymbolScale` to properly resolve imports.
@@ -20,12 +18,10 @@ namespace margelo::nitro::nitrosymbols { enum class SymbolVariant; }
 // Forward declaration of `SymbolRenderingMode` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SymbolRenderingMode; }
 
-#include "SafeSFSymbol.hpp"
-#include "JSafeSFSymbol.hpp"
+#include <string>
 #include <optional>
 #include "SymbolWeight.hpp"
 #include "JSymbolWeight.hpp"
-#include <string>
 #include "SymbolScale.hpp"
 #include "JSymbolScale.hpp"
 #include "SFSymbolEffect.hpp"
@@ -65,14 +61,14 @@ namespace margelo::nitro::nitrosymbols {
   }
 
   // Properties
-  SafeSFSymbol JHybridSymbolViewSpec::getSymbolName() {
-    static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSafeSFSymbol>()>("getSymbolName");
+  std::string JHybridSymbolViewSpec::getSymbolName() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JString>()>("getSymbolName");
     auto __result = method(_javaPart);
-    return __result->toCpp();
+    return __result->toStdString();
   }
-  void JHybridSymbolViewSpec::setSymbolName(SafeSFSymbol symbolName) {
-    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSafeSFSymbol> /* symbolName */)>("setSymbolName");
-    method(_javaPart, JSafeSFSymbol::fromCpp(symbolName));
+  void JHybridSymbolViewSpec::setSymbolName(const std::string& symbolName) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JString> /* symbolName */)>("setSymbolName");
+    method(_javaPart, jni::make_jstring(symbolName));
   }
   std::optional<double> JHybridSymbolViewSpec::getPointSize() {
     static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JDouble>()>("getPointSize");

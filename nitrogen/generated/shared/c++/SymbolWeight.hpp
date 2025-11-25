@@ -29,13 +29,13 @@ namespace margelo::nitro::nitrosymbols {
    * An enum which can be represented as a JavaScript union (SymbolWeight).
    */
   enum class SymbolWeight {
-    BOLD      SWIFT_NAME(bold) = 0,
-    ULTRALIGHT      SWIFT_NAME(ultralight) = 1,
-    THIN      SWIFT_NAME(thin) = 2,
-    LIGHT      SWIFT_NAME(light) = 3,
-    REGULAR      SWIFT_NAME(regular) = 4,
-    MEDIUM      SWIFT_NAME(medium) = 5,
-    SEMIBOLD      SWIFT_NAME(semibold) = 6,
+    ULTRALIGHT      SWIFT_NAME(ultralight) = 0,
+    THIN      SWIFT_NAME(thin) = 1,
+    LIGHT      SWIFT_NAME(light) = 2,
+    REGULAR      SWIFT_NAME(regular) = 3,
+    MEDIUM      SWIFT_NAME(medium) = 4,
+    SEMIBOLD      SWIFT_NAME(semibold) = 5,
+    BOLD      SWIFT_NAME(bold) = 6,
     HEAVY      SWIFT_NAME(heavy) = 7,
     BLACK      SWIFT_NAME(black) = 8,
   } CLOSED_ENUM;
@@ -50,13 +50,13 @@ namespace margelo::nitro {
     static inline margelo::nitro::nitrosymbols::SymbolWeight fromJSI(jsi::Runtime& runtime, const jsi::Value& arg) {
       std::string unionValue = JSIConverter<std::string>::fromJSI(runtime, arg);
       switch (hashString(unionValue.c_str(), unionValue.size())) {
-        case hashString("bold"): return margelo::nitro::nitrosymbols::SymbolWeight::BOLD;
         case hashString("ultralight"): return margelo::nitro::nitrosymbols::SymbolWeight::ULTRALIGHT;
         case hashString("thin"): return margelo::nitro::nitrosymbols::SymbolWeight::THIN;
         case hashString("light"): return margelo::nitro::nitrosymbols::SymbolWeight::LIGHT;
         case hashString("regular"): return margelo::nitro::nitrosymbols::SymbolWeight::REGULAR;
         case hashString("medium"): return margelo::nitro::nitrosymbols::SymbolWeight::MEDIUM;
         case hashString("semibold"): return margelo::nitro::nitrosymbols::SymbolWeight::SEMIBOLD;
+        case hashString("bold"): return margelo::nitro::nitrosymbols::SymbolWeight::BOLD;
         case hashString("heavy"): return margelo::nitro::nitrosymbols::SymbolWeight::HEAVY;
         case hashString("black"): return margelo::nitro::nitrosymbols::SymbolWeight::BLACK;
         default: [[unlikely]]
@@ -65,13 +65,13 @@ namespace margelo::nitro {
     }
     static inline jsi::Value toJSI(jsi::Runtime& runtime, margelo::nitro::nitrosymbols::SymbolWeight arg) {
       switch (arg) {
-        case margelo::nitro::nitrosymbols::SymbolWeight::BOLD: return JSIConverter<std::string>::toJSI(runtime, "bold");
         case margelo::nitro::nitrosymbols::SymbolWeight::ULTRALIGHT: return JSIConverter<std::string>::toJSI(runtime, "ultralight");
         case margelo::nitro::nitrosymbols::SymbolWeight::THIN: return JSIConverter<std::string>::toJSI(runtime, "thin");
         case margelo::nitro::nitrosymbols::SymbolWeight::LIGHT: return JSIConverter<std::string>::toJSI(runtime, "light");
         case margelo::nitro::nitrosymbols::SymbolWeight::REGULAR: return JSIConverter<std::string>::toJSI(runtime, "regular");
         case margelo::nitro::nitrosymbols::SymbolWeight::MEDIUM: return JSIConverter<std::string>::toJSI(runtime, "medium");
         case margelo::nitro::nitrosymbols::SymbolWeight::SEMIBOLD: return JSIConverter<std::string>::toJSI(runtime, "semibold");
+        case margelo::nitro::nitrosymbols::SymbolWeight::BOLD: return JSIConverter<std::string>::toJSI(runtime, "bold");
         case margelo::nitro::nitrosymbols::SymbolWeight::HEAVY: return JSIConverter<std::string>::toJSI(runtime, "heavy");
         case margelo::nitro::nitrosymbols::SymbolWeight::BLACK: return JSIConverter<std::string>::toJSI(runtime, "black");
         default: [[unlikely]]
@@ -85,13 +85,13 @@ namespace margelo::nitro {
       }
       std::string unionValue = JSIConverter<std::string>::fromJSI(runtime, value);
       switch (hashString(unionValue.c_str(), unionValue.size())) {
-        case hashString("bold"):
         case hashString("ultralight"):
         case hashString("thin"):
         case hashString("light"):
         case hashString("regular"):
         case hashString("medium"):
         case hashString("semibold"):
+        case hashString("bold"):
         case hashString("heavy"):
         case hashString("black"):
           return true;

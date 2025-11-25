@@ -16,9 +16,9 @@ import com.facebook.proguard.annotations.DoNotStrip
 @DoNotStrip
 @Keep
 enum class SymbolVariant(@DoNotStrip @Keep val value: Int) {
-  CIRCLE(0),
-  RECTANGLE(1),
-  SQUARE(2),
-  FILL(3),
-  SLASH(4);
+  FILL(0),
+  SLASH(1),
+  RECTANGLE(2),
+  CIRCLE(3),
+  SQUARE(4);
 }

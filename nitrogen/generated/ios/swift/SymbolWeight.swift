@@ -17,8 +17,6 @@ public extension SymbolWeight {
    */
   init?(fromString string: String) {
     switch string {
-      case "bold":
-        self = .bold
       case "ultralight":
         self = .ultralight
       case "thin":
@@ -31,6 +29,8 @@ public extension SymbolWeight {
         self = .medium
       case "semibold":
         self = .semibold
+      case "bold":
+        self = .bold
       case "heavy":
         self = .heavy
       case "black":
@@ -45,8 +45,6 @@ public extension SymbolWeight {
    */
   var stringValue: String {
     switch self {
-      case .bold:
-        return "bold"
       case .ultralight:
         return "ultralight"
       case .thin:
@@ -59,6 +57,8 @@ public extension SymbolWeight {
         return "medium"
       case .semibold:
         return "semibold"
+      case .bold:
+        return "bold"
       case .heavy:
         return "heavy"
       case .black:

@@ -29,11 +29,11 @@ namespace margelo::nitro::nitrosymbols {
    * An enum which can be represented as a JavaScript union (SymbolVariant).
    */
   enum class SymbolVariant {
-    CIRCLE      SWIFT_NAME(circle) = 0,
-    RECTANGLE      SWIFT_NAME(rectangle) = 1,
-    SQUARE      SWIFT_NAME(square) = 2,
-    FILL      SWIFT_NAME(fill) = 3,
-    SLASH      SWIFT_NAME(slash) = 4,
+    FILL      SWIFT_NAME(fill) = 0,
+    SLASH      SWIFT_NAME(slash) = 1,
+    RECTANGLE      SWIFT_NAME(rectangle) = 2,
+    CIRCLE      SWIFT_NAME(circle) = 3,
+    SQUARE      SWIFT_NAME(square) = 4,
   } CLOSED_ENUM;
 
 } // namespace margelo::nitro::nitrosymbols
@@ -46,22 +46,22 @@ namespace margelo::nitro {
     static inline margelo::nitro::nitrosymbols::SymbolVariant fromJSI(jsi::Runtime& runtime, const jsi::Value& arg) {
       std::string unionValue = JSIConverter<std::string>::fromJSI(runtime, arg);
       switch (hashString(unionValue.c_str(), unionValue.size())) {
-        case hashString("circle"): return margelo::nitro::nitrosymbols::SymbolVariant::CIRCLE;
-        case hashString("rectangle"): return margelo::nitro::nitrosymbols::SymbolVariant::RECTANGLE;
-        case hashString("square"): return margelo::nitro::nitrosymbols::SymbolVariant::SQUARE;
         case hashString("fill"): return margelo::nitro::nitrosymbols::SymbolVariant::FILL;
         case hashString("slash"): return margelo::nitro::nitrosymbols::SymbolVariant::SLASH;
+        case hashString("rectangle"): return margelo::nitro::nitrosymbols::SymbolVariant::RECTANGLE;
+        case hashString("circle"): return margelo::nitro::nitrosymbols::SymbolVariant::CIRCLE;
+        case hashString("square"): return margelo::nitro::nitrosymbols::SymbolVariant::SQUARE;
         default: [[unlikely]]
           throw std::invalid_argument("Cannot convert \"" + unionValue + "\" to enum SymbolVariant - invalid value!");
       }
     }
     static inline jsi::Value toJSI(jsi::Runtime& runtime, margelo::nitro::nitrosymbols::SymbolVariant arg) {
       switch (arg) {
-        case margelo::nitro::nitrosymbols::SymbolVariant::CIRCLE: return JSIConverter<std::string>::toJSI(runtime, "circle");
-        case margelo::nitro::nitrosymbols::SymbolVariant::RECTANGLE: return JSIConverter<std::string>::toJSI(runtime, "rectangle");
-        case margelo::nitro::nitrosymbols::SymbolVariant::SQUARE: return JSIConverter<std::string>::toJSI(runtime, "square");
         case margelo::nitro::nitrosymbols::SymbolVariant::FILL: return JSIConverter<std::string>::toJSI(runtime, "fill");
         case margelo::nitro::nitrosymbols::SymbolVariant::SLASH: return JSIConverter<std::string>::toJSI(runtime, "slash");
+        case margelo::nitro::nitrosymbols::SymbolVariant::RECTANGLE: return JSIConverter<std::string>::toJSI(runtime, "rectangle");
+        case margelo::nitro::nitrosymbols::SymbolVariant::CIRCLE: return JSIConverter<std::string>::toJSI(runtime, "circle");
+        case margelo::nitro::nitrosymbols::SymbolVariant::SQUARE: return JSIConverter<std::string>::toJSI(runtime, "square");
         default: [[unlikely]]
           throw std::invalid_argument("Cannot convert SymbolVariant to JS - invalid value: "
                                     + std::to_string(static_cast<int>(arg)) + "!");
@@ -73,11 +73,11 @@ namespace margelo::nitro {
       }
       std::string unionValue = JSIConverter<std::string>::fromJSI(runtime, value);
       switch (hashString(unionValue.c_str(), unionValue.size())) {
-        case hashString("circle"):
-        case hashString("rectangle"):
-        case hashString("square"):
         case hashString("fill"):
         case hashString("slash"):
+        case hashString("rectangle"):
+        case hashString("circle"):
+        case hashString("square"):
           return true;
         default:
           return false;

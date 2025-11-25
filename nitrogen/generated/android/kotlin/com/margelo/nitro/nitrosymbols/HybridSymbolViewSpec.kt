@@ -46,7 +46,7 @@ abstract class HybridSymbolViewSpec: HybridView() {
   @get:Keep
   @set:DoNotStrip
   @set:Keep
-  abstract var symbolName: SafeSFSymbol
+  abstract var symbolName: String
   
   @get:DoNotStrip
   @get:Keep

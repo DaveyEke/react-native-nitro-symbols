@@ -54,7 +54,7 @@ class HybridSymbolView: HybridSymbolViewSpec {
         didSet { if oldValue != pointSize { updateSwiftUIView() } }
     }
     
-    var weight: String? {
+    var weight: SymbolWeight? {
         didSet { if oldValue != weight { updateSwiftUIView() } }
     }
     
@@ -66,11 +66,11 @@ class HybridSymbolView: HybridSymbolViewSpec {
         didSet { if oldValue != isAnimating { updateSwiftUIView() } }
     }
     
-    var scale: String? {
+    var scale: SymbolScale? {
         didSet { if oldValue != scale { updateSwiftUIView() } }
     }
     
-    var effect: String? {
+    var effect: SFSymbolEffect? {
         didSet { if oldValue != effect { updateSwiftUIView() } }
     }
     
@@ -78,11 +78,11 @@ class HybridSymbolView: HybridSymbolViewSpec {
         didSet { if oldValue != colors { updateSwiftUIView() } }
     }
     
-    var variant: String? {
+    var variant: SymbolVariant? {
         didSet { if oldValue != variant { updateSwiftUIView() } }
     }
     
-    var renderingMode: String? {
+    var renderingMode: SymbolRenderingMode? {
         didSet { if oldValue != renderingMode { updateSwiftUIView() } }
     }
     

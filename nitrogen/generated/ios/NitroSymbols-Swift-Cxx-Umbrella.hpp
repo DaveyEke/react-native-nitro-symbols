@@ -12,8 +12,6 @@
 namespace margelo::nitro::nitrosymbols { class HybridSymbolViewSpec; }
 // Forward declaration of `SFSymbolEffect` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SFSymbolEffect; }
-// Forward declaration of `SafeSFSymbol` to properly resolve imports.
-namespace margelo::nitro::nitrosymbols { enum class SafeSFSymbol; }
 // Forward declaration of `SymbolRenderingMode` to properly resolve imports.
 namespace margelo::nitro::nitrosymbols { enum class SymbolRenderingMode; }
 // Forward declaration of `SymbolScale` to properly resolve imports.
@@ -26,7 +24,6 @@ namespace margelo::nitro::nitrosymbols { enum class SymbolWeight; }
 // Include C++ defined types
 #include "HybridSymbolViewSpec.hpp"
 #include "SFSymbolEffect.hpp"
-#include "SafeSFSymbol.hpp"
 #include "SymbolRenderingMode.hpp"
 #include "SymbolScale.hpp"
 #include "SymbolVariant.hpp"

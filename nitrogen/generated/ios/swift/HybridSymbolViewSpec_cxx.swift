@@ -114,14 +114,14 @@ open class HybridSymbolViewSpec_cxx {
   }
 
   // Properties
-  public final var symbolName: Int32 {
+  public final var symbolName: std.string {
     @inline(__always)
     get {
-      return self.__implementation.symbolName.rawValue
+      return std.string(self.__implementation.symbolName)
     }
     @inline(__always)
     set {
-      self.__implementation.symbolName = margelo.nitro.nitrosymbols.SafeSFSymbol(rawValue: newValue)!
+      self.__implementation.symbolName = String(newValue)
     }
   }
   

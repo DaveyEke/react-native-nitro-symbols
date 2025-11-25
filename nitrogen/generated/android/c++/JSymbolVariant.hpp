@@ -41,23 +41,23 @@ namespace margelo::nitro::nitrosymbols {
     [[maybe_unused]]
     static jni::alias_ref<JSymbolVariant> fromCpp(SymbolVariant value) {
       static const auto clazz = javaClassStatic();
-      static const auto fieldCIRCLE = clazz->getStaticField<JSymbolVariant>("CIRCLE");
-      static const auto fieldRECTANGLE = clazz->getStaticField<JSymbolVariant>("RECTANGLE");
-      static const auto fieldSQUARE = clazz->getStaticField<JSymbolVariant>("SQUARE");
       static const auto fieldFILL = clazz->getStaticField<JSymbolVariant>("FILL");
       static const auto fieldSLASH = clazz->getStaticField<JSymbolVariant>("SLASH");
+      static const auto fieldRECTANGLE = clazz->getStaticField<JSymbolVariant>("RECTANGLE");
+      static const auto fieldCIRCLE = clazz->getStaticField<JSymbolVariant>("CIRCLE");
+      static const auto fieldSQUARE = clazz->getStaticField<JSymbolVariant>("SQUARE");
       
       switch (value) {
-        case SymbolVariant::CIRCLE:
-          return clazz->getStaticFieldValue(fieldCIRCLE);
-        case SymbolVariant::RECTANGLE:
-          return clazz->getStaticFieldValue(fieldRECTANGLE);
-        case SymbolVariant::SQUARE:
-          return clazz->getStaticFieldValue(fieldSQUARE);
         case SymbolVariant::FILL:
           return clazz->getStaticFieldValue(fieldFILL);
         case SymbolVariant::SLASH:
           return clazz->getStaticFieldValue(fieldSLASH);
+        case SymbolVariant::RECTANGLE:
+          return clazz->getStaticFieldValue(fieldRECTANGLE);
+        case SymbolVariant::CIRCLE:
+          return clazz->getStaticFieldValue(fieldCIRCLE);
+        case SymbolVariant::SQUARE:
+          return clazz->getStaticFieldValue(fieldSQUARE);
         default:
           std::string stringValue = std::to_string(static_cast<int>(value));
           throw std::invalid_argument("Invalid enum value (" + stringValue + "!");

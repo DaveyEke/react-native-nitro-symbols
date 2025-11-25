@@ -16,13 +16,13 @@ import com.facebook.proguard.annotations.DoNotStrip
 @DoNotStrip
 @Keep
 enum class SymbolWeight(@DoNotStrip @Keep val value: Int) {
-  BOLD(0),
-  ULTRALIGHT(1),
-  THIN(2),
-  LIGHT(3),
-  REGULAR(4),
-  MEDIUM(5),
-  SEMIBOLD(6),
+  ULTRALIGHT(0),
+  THIN(1),
+  LIGHT(2),
+  REGULAR(3),
+  MEDIUM(4),
+  SEMIBOLD(5),
+  BOLD(6),
   HEAVY(7),
   BLACK(8);
 }

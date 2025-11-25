@@ -41,19 +41,17 @@ namespace margelo::nitro::nitrosymbols {
     [[maybe_unused]]
     static jni::alias_ref<JSymbolWeight> fromCpp(SymbolWeight value) {
       static const auto clazz = javaClassStatic();
-      static const auto fieldBOLD = clazz->getStaticField<JSymbolWeight>("BOLD");
       static const auto fieldULTRALIGHT = clazz->getStaticField<JSymbolWeight>("ULTRALIGHT");
       static const auto fieldTHIN = clazz->getStaticField<JSymbolWeight>("THIN");
       static const auto fieldLIGHT = clazz->getStaticField<JSymbolWeight>("LIGHT");
       static const auto fieldREGULAR = clazz->getStaticField<JSymbolWeight>("REGULAR");
       static const auto fieldMEDIUM = clazz->getStaticField<JSymbolWeight>("MEDIUM");
       static const auto fieldSEMIBOLD = clazz->getStaticField<JSymbolWeight>("SEMIBOLD");
+      static const auto fieldBOLD = clazz->getStaticField<JSymbolWeight>("BOLD");
       static const auto fieldHEAVY = clazz->getStaticField<JSymbolWeight>("HEAVY");
       static const auto fieldBLACK = clazz->getStaticField<JSymbolWeight>("BLACK");
       
       switch (value) {
-        case SymbolWeight::BOLD:
-          return clazz->getStaticFieldValue(fieldBOLD);
         case SymbolWeight::ULTRALIGHT:
           return clazz->getStaticFieldValue(fieldULTRALIGHT);
         case SymbolWeight::THIN:
@@ -66,6 +64,8 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldMEDIUM);
         case SymbolWeight::SEMIBOLD:
           return clazz->getStaticFieldValue(fieldSEMIBOLD);
+        case SymbolWeight::BOLD:
+          return clazz->getStaticFieldValue(fieldBOLD);
         case SymbolWeight::HEAVY:
           return clazz->getStaticFieldValue(fieldHEAVY);
         case SymbolWeight::BLACK:

@@ -8,58 +8,59 @@
 import Foundation
 import SwiftUI
 
-func mapEffect(_ value: String?) -> SymbolEffectType {
-    switch value?.lowercased() {
-    case "bounce": return .bounce
-    case "pulse": return .pulse
-    case "drawon": return .drawOn
-    case "scale": return .scale
-    case "variablecolor": return .variableColor
-    default: return .none
+func mapEffect(_ value: SFSymbolEffect?) -> SymbolEffectType {
+    guard let value = value else { return .none }
+    switch value {
+    case .bounce: return .bounce
+    case .pulse: return .pulse
+    case .drawon: return .drawOn
+    case .scale: return .scale
+    case .variablecolor: return .variableColor
     }
 }
 
-func mapWeight(_ value: String?) -> Font.Weight {
-    switch value?.lowercased() {
-    case "ultralight": return .ultraLight
-    case "thin": return .thin
-    case "light": return .light
-    case "regular": return .regular
-    case "medium": return .medium
-    case "semibold": return .semibold
-    case "bold": return .bold
-    case "heavy": return .heavy
-    case "black": return .black
-    default: return .regular
+func mapWeight(_ value: SymbolWeight?) -> Font.Weight {
+    guard let value = value else { return .regular }
+    switch value {
+    case .ultralight: return .ultraLight
+    case .thin: return .thin
+    case .light: return .light
+    case .regular: return .regular
+    case .medium: return .medium
+    case .semibold: return .semibold
+    case .bold: return .bold
+    case .heavy: return .heavy
+    case .black: return .black
     }
 }
 
-func mapScale(_ value: String?) -> Image.Scale {
-    switch value?.lowercased() {
-    case "small": return .small
-    case "large": return .large
-    default: return .medium
+func mapScale(_ value: SymbolScale?) -> Image.Scale {
+    guard let value = value else { return .medium }
+    switch value {
+    case .small: return .small
+    case .large: return .large
+    case .medium: return .medium
     }
 }
 
-func mapRenderingMode(_ value: String?) -> SymbolRenderingMode {
-    switch value?.lowercased() {
-    case "monochrome": return .monochrome
-    case "hierarchical": return .hierarchical
-    case "palette": return .palette
-    case "multicolor": return .multicolor
-    default: return .monochrome
+func mapRenderingMode(_ value: SymbolRenderingMode?) -> SwiftUI.SymbolRenderingMode {
+    guard let value = value else { return .monochrome }
+    switch value {
+    case .monochrome: return .monochrome
+    case .hierarchical: return .hierarchical
+    case .palette: return .palette
+    case .multicolor: return .multicolor	
     }
 }
 
-func mapVariant(_ value: String?) -> SymbolVariants {
-    switch value?.lowercased() {
-    case "fill": return .fill
-    case "slash": return .slash
-    case "rectangle": return .rectangle
-    case "circle": return .circle
-    case "square": return .square
-    default: return .none
+func mapVariant(_ value: SymbolVariant?) -> SymbolVariants {
+    guard let value = value else { return .none }
+    switch value {
+    case .fill: return .fill
+    case .slash: return .slash
+    case .rectangle: return .rectangle
+    case .circle: return .circle
+    case .square: return .square
     }
 }
 

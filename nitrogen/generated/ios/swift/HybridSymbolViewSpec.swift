@@ -11,7 +11,7 @@ import NitroModules
 /// See ``HybridSymbolViewSpec``
 public protocol HybridSymbolViewSpec_protocol: HybridObject, HybridView {
   // Properties
-  var symbolName: SafeSFSymbol { get set }
+  var symbolName: String { get set }
   var pointSize: Double? { get set }
   var weight: SymbolWeight? { get set }
   var tintColor: String? { get set }

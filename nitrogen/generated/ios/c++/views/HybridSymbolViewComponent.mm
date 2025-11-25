@@ -71,9 +71,9 @@ using namespace margelo::nitro::nitrosymbols::views;
   // 2. Update each prop individually
   swiftPart.beforeUpdate();
 
-  // symbolName: enum
+  // symbolName: string
   if (newViewProps.symbolName.isDirty) {
-    swiftPart.setSymbolName(static_cast<int>(newViewProps.symbolName.value));
+    swiftPart.setSymbolName(newViewProps.symbolName.value);
     newViewProps.symbolName.isDirty = false;
   }
   // pointSize: optional

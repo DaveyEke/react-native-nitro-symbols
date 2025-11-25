@@ -50,8 +50,8 @@ namespace margelo::nitro::nitrosymbols {
 
   public:
     // Properties
-    SafeSFSymbol getSymbolName() override;
-    void setSymbolName(SafeSFSymbol symbolName) override;
+    std::string getSymbolName() override;
+    void setSymbolName(const std::string& symbolName) override;
     std::optional<double> getPointSize() override;
     void setPointSize(std::optional<double> pointSize) override;
     std::optional<SymbolWeight> getWeight() override;
