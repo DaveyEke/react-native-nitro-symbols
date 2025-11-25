@@ -43,10 +43,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto clazz = javaClassStatic();
       static const auto fieldNUMBER = clazz->getStaticField<JSafeSFSymbol>("NUMBER");
       static const auto fieldFUNCTION = clazz->getStaticField<JSafeSFSymbol>("FUNCTION");
-      static const auto field_0_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_0_CIRCLE");
-      static const auto field_0_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_0_CIRCLE_FILL");
-      static const auto field_0_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_0_SQUARE");
-      static const auto field_0_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_0_SQUARE_FILL");
       static const auto field_00_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_00_CIRCLE");
       static const auto field_00_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_00_CIRCLE_FILL");
       static const auto field_00_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_00_SQUARE");
@@ -87,59 +83,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_09_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_09_CIRCLE_FILL");
       static const auto field_09_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_09_SQUARE");
       static const auto field_09_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_09_SQUARE_FILL");
-      static const auto field_1_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_1_CIRCLE");
-      static const auto field_1_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_1_CIRCLE_FILL");
-      static const auto field_1_MAGNIFYINGGLASS = clazz->getStaticField<JSafeSFSymbol>("_1_MAGNIFYINGGLASS");
-      static const auto field_1_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_1_SQUARE");
-      static const auto field_1_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_1_SQUARE_FILL");
-      static const auto field_10_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_10_CIRCLE");
-      static const auto field_10_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_10_CIRCLE_FILL");
-      static const auto field_10_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_10_SQUARE");
-      static const auto field_10_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_10_SQUARE_FILL");
-      static const auto field_11_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_11_CIRCLE");
-      static const auto field_11_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_11_CIRCLE_FILL");
-      static const auto field_11_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_11_SQUARE");
-      static const auto field_11_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_11_SQUARE_FILL");
-      static const auto field_12_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_12_CIRCLE");
-      static const auto field_12_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_12_CIRCLE_FILL");
-      static const auto field_12_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_12_SQUARE");
-      static const auto field_12_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_12_SQUARE_FILL");
-      static const auto field_13_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_13_CIRCLE");
-      static const auto field_13_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_13_CIRCLE_FILL");
-      static const auto field_13_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_13_SQUARE");
-      static const auto field_13_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_13_SQUARE_FILL");
-      static const auto field_14_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_14_CIRCLE");
-      static const auto field_14_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_14_CIRCLE_FILL");
-      static const auto field_14_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_14_SQUARE");
-      static const auto field_14_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_14_SQUARE_FILL");
-      static const auto field_15_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_15_CIRCLE");
-      static const auto field_15_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_15_CIRCLE_FILL");
-      static const auto field_15_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_15_SQUARE");
-      static const auto field_15_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_15_SQUARE_FILL");
-      static const auto field_16_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_16_CIRCLE");
-      static const auto field_16_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_16_CIRCLE_FILL");
-      static const auto field_16_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_16_SQUARE");
-      static const auto field_16_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_16_SQUARE_FILL");
-      static const auto field_17_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_17_CIRCLE");
-      static const auto field_17_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_17_CIRCLE_FILL");
-      static const auto field_17_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_17_SQUARE");
-      static const auto field_17_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_17_SQUARE_FILL");
-      static const auto field_18_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_18_CIRCLE");
-      static const auto field_18_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_18_CIRCLE_FILL");
-      static const auto field_18_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_18_SQUARE");
-      static const auto field_18_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_18_SQUARE_FILL");
-      static const auto field_19_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_19_CIRCLE");
-      static const auto field_19_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_19_CIRCLE_FILL");
-      static const auto field_19_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_19_SQUARE");
-      static const auto field_19_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_19_SQUARE_FILL");
-      static const auto field_2_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_2_CIRCLE");
-      static const auto field_2_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_2_CIRCLE_FILL");
-      static const auto field_2_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_2_SQUARE");
-      static const auto field_2_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_2_SQUARE_FILL");
-      static const auto field_20_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_20_CIRCLE");
-      static const auto field_20_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_20_CIRCLE_FILL");
-      static const auto field_20_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_20_SQUARE");
-      static const auto field_20_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_20_SQUARE_FILL");
       static const auto field_21_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_21_CIRCLE");
       static const auto field_21_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_21_CIRCLE_FILL");
       static const auto field_21_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_21_SQUARE");
@@ -156,10 +99,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_24_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_24_CIRCLE_FILL");
       static const auto field_24_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_24_SQUARE");
       static const auto field_24_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_24_SQUARE_FILL");
-      static const auto field_25_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_25_CIRCLE");
-      static const auto field_25_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_25_CIRCLE_FILL");
-      static const auto field_25_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_25_SQUARE");
-      static const auto field_25_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_25_SQUARE_FILL");
       static const auto field_26_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_26_CIRCLE");
       static const auto field_26_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_26_CIRCLE_FILL");
       static const auto field_26_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_26_SQUARE");
@@ -176,14 +115,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_29_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_29_CIRCLE_FILL");
       static const auto field_29_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_29_SQUARE");
       static const auto field_29_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_29_SQUARE_FILL");
-      static const auto field_3_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_3_CIRCLE");
-      static const auto field_3_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_3_CIRCLE_FILL");
-      static const auto field_3_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_3_SQUARE");
-      static const auto field_3_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_3_SQUARE_FILL");
-      static const auto field_30_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_30_CIRCLE");
-      static const auto field_30_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_30_CIRCLE_FILL");
-      static const auto field_30_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_30_SQUARE");
-      static const auto field_30_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_30_SQUARE_FILL");
       static const auto field_31_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_31_CIRCLE");
       static const auto field_31_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_31_CIRCLE_FILL");
       static const auto field_31_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_31_SQUARE");
@@ -200,10 +131,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_34_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_34_CIRCLE_FILL");
       static const auto field_34_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_34_SQUARE");
       static const auto field_34_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_34_SQUARE_FILL");
-      static const auto field_35_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_35_CIRCLE");
-      static const auto field_35_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_35_CIRCLE_FILL");
-      static const auto field_35_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_35_SQUARE");
-      static const auto field_35_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_35_SQUARE_FILL");
       static const auto field_36_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_36_CIRCLE");
       static const auto field_36_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_36_CIRCLE_FILL");
       static const auto field_36_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_36_SQUARE");
@@ -220,18 +147,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_39_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_39_CIRCLE_FILL");
       static const auto field_39_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_39_SQUARE");
       static const auto field_39_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_39_SQUARE_FILL");
-      static const auto field_4_ALT_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_4_ALT_CIRCLE");
-      static const auto field_4_ALT_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_4_ALT_CIRCLE_FILL");
-      static const auto field_4_ALT_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_4_ALT_SQUARE");
-      static const auto field_4_ALT_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_4_ALT_SQUARE_FILL");
-      static const auto field_4_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_4_CIRCLE");
-      static const auto field_4_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_4_CIRCLE_FILL");
-      static const auto field_4_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_4_SQUARE");
-      static const auto field_4_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_4_SQUARE_FILL");
-      static const auto field_40_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_40_CIRCLE");
-      static const auto field_40_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_40_CIRCLE_FILL");
-      static const auto field_40_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_40_SQUARE");
-      static const auto field_40_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_40_SQUARE_FILL");
       static const auto field_41_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_41_CIRCLE");
       static const auto field_41_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_41_CIRCLE_FILL");
       static const auto field_41_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_41_SQUARE");
@@ -248,10 +163,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_44_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_44_CIRCLE_FILL");
       static const auto field_44_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_44_SQUARE");
       static const auto field_44_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_44_SQUARE_FILL");
-      static const auto field_45_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_45_CIRCLE");
-      static const auto field_45_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_45_CIRCLE_FILL");
-      static const auto field_45_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_45_SQUARE");
-      static const auto field_45_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_45_SQUARE_FILL");
       static const auto field_46_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_46_CIRCLE");
       static const auto field_46_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_46_CIRCLE_FILL");
       static const auto field_46_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_46_SQUARE");
@@ -268,38 +179,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_49_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_49_CIRCLE_FILL");
       static const auto field_49_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_49_SQUARE");
       static const auto field_49_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_49_SQUARE_FILL");
-      static const auto field_5_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_5_CIRCLE");
-      static const auto field_5_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_5_CIRCLE_FILL");
-      static const auto field_5_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_5_SQUARE");
-      static const auto field_5_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_5_SQUARE_FILL");
-      static const auto field_50_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_50_CIRCLE");
-      static const auto field_50_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_50_CIRCLE_FILL");
-      static const auto field_50_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_50_SQUARE");
-      static const auto field_50_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_50_SQUARE_FILL");
-      static const auto field_6_ALT_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_6_ALT_CIRCLE");
-      static const auto field_6_ALT_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_6_ALT_CIRCLE_FILL");
-      static const auto field_6_ALT_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_6_ALT_SQUARE");
-      static const auto field_6_ALT_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_6_ALT_SQUARE_FILL");
-      static const auto field_6_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_6_CIRCLE");
-      static const auto field_6_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_6_CIRCLE_FILL");
-      static const auto field_6_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_6_SQUARE");
-      static const auto field_6_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_6_SQUARE_FILL");
-      static const auto field_7_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_7_CIRCLE");
-      static const auto field_7_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_7_CIRCLE_FILL");
-      static const auto field_7_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_7_SQUARE");
-      static const auto field_7_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_7_SQUARE_FILL");
-      static const auto field_8_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_8_CIRCLE");
-      static const auto field_8_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_8_CIRCLE_FILL");
-      static const auto field_8_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_8_SQUARE");
-      static const auto field_8_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_8_SQUARE_FILL");
-      static const auto field_9_ALT_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_9_ALT_CIRCLE");
-      static const auto field_9_ALT_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_9_ALT_CIRCLE_FILL");
-      static const auto field_9_ALT_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_9_ALT_SQUARE");
-      static const auto field_9_ALT_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_9_ALT_SQUARE_FILL");
-      static const auto field_9_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("_9_CIRCLE");
-      static const auto field_9_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_9_CIRCLE_FILL");
-      static const auto field_9_SQUARE = clazz->getStaticField<JSafeSFSymbol>("_9_SQUARE");
-      static const auto field_9_SQUARE_FILL = clazz->getStaticField<JSafeSFSymbol>("_9_SQUARE_FILL");
       static const auto fieldA = clazz->getStaticField<JSafeSFSymbol>("A");
       static const auto fieldA_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("A_CIRCLE");
       static const auto fieldA_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("A_CIRCLE_FILL");
@@ -1720,7 +1599,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto fieldPIN_CIRCLE_FILL = clazz->getStaticField<JSafeSFSymbol>("PIN_CIRCLE_FILL");
       static const auto fieldSCISSORS_BADGE_ELLIPSIS = clazz->getStaticField<JSafeSFSymbol>("SCISSORS_BADGE_ELLIPSIS");
       static const auto fieldSTUDENTDESK = clazz->getStaticField<JSafeSFSymbol>("STUDENTDESK");
-      static const auto field_1_MAGNIFYINGGLASS_AR = clazz->getStaticField<JSafeSFSymbol>("_1_MAGNIFYINGGLASS_AR");
       static const auto field_4K_TV = clazz->getStaticField<JSafeSFSymbol>("_4K_TV");
       static const auto field_4K_TV_FILL = clazz->getStaticField<JSafeSFSymbol>("_4K_TV_FILL");
       static const auto fieldA_BOOK_CLOSED = clazz->getStaticField<JSafeSFSymbol>("A_BOOK_CLOSED");
@@ -2926,7 +2804,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto fieldHOMEPODMINI_2_FILL = clazz->getStaticField<JSafeSFSymbol>("HOMEPODMINI_2_FILL");
       static const auto fieldHOMEPODMINI_FILL = clazz->getStaticField<JSafeSFSymbol>("HOMEPODMINI_FILL");
       static const auto fieldRECTANGLE_TOPTHIRD_INSET_FILL = clazz->getStaticField<JSafeSFSymbol>("RECTANGLE_TOPTHIRD_INSET_FILL");
-      static const auto field_1_MAGNIFYINGGLASS_HI = clazz->getStaticField<JSafeSFSymbol>("_1_MAGNIFYINGGLASS_HI");
       static const auto field_123_RECTANGLE = clazz->getStaticField<JSafeSFSymbol>("_123_RECTANGLE");
       static const auto field_123_RECTANGLE_AR = clazz->getStaticField<JSafeSFSymbol>("_123_RECTANGLE_AR");
       static const auto field_123_RECTANGLE_FILL = clazz->getStaticField<JSafeSFSymbol>("_123_RECTANGLE_FILL");
@@ -4733,60 +4610,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto fieldWRENCH_ADJUSTABLE_FILL = clazz->getStaticField<JSafeSFSymbol>("WRENCH_ADJUSTABLE_FILL");
       static const auto fieldXBOX_LOGO = clazz->getStaticField<JSafeSFSymbol>("XBOX_LOGO");
       static const auto fieldYENSIGN = clazz->getStaticField<JSafeSFSymbol>("YENSIGN");
-      static const auto field_0_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_0_CIRCLE_AR");
-      static const auto field_0_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_0_CIRCLE_FILL_AR");
-      static const auto field_0_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_0_SQUARE_AR");
-      static const auto field_0_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_0_SQUARE_FILL_AR");
-      static const auto field_1_BRAKESIGNAL = clazz->getStaticField<JSafeSFSymbol>("_1_BRAKESIGNAL");
-      static const auto field_1_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_1_CIRCLE_AR");
-      static const auto field_1_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_1_CIRCLE_FILL_AR");
-      static const auto field_1_LANE = clazz->getStaticField<JSafeSFSymbol>("_1_LANE");
-      static const auto field_1_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_1_SQUARE_AR");
-      static const auto field_1_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_1_SQUARE_FILL_AR");
-      static const auto field_10_LANE = clazz->getStaticField<JSafeSFSymbol>("_10_LANE");
-      static const auto field_11_LANE = clazz->getStaticField<JSafeSFSymbol>("_11_LANE");
-      static const auto field_12_LANE = clazz->getStaticField<JSafeSFSymbol>("_12_LANE");
-      static const auto field_2_BRAKESIGNAL = clazz->getStaticField<JSafeSFSymbol>("_2_BRAKESIGNAL");
-      static const auto field_2_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_2_CIRCLE_AR");
-      static const auto field_2_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_2_CIRCLE_FILL_AR");
-      static const auto field_2_LANE = clazz->getStaticField<JSafeSFSymbol>("_2_LANE");
-      static const auto field_2_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_2_SQUARE_AR");
-      static const auto field_2_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_2_SQUARE_FILL_AR");
-      static const auto field_3_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_3_CIRCLE_AR");
-      static const auto field_3_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_3_CIRCLE_FILL_AR");
-      static const auto field_3_LANE = clazz->getStaticField<JSafeSFSymbol>("_3_LANE");
-      static const auto field_3_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_3_SQUARE_AR");
-      static const auto field_3_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_3_SQUARE_FILL_AR");
-      static const auto field_4_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_4_CIRCLE_AR");
-      static const auto field_4_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_4_CIRCLE_FILL_AR");
-      static const auto field_4_LANE = clazz->getStaticField<JSafeSFSymbol>("_4_LANE");
-      static const auto field_4_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_4_SQUARE_AR");
-      static const auto field_4_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_4_SQUARE_FILL_AR");
-      static const auto field_5_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_5_CIRCLE_AR");
-      static const auto field_5_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_5_CIRCLE_FILL_AR");
-      static const auto field_5_LANE = clazz->getStaticField<JSafeSFSymbol>("_5_LANE");
-      static const auto field_5_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_5_SQUARE_AR");
-      static const auto field_5_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_5_SQUARE_FILL_AR");
-      static const auto field_6_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_6_CIRCLE_AR");
-      static const auto field_6_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_6_CIRCLE_FILL_AR");
-      static const auto field_6_LANE = clazz->getStaticField<JSafeSFSymbol>("_6_LANE");
-      static const auto field_6_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_6_SQUARE_AR");
-      static const auto field_6_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_6_SQUARE_FILL_AR");
-      static const auto field_7_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_7_CIRCLE_AR");
-      static const auto field_7_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_7_CIRCLE_FILL_AR");
-      static const auto field_7_LANE = clazz->getStaticField<JSafeSFSymbol>("_7_LANE");
-      static const auto field_7_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_7_SQUARE_AR");
-      static const auto field_7_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_7_SQUARE_FILL_AR");
-      static const auto field_8_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_8_CIRCLE_AR");
-      static const auto field_8_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_8_CIRCLE_FILL_AR");
-      static const auto field_8_LANE = clazz->getStaticField<JSafeSFSymbol>("_8_LANE");
-      static const auto field_8_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_8_SQUARE_AR");
-      static const auto field_8_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_8_SQUARE_FILL_AR");
-      static const auto field_9_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_9_CIRCLE_AR");
-      static const auto field_9_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_9_CIRCLE_FILL_AR");
-      static const auto field_9_LANE = clazz->getStaticField<JSafeSFSymbol>("_9_LANE");
-      static const auto field_9_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_9_SQUARE_AR");
-      static const auto field_9_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_9_SQUARE_FILL_AR");
       static const auto fieldABS = clazz->getStaticField<JSafeSFSymbol>("ABS");
       static const auto fieldABS_BRAKESIGNAL_SLASH = clazz->getStaticField<JSafeSFSymbol>("ABS_BRAKESIGNAL_SLASH");
       static const auto fieldABS_CIRCLE = clazz->getStaticField<JSafeSFSymbol>("ABS_CIRCLE");
@@ -5106,30 +4929,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto fieldWINDSHIELD_REAR_AND_WIPER_INTERMITTENT = clazz->getStaticField<JSafeSFSymbol>("WINDSHIELD_REAR_AND_WIPER_INTERMITTENT");
       static const auto fieldWRONGWAYSIGN = clazz->getStaticField<JSafeSFSymbol>("WRONGWAYSIGN");
       static const auto fieldWRONGWAYSIGN_FILL = clazz->getStaticField<JSafeSFSymbol>("WRONGWAYSIGN_FILL");
-      static const auto field_1_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_1_LANE_AR");
-      static const auto field_1_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_1_LANE_HI");
-      static const auto field_10_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_10_LANE_AR");
-      static const auto field_10_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_10_LANE_HI");
-      static const auto field_11_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_11_LANE_AR");
-      static const auto field_11_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_11_LANE_HI");
-      static const auto field_12_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_12_LANE_AR");
-      static const auto field_12_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_12_LANE_HI");
-      static const auto field_2_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_2_LANE_AR");
-      static const auto field_2_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_2_LANE_HI");
-      static const auto field_3_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_3_LANE_AR");
-      static const auto field_3_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_3_LANE_HI");
-      static const auto field_4_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_4_LANE_AR");
-      static const auto field_4_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_4_LANE_HI");
-      static const auto field_5_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_5_LANE_AR");
-      static const auto field_5_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_5_LANE_HI");
-      static const auto field_6_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_6_LANE_AR");
-      static const auto field_6_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_6_LANE_HI");
-      static const auto field_7_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_7_LANE_AR");
-      static const auto field_7_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_7_LANE_HI");
-      static const auto field_8_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_8_LANE_AR");
-      static const auto field_8_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_8_LANE_HI");
-      static const auto field_9_LANE_AR = clazz->getStaticField<JSafeSFSymbol>("_9_LANE_AR");
-      static const auto field_9_LANE_HI = clazz->getStaticField<JSafeSFSymbol>("_9_LANE_HI");
       static const auto fieldAXLE_2 = clazz->getStaticField<JSafeSFSymbol>("AXLE_2");
       static const auto fieldAXLE_2_FRONT_AND_REAR_ENGAGED = clazz->getStaticField<JSafeSFSymbol>("AXLE_2_FRONT_AND_REAR_ENGAGED");
       static const auto fieldAXLE_2_FRONT_ENGAGED = clazz->getStaticField<JSafeSFSymbol>("AXLE_2_FRONT_ENGAGED");
@@ -6138,10 +5937,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto fieldZL_BUTTON_ROUNDEDTOP_HORIZONTAL_FILL = clazz->getStaticField<JSafeSFSymbol>("ZL_BUTTON_ROUNDEDTOP_HORIZONTAL_FILL");
       static const auto fieldZR_BUTTON_ROUNDEDTOP_HORIZONTAL = clazz->getStaticField<JSafeSFSymbol>("ZR_BUTTON_ROUNDEDTOP_HORIZONTAL");
       static const auto fieldZR_BUTTON_ROUNDEDTOP_HORIZONTAL_FILL = clazz->getStaticField<JSafeSFSymbol>("ZR_BUTTON_ROUNDEDTOP_HORIZONTAL_FILL");
-      static const auto field_0_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_0_CIRCLE_FILL_HI");
-      static const auto field_0_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_0_CIRCLE_HI");
-      static const auto field_0_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_0_SQUARE_FILL_HI");
-      static const auto field_0_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_0_SQUARE_HI");
       static const auto field_00_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_00_CIRCLE_AR");
       static const auto field_00_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_00_CIRCLE_FILL_AR");
       static const auto field_00_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_00_CIRCLE_FILL_HI");
@@ -6222,102 +6017,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_09_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_09_SQUARE_FILL_AR");
       static const auto field_09_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_09_SQUARE_FILL_HI");
       static const auto field_09_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_09_SQUARE_HI");
-      static const auto field_1_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_1_CIRCLE_FILL_HI");
-      static const auto field_1_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_1_CIRCLE_HI");
-      static const auto field_1_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_1_SQUARE_FILL_HI");
-      static const auto field_1_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_1_SQUARE_HI");
-      static const auto field_10_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_10_CIRCLE_AR");
-      static const auto field_10_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_10_CIRCLE_FILL_AR");
-      static const auto field_10_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_10_CIRCLE_FILL_HI");
-      static const auto field_10_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_10_CIRCLE_HI");
-      static const auto field_10_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_10_SQUARE_AR");
-      static const auto field_10_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_10_SQUARE_FILL_AR");
-      static const auto field_10_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_10_SQUARE_FILL_HI");
-      static const auto field_10_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_10_SQUARE_HI");
-      static const auto field_11_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_11_CIRCLE_AR");
-      static const auto field_11_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_11_CIRCLE_FILL_AR");
-      static const auto field_11_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_11_CIRCLE_FILL_HI");
-      static const auto field_11_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_11_CIRCLE_HI");
-      static const auto field_11_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_11_SQUARE_AR");
-      static const auto field_11_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_11_SQUARE_FILL_AR");
-      static const auto field_11_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_11_SQUARE_FILL_HI");
-      static const auto field_11_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_11_SQUARE_HI");
-      static const auto field_12_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_12_CIRCLE_AR");
-      static const auto field_12_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_12_CIRCLE_FILL_AR");
-      static const auto field_12_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_12_CIRCLE_FILL_HI");
-      static const auto field_12_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_12_CIRCLE_HI");
-      static const auto field_12_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_12_SQUARE_AR");
-      static const auto field_12_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_12_SQUARE_FILL_AR");
-      static const auto field_12_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_12_SQUARE_FILL_HI");
-      static const auto field_12_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_12_SQUARE_HI");
-      static const auto field_13_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_13_CIRCLE_AR");
-      static const auto field_13_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_13_CIRCLE_FILL_AR");
-      static const auto field_13_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_13_CIRCLE_FILL_HI");
-      static const auto field_13_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_13_CIRCLE_HI");
-      static const auto field_13_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_13_SQUARE_AR");
-      static const auto field_13_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_13_SQUARE_FILL_AR");
-      static const auto field_13_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_13_SQUARE_FILL_HI");
-      static const auto field_13_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_13_SQUARE_HI");
-      static const auto field_14_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_14_CIRCLE_AR");
-      static const auto field_14_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_14_CIRCLE_FILL_AR");
-      static const auto field_14_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_14_CIRCLE_FILL_HI");
-      static const auto field_14_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_14_CIRCLE_HI");
-      static const auto field_14_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_14_SQUARE_AR");
-      static const auto field_14_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_14_SQUARE_FILL_AR");
-      static const auto field_14_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_14_SQUARE_FILL_HI");
-      static const auto field_14_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_14_SQUARE_HI");
-      static const auto field_15_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_15_CIRCLE_AR");
-      static const auto field_15_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_15_CIRCLE_FILL_AR");
-      static const auto field_15_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_15_CIRCLE_FILL_HI");
-      static const auto field_15_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_15_CIRCLE_HI");
-      static const auto field_15_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_15_SQUARE_AR");
-      static const auto field_15_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_15_SQUARE_FILL_AR");
-      static const auto field_15_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_15_SQUARE_FILL_HI");
-      static const auto field_15_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_15_SQUARE_HI");
-      static const auto field_16_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_16_CIRCLE_AR");
-      static const auto field_16_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_16_CIRCLE_FILL_AR");
-      static const auto field_16_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_16_CIRCLE_FILL_HI");
-      static const auto field_16_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_16_CIRCLE_HI");
-      static const auto field_16_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_16_SQUARE_AR");
-      static const auto field_16_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_16_SQUARE_FILL_AR");
-      static const auto field_16_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_16_SQUARE_FILL_HI");
-      static const auto field_16_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_16_SQUARE_HI");
-      static const auto field_17_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_17_CIRCLE_AR");
-      static const auto field_17_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_17_CIRCLE_FILL_AR");
-      static const auto field_17_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_17_CIRCLE_FILL_HI");
-      static const auto field_17_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_17_CIRCLE_HI");
-      static const auto field_17_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_17_SQUARE_AR");
-      static const auto field_17_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_17_SQUARE_FILL_AR");
-      static const auto field_17_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_17_SQUARE_FILL_HI");
-      static const auto field_17_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_17_SQUARE_HI");
-      static const auto field_18_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_18_CIRCLE_AR");
-      static const auto field_18_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_18_CIRCLE_FILL_AR");
-      static const auto field_18_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_18_CIRCLE_FILL_HI");
-      static const auto field_18_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_18_CIRCLE_HI");
-      static const auto field_18_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_18_SQUARE_AR");
-      static const auto field_18_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_18_SQUARE_FILL_AR");
-      static const auto field_18_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_18_SQUARE_FILL_HI");
-      static const auto field_18_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_18_SQUARE_HI");
-      static const auto field_19_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_19_CIRCLE_AR");
-      static const auto field_19_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_19_CIRCLE_FILL_AR");
-      static const auto field_19_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_19_CIRCLE_FILL_HI");
-      static const auto field_19_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_19_CIRCLE_HI");
-      static const auto field_19_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_19_SQUARE_AR");
-      static const auto field_19_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_19_SQUARE_FILL_AR");
-      static const auto field_19_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_19_SQUARE_FILL_HI");
-      static const auto field_19_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_19_SQUARE_HI");
-      static const auto field_2_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_2_CIRCLE_FILL_HI");
-      static const auto field_2_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_2_CIRCLE_HI");
-      static const auto field_2_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_2_SQUARE_FILL_HI");
-      static const auto field_2_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_2_SQUARE_HI");
-      static const auto field_20_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_20_CIRCLE_AR");
-      static const auto field_20_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_20_CIRCLE_FILL_AR");
-      static const auto field_20_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_20_CIRCLE_FILL_HI");
-      static const auto field_20_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_20_CIRCLE_HI");
-      static const auto field_20_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_20_SQUARE_AR");
-      static const auto field_20_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_20_SQUARE_FILL_AR");
-      static const auto field_20_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_20_SQUARE_FILL_HI");
-      static const auto field_20_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_20_SQUARE_HI");
       static const auto field_21_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_21_CIRCLE_AR");
       static const auto field_21_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_21_CIRCLE_FILL_AR");
       static const auto field_21_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_21_CIRCLE_FILL_HI");
@@ -6350,14 +6049,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_24_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_24_SQUARE_FILL_AR");
       static const auto field_24_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_24_SQUARE_FILL_HI");
       static const auto field_24_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_24_SQUARE_HI");
-      static const auto field_25_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_25_CIRCLE_AR");
-      static const auto field_25_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_25_CIRCLE_FILL_AR");
-      static const auto field_25_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_25_CIRCLE_FILL_HI");
-      static const auto field_25_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_25_CIRCLE_HI");
-      static const auto field_25_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_25_SQUARE_AR");
-      static const auto field_25_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_25_SQUARE_FILL_AR");
-      static const auto field_25_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_25_SQUARE_FILL_HI");
-      static const auto field_25_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_25_SQUARE_HI");
       static const auto field_26_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_26_CIRCLE_AR");
       static const auto field_26_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_26_CIRCLE_FILL_AR");
       static const auto field_26_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_26_CIRCLE_FILL_HI");
@@ -6390,18 +6081,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_29_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_29_SQUARE_FILL_AR");
       static const auto field_29_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_29_SQUARE_FILL_HI");
       static const auto field_29_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_29_SQUARE_HI");
-      static const auto field_3_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_3_CIRCLE_FILL_HI");
-      static const auto field_3_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_3_CIRCLE_HI");
-      static const auto field_3_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_3_SQUARE_FILL_HI");
-      static const auto field_3_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_3_SQUARE_HI");
-      static const auto field_30_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_30_CIRCLE_AR");
-      static const auto field_30_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_30_CIRCLE_FILL_AR");
-      static const auto field_30_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_30_CIRCLE_FILL_HI");
-      static const auto field_30_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_30_CIRCLE_HI");
-      static const auto field_30_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_30_SQUARE_AR");
-      static const auto field_30_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_30_SQUARE_FILL_AR");
-      static const auto field_30_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_30_SQUARE_FILL_HI");
-      static const auto field_30_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_30_SQUARE_HI");
       static const auto field_31_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_31_CIRCLE_AR");
       static const auto field_31_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_31_CIRCLE_FILL_AR");
       static const auto field_31_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_31_CIRCLE_FILL_HI");
@@ -6434,14 +6113,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_34_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_34_SQUARE_FILL_AR");
       static const auto field_34_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_34_SQUARE_FILL_HI");
       static const auto field_34_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_34_SQUARE_HI");
-      static const auto field_35_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_35_CIRCLE_AR");
-      static const auto field_35_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_35_CIRCLE_FILL_AR");
-      static const auto field_35_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_35_CIRCLE_FILL_HI");
-      static const auto field_35_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_35_CIRCLE_HI");
-      static const auto field_35_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_35_SQUARE_AR");
-      static const auto field_35_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_35_SQUARE_FILL_AR");
-      static const auto field_35_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_35_SQUARE_FILL_HI");
-      static const auto field_35_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_35_SQUARE_HI");
       static const auto field_36_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_36_CIRCLE_AR");
       static const auto field_36_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_36_CIRCLE_FILL_AR");
       static const auto field_36_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_36_CIRCLE_FILL_HI");
@@ -6474,18 +6145,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_39_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_39_SQUARE_FILL_AR");
       static const auto field_39_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_39_SQUARE_FILL_HI");
       static const auto field_39_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_39_SQUARE_HI");
-      static const auto field_4_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_4_CIRCLE_FILL_HI");
-      static const auto field_4_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_4_CIRCLE_HI");
-      static const auto field_4_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_4_SQUARE_FILL_HI");
-      static const auto field_4_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_4_SQUARE_HI");
-      static const auto field_40_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_40_CIRCLE_AR");
-      static const auto field_40_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_40_CIRCLE_FILL_AR");
-      static const auto field_40_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_40_CIRCLE_FILL_HI");
-      static const auto field_40_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_40_CIRCLE_HI");
-      static const auto field_40_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_40_SQUARE_AR");
-      static const auto field_40_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_40_SQUARE_FILL_AR");
-      static const auto field_40_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_40_SQUARE_FILL_HI");
-      static const auto field_40_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_40_SQUARE_HI");
       static const auto field_41_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_41_CIRCLE_AR");
       static const auto field_41_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_41_CIRCLE_FILL_AR");
       static const auto field_41_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_41_CIRCLE_FILL_HI");
@@ -6518,14 +6177,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_44_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_44_SQUARE_FILL_AR");
       static const auto field_44_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_44_SQUARE_FILL_HI");
       static const auto field_44_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_44_SQUARE_HI");
-      static const auto field_45_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_45_CIRCLE_AR");
-      static const auto field_45_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_45_CIRCLE_FILL_AR");
-      static const auto field_45_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_45_CIRCLE_FILL_HI");
-      static const auto field_45_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_45_CIRCLE_HI");
-      static const auto field_45_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_45_SQUARE_AR");
-      static const auto field_45_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_45_SQUARE_FILL_AR");
-      static const auto field_45_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_45_SQUARE_FILL_HI");
-      static const auto field_45_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_45_SQUARE_HI");
       static const auto field_46_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_46_CIRCLE_AR");
       static const auto field_46_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_46_CIRCLE_FILL_AR");
       static const auto field_46_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_46_CIRCLE_FILL_HI");
@@ -6558,34 +6209,6 @@ namespace margelo::nitro::nitrosymbols {
       static const auto field_49_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_49_SQUARE_FILL_AR");
       static const auto field_49_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_49_SQUARE_FILL_HI");
       static const auto field_49_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_49_SQUARE_HI");
-      static const auto field_5_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_5_CIRCLE_FILL_HI");
-      static const auto field_5_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_5_CIRCLE_HI");
-      static const auto field_5_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_5_SQUARE_FILL_HI");
-      static const auto field_5_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_5_SQUARE_HI");
-      static const auto field_50_CIRCLE_AR = clazz->getStaticField<JSafeSFSymbol>("_50_CIRCLE_AR");
-      static const auto field_50_CIRCLE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_50_CIRCLE_FILL_AR");
-      static const auto field_50_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_50_CIRCLE_FILL_HI");
-      static const auto field_50_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_50_CIRCLE_HI");
-      static const auto field_50_SQUARE_AR = clazz->getStaticField<JSafeSFSymbol>("_50_SQUARE_AR");
-      static const auto field_50_SQUARE_FILL_AR = clazz->getStaticField<JSafeSFSymbol>("_50_SQUARE_FILL_AR");
-      static const auto field_50_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_50_SQUARE_FILL_HI");
-      static const auto field_50_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_50_SQUARE_HI");
-      static const auto field_6_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_6_CIRCLE_FILL_HI");
-      static const auto field_6_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_6_CIRCLE_HI");
-      static const auto field_6_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_6_SQUARE_FILL_HI");
-      static const auto field_6_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_6_SQUARE_HI");
-      static const auto field_7_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_7_CIRCLE_FILL_HI");
-      static const auto field_7_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_7_CIRCLE_HI");
-      static const auto field_7_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_7_SQUARE_FILL_HI");
-      static const auto field_7_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_7_SQUARE_HI");
-      static const auto field_8_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_8_CIRCLE_FILL_HI");
-      static const auto field_8_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_8_CIRCLE_HI");
-      static const auto field_8_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_8_SQUARE_FILL_HI");
-      static const auto field_8_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_8_SQUARE_HI");
-      static const auto field_9_CIRCLE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_9_CIRCLE_FILL_HI");
-      static const auto field_9_CIRCLE_HI = clazz->getStaticField<JSafeSFSymbol>("_9_CIRCLE_HI");
-      static const auto field_9_SQUARE_FILL_HI = clazz->getStaticField<JSafeSFSymbol>("_9_SQUARE_FILL_HI");
-      static const auto field_9_SQUARE_HI = clazz->getStaticField<JSafeSFSymbol>("_9_SQUARE_HI");
       static const auto fieldCHEVRON_COMPACT_BACKWARD = clazz->getStaticField<JSafeSFSymbol>("CHEVRON_COMPACT_BACKWARD");
       static const auto fieldCHEVRON_COMPACT_FORWARD = clazz->getStaticField<JSafeSFSymbol>("CHEVRON_COMPACT_FORWARD");
       static const auto fieldPERSON_CROP_SQUARE_BADGE_CAMERA = clazz->getStaticField<JSafeSFSymbol>("PERSON_CROP_SQUARE_BADGE_CAMERA");
@@ -6624,54 +6247,12 @@ namespace margelo::nitro::nitrosymbols {
       static const auto fieldBEATS_SOLOBUDS_CHARGINGCASE_FILL = clazz->getStaticField<JSafeSFSymbol>("BEATS_SOLOBUDS_CHARGINGCASE_FILL");
       static const auto fieldBEATS_SOLOBUDS_LEFT = clazz->getStaticField<JSafeSFSymbol>("BEATS_SOLOBUDS_LEFT");
       static const auto fieldBEATS_SOLOBUDS_RIGHT = clazz->getStaticField<JSafeSFSymbol>("BEATS_SOLOBUDS_RIGHT");
-      static const auto field_10_ARROW_TRIANGLEHEAD_CLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_10_ARROW_TRIANGLEHEAD_CLOCKWISE");
-      static const auto field_10_ARROW_TRIANGLEHEAD_CLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_10_ARROW_TRIANGLEHEAD_CLOCKWISE_AR");
-      static const auto field_10_ARROW_TRIANGLEHEAD_CLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_10_ARROW_TRIANGLEHEAD_CLOCKWISE_HI");
-      static const auto field_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE");
-      static const auto field_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR");
-      static const auto field_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI");
-      static const auto field_15_ARROW_TRIANGLEHEAD_CLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_15_ARROW_TRIANGLEHEAD_CLOCKWISE");
-      static const auto field_15_ARROW_TRIANGLEHEAD_CLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_15_ARROW_TRIANGLEHEAD_CLOCKWISE_AR");
-      static const auto field_15_ARROW_TRIANGLEHEAD_CLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_15_ARROW_TRIANGLEHEAD_CLOCKWISE_HI");
-      static const auto field_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE");
-      static const auto field_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR");
-      static const auto field_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI");
-      static const auto field_30_ARROW_TRIANGLEHEAD_CLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_30_ARROW_TRIANGLEHEAD_CLOCKWISE");
-      static const auto field_30_ARROW_TRIANGLEHEAD_CLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_30_ARROW_TRIANGLEHEAD_CLOCKWISE_AR");
-      static const auto field_30_ARROW_TRIANGLEHEAD_CLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_30_ARROW_TRIANGLEHEAD_CLOCKWISE_HI");
-      static const auto field_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE");
-      static const auto field_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR");
-      static const auto field_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI");
-      static const auto field_45_ARROW_TRIANGLEHEAD_CLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_45_ARROW_TRIANGLEHEAD_CLOCKWISE");
-      static const auto field_45_ARROW_TRIANGLEHEAD_CLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_45_ARROW_TRIANGLEHEAD_CLOCKWISE_AR");
-      static const auto field_45_ARROW_TRIANGLEHEAD_CLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_45_ARROW_TRIANGLEHEAD_CLOCKWISE_HI");
-      static const auto field_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE");
-      static const auto field_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR");
-      static const auto field_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI");
-      static const auto field_5_ARROW_TRIANGLEHEAD_CLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_5_ARROW_TRIANGLEHEAD_CLOCKWISE");
-      static const auto field_5_ARROW_TRIANGLEHEAD_CLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_5_ARROW_TRIANGLEHEAD_CLOCKWISE_AR");
-      static const auto field_5_ARROW_TRIANGLEHEAD_CLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_5_ARROW_TRIANGLEHEAD_CLOCKWISE_HI");
-      static const auto field_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE");
-      static const auto field_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR");
-      static const auto field_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI");
-      static const auto field_60_ARROW_TRIANGLEHEAD_CLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_60_ARROW_TRIANGLEHEAD_CLOCKWISE");
-      static const auto field_60_ARROW_TRIANGLEHEAD_CLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_60_ARROW_TRIANGLEHEAD_CLOCKWISE_AR");
-      static const auto field_60_ARROW_TRIANGLEHEAD_CLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_60_ARROW_TRIANGLEHEAD_CLOCKWISE_HI");
-      static const auto field_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE");
-      static const auto field_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR");
-      static const auto field_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI");
       static const auto field_75_ARROW_TRIANGLEHEAD_CLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_75_ARROW_TRIANGLEHEAD_CLOCKWISE");
       static const auto field_75_ARROW_TRIANGLEHEAD_CLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_75_ARROW_TRIANGLEHEAD_CLOCKWISE_AR");
       static const auto field_75_ARROW_TRIANGLEHEAD_CLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_75_ARROW_TRIANGLEHEAD_CLOCKWISE_HI");
       static const auto field_75_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_75_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE");
       static const auto field_75_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_75_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR");
       static const auto field_75_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_75_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI");
-      static const auto field_90_ARROW_TRIANGLEHEAD_CLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_90_ARROW_TRIANGLEHEAD_CLOCKWISE");
-      static const auto field_90_ARROW_TRIANGLEHEAD_CLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_90_ARROW_TRIANGLEHEAD_CLOCKWISE_AR");
-      static const auto field_90_ARROW_TRIANGLEHEAD_CLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_90_ARROW_TRIANGLEHEAD_CLOCKWISE_HI");
-      static const auto field_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE = clazz->getStaticField<JSafeSFSymbol>("_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE");
-      static const auto field_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR = clazz->getStaticField<JSafeSFSymbol>("_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR");
-      static const auto field_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI = clazz->getStaticField<JSafeSFSymbol>("_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI");
       static const auto fieldAIR_CAR_SIDE = clazz->getStaticField<JSafeSFSymbol>("AIR_CAR_SIDE");
       static const auto fieldAIR_CAR_SIDE_FILL = clazz->getStaticField<JSafeSFSymbol>("AIR_CAR_SIDE_FILL");
       static const auto fieldAIR_CONVERTIBLE_SIDE = clazz->getStaticField<JSafeSFSymbol>("AIR_CONVERTIBLE_SIDE");
@@ -8227,14 +7808,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldNUMBER);
         case SafeSFSymbol::FUNCTION:
           return clazz->getStaticFieldValue(fieldFUNCTION);
-        case SafeSFSymbol::_0_CIRCLE:
-          return clazz->getStaticFieldValue(field_0_CIRCLE);
-        case SafeSFSymbol::_0_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_0_CIRCLE_FILL);
-        case SafeSFSymbol::_0_SQUARE:
-          return clazz->getStaticFieldValue(field_0_SQUARE);
-        case SafeSFSymbol::_0_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_0_SQUARE_FILL);
         case SafeSFSymbol::_00_CIRCLE:
           return clazz->getStaticFieldValue(field_00_CIRCLE);
         case SafeSFSymbol::_00_CIRCLE_FILL:
@@ -8315,112 +7888,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_09_SQUARE);
         case SafeSFSymbol::_09_SQUARE_FILL:
           return clazz->getStaticFieldValue(field_09_SQUARE_FILL);
-        case SafeSFSymbol::_1_CIRCLE:
-          return clazz->getStaticFieldValue(field_1_CIRCLE);
-        case SafeSFSymbol::_1_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_1_CIRCLE_FILL);
-        case SafeSFSymbol::_1_MAGNIFYINGGLASS:
-          return clazz->getStaticFieldValue(field_1_MAGNIFYINGGLASS);
-        case SafeSFSymbol::_1_SQUARE:
-          return clazz->getStaticFieldValue(field_1_SQUARE);
-        case SafeSFSymbol::_1_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_1_SQUARE_FILL);
-        case SafeSFSymbol::_10_CIRCLE:
-          return clazz->getStaticFieldValue(field_10_CIRCLE);
-        case SafeSFSymbol::_10_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_10_CIRCLE_FILL);
-        case SafeSFSymbol::_10_SQUARE:
-          return clazz->getStaticFieldValue(field_10_SQUARE);
-        case SafeSFSymbol::_10_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_10_SQUARE_FILL);
-        case SafeSFSymbol::_11_CIRCLE:
-          return clazz->getStaticFieldValue(field_11_CIRCLE);
-        case SafeSFSymbol::_11_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_11_CIRCLE_FILL);
-        case SafeSFSymbol::_11_SQUARE:
-          return clazz->getStaticFieldValue(field_11_SQUARE);
-        case SafeSFSymbol::_11_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_11_SQUARE_FILL);
-        case SafeSFSymbol::_12_CIRCLE:
-          return clazz->getStaticFieldValue(field_12_CIRCLE);
-        case SafeSFSymbol::_12_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_12_CIRCLE_FILL);
-        case SafeSFSymbol::_12_SQUARE:
-          return clazz->getStaticFieldValue(field_12_SQUARE);
-        case SafeSFSymbol::_12_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_12_SQUARE_FILL);
-        case SafeSFSymbol::_13_CIRCLE:
-          return clazz->getStaticFieldValue(field_13_CIRCLE);
-        case SafeSFSymbol::_13_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_13_CIRCLE_FILL);
-        case SafeSFSymbol::_13_SQUARE:
-          return clazz->getStaticFieldValue(field_13_SQUARE);
-        case SafeSFSymbol::_13_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_13_SQUARE_FILL);
-        case SafeSFSymbol::_14_CIRCLE:
-          return clazz->getStaticFieldValue(field_14_CIRCLE);
-        case SafeSFSymbol::_14_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_14_CIRCLE_FILL);
-        case SafeSFSymbol::_14_SQUARE:
-          return clazz->getStaticFieldValue(field_14_SQUARE);
-        case SafeSFSymbol::_14_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_14_SQUARE_FILL);
-        case SafeSFSymbol::_15_CIRCLE:
-          return clazz->getStaticFieldValue(field_15_CIRCLE);
-        case SafeSFSymbol::_15_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_15_CIRCLE_FILL);
-        case SafeSFSymbol::_15_SQUARE:
-          return clazz->getStaticFieldValue(field_15_SQUARE);
-        case SafeSFSymbol::_15_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_15_SQUARE_FILL);
-        case SafeSFSymbol::_16_CIRCLE:
-          return clazz->getStaticFieldValue(field_16_CIRCLE);
-        case SafeSFSymbol::_16_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_16_CIRCLE_FILL);
-        case SafeSFSymbol::_16_SQUARE:
-          return clazz->getStaticFieldValue(field_16_SQUARE);
-        case SafeSFSymbol::_16_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_16_SQUARE_FILL);
-        case SafeSFSymbol::_17_CIRCLE:
-          return clazz->getStaticFieldValue(field_17_CIRCLE);
-        case SafeSFSymbol::_17_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_17_CIRCLE_FILL);
-        case SafeSFSymbol::_17_SQUARE:
-          return clazz->getStaticFieldValue(field_17_SQUARE);
-        case SafeSFSymbol::_17_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_17_SQUARE_FILL);
-        case SafeSFSymbol::_18_CIRCLE:
-          return clazz->getStaticFieldValue(field_18_CIRCLE);
-        case SafeSFSymbol::_18_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_18_CIRCLE_FILL);
-        case SafeSFSymbol::_18_SQUARE:
-          return clazz->getStaticFieldValue(field_18_SQUARE);
-        case SafeSFSymbol::_18_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_18_SQUARE_FILL);
-        case SafeSFSymbol::_19_CIRCLE:
-          return clazz->getStaticFieldValue(field_19_CIRCLE);
-        case SafeSFSymbol::_19_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_19_CIRCLE_FILL);
-        case SafeSFSymbol::_19_SQUARE:
-          return clazz->getStaticFieldValue(field_19_SQUARE);
-        case SafeSFSymbol::_19_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_19_SQUARE_FILL);
-        case SafeSFSymbol::_2_CIRCLE:
-          return clazz->getStaticFieldValue(field_2_CIRCLE);
-        case SafeSFSymbol::_2_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_2_CIRCLE_FILL);
-        case SafeSFSymbol::_2_SQUARE:
-          return clazz->getStaticFieldValue(field_2_SQUARE);
-        case SafeSFSymbol::_2_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_2_SQUARE_FILL);
-        case SafeSFSymbol::_20_CIRCLE:
-          return clazz->getStaticFieldValue(field_20_CIRCLE);
-        case SafeSFSymbol::_20_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_20_CIRCLE_FILL);
-        case SafeSFSymbol::_20_SQUARE:
-          return clazz->getStaticFieldValue(field_20_SQUARE);
-        case SafeSFSymbol::_20_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_20_SQUARE_FILL);
         case SafeSFSymbol::_21_CIRCLE:
           return clazz->getStaticFieldValue(field_21_CIRCLE);
         case SafeSFSymbol::_21_CIRCLE_FILL:
@@ -8453,14 +7920,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_24_SQUARE);
         case SafeSFSymbol::_24_SQUARE_FILL:
           return clazz->getStaticFieldValue(field_24_SQUARE_FILL);
-        case SafeSFSymbol::_25_CIRCLE:
-          return clazz->getStaticFieldValue(field_25_CIRCLE);
-        case SafeSFSymbol::_25_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_25_CIRCLE_FILL);
-        case SafeSFSymbol::_25_SQUARE:
-          return clazz->getStaticFieldValue(field_25_SQUARE);
-        case SafeSFSymbol::_25_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_25_SQUARE_FILL);
         case SafeSFSymbol::_26_CIRCLE:
           return clazz->getStaticFieldValue(field_26_CIRCLE);
         case SafeSFSymbol::_26_CIRCLE_FILL:
@@ -8493,22 +7952,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_29_SQUARE);
         case SafeSFSymbol::_29_SQUARE_FILL:
           return clazz->getStaticFieldValue(field_29_SQUARE_FILL);
-        case SafeSFSymbol::_3_CIRCLE:
-          return clazz->getStaticFieldValue(field_3_CIRCLE);
-        case SafeSFSymbol::_3_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_3_CIRCLE_FILL);
-        case SafeSFSymbol::_3_SQUARE:
-          return clazz->getStaticFieldValue(field_3_SQUARE);
-        case SafeSFSymbol::_3_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_3_SQUARE_FILL);
-        case SafeSFSymbol::_30_CIRCLE:
-          return clazz->getStaticFieldValue(field_30_CIRCLE);
-        case SafeSFSymbol::_30_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_30_CIRCLE_FILL);
-        case SafeSFSymbol::_30_SQUARE:
-          return clazz->getStaticFieldValue(field_30_SQUARE);
-        case SafeSFSymbol::_30_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_30_SQUARE_FILL);
         case SafeSFSymbol::_31_CIRCLE:
           return clazz->getStaticFieldValue(field_31_CIRCLE);
         case SafeSFSymbol::_31_CIRCLE_FILL:
@@ -8541,14 +7984,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_34_SQUARE);
         case SafeSFSymbol::_34_SQUARE_FILL:
           return clazz->getStaticFieldValue(field_34_SQUARE_FILL);
-        case SafeSFSymbol::_35_CIRCLE:
-          return clazz->getStaticFieldValue(field_35_CIRCLE);
-        case SafeSFSymbol::_35_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_35_CIRCLE_FILL);
-        case SafeSFSymbol::_35_SQUARE:
-          return clazz->getStaticFieldValue(field_35_SQUARE);
-        case SafeSFSymbol::_35_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_35_SQUARE_FILL);
         case SafeSFSymbol::_36_CIRCLE:
           return clazz->getStaticFieldValue(field_36_CIRCLE);
         case SafeSFSymbol::_36_CIRCLE_FILL:
@@ -8581,30 +8016,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_39_SQUARE);
         case SafeSFSymbol::_39_SQUARE_FILL:
           return clazz->getStaticFieldValue(field_39_SQUARE_FILL);
-        case SafeSFSymbol::_4_ALT_CIRCLE:
-          return clazz->getStaticFieldValue(field_4_ALT_CIRCLE);
-        case SafeSFSymbol::_4_ALT_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_4_ALT_CIRCLE_FILL);
-        case SafeSFSymbol::_4_ALT_SQUARE:
-          return clazz->getStaticFieldValue(field_4_ALT_SQUARE);
-        case SafeSFSymbol::_4_ALT_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_4_ALT_SQUARE_FILL);
-        case SafeSFSymbol::_4_CIRCLE:
-          return clazz->getStaticFieldValue(field_4_CIRCLE);
-        case SafeSFSymbol::_4_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_4_CIRCLE_FILL);
-        case SafeSFSymbol::_4_SQUARE:
-          return clazz->getStaticFieldValue(field_4_SQUARE);
-        case SafeSFSymbol::_4_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_4_SQUARE_FILL);
-        case SafeSFSymbol::_40_CIRCLE:
-          return clazz->getStaticFieldValue(field_40_CIRCLE);
-        case SafeSFSymbol::_40_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_40_CIRCLE_FILL);
-        case SafeSFSymbol::_40_SQUARE:
-          return clazz->getStaticFieldValue(field_40_SQUARE);
-        case SafeSFSymbol::_40_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_40_SQUARE_FILL);
         case SafeSFSymbol::_41_CIRCLE:
           return clazz->getStaticFieldValue(field_41_CIRCLE);
         case SafeSFSymbol::_41_CIRCLE_FILL:
@@ -8637,14 +8048,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_44_SQUARE);
         case SafeSFSymbol::_44_SQUARE_FILL:
           return clazz->getStaticFieldValue(field_44_SQUARE_FILL);
-        case SafeSFSymbol::_45_CIRCLE:
-          return clazz->getStaticFieldValue(field_45_CIRCLE);
-        case SafeSFSymbol::_45_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_45_CIRCLE_FILL);
-        case SafeSFSymbol::_45_SQUARE:
-          return clazz->getStaticFieldValue(field_45_SQUARE);
-        case SafeSFSymbol::_45_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_45_SQUARE_FILL);
         case SafeSFSymbol::_46_CIRCLE:
           return clazz->getStaticFieldValue(field_46_CIRCLE);
         case SafeSFSymbol::_46_CIRCLE_FILL:
@@ -8677,70 +8080,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_49_SQUARE);
         case SafeSFSymbol::_49_SQUARE_FILL:
           return clazz->getStaticFieldValue(field_49_SQUARE_FILL);
-        case SafeSFSymbol::_5_CIRCLE:
-          return clazz->getStaticFieldValue(field_5_CIRCLE);
-        case SafeSFSymbol::_5_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_5_CIRCLE_FILL);
-        case SafeSFSymbol::_5_SQUARE:
-          return clazz->getStaticFieldValue(field_5_SQUARE);
-        case SafeSFSymbol::_5_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_5_SQUARE_FILL);
-        case SafeSFSymbol::_50_CIRCLE:
-          return clazz->getStaticFieldValue(field_50_CIRCLE);
-        case SafeSFSymbol::_50_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_50_CIRCLE_FILL);
-        case SafeSFSymbol::_50_SQUARE:
-          return clazz->getStaticFieldValue(field_50_SQUARE);
-        case SafeSFSymbol::_50_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_50_SQUARE_FILL);
-        case SafeSFSymbol::_6_ALT_CIRCLE:
-          return clazz->getStaticFieldValue(field_6_ALT_CIRCLE);
-        case SafeSFSymbol::_6_ALT_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_6_ALT_CIRCLE_FILL);
-        case SafeSFSymbol::_6_ALT_SQUARE:
-          return clazz->getStaticFieldValue(field_6_ALT_SQUARE);
-        case SafeSFSymbol::_6_ALT_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_6_ALT_SQUARE_FILL);
-        case SafeSFSymbol::_6_CIRCLE:
-          return clazz->getStaticFieldValue(field_6_CIRCLE);
-        case SafeSFSymbol::_6_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_6_CIRCLE_FILL);
-        case SafeSFSymbol::_6_SQUARE:
-          return clazz->getStaticFieldValue(field_6_SQUARE);
-        case SafeSFSymbol::_6_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_6_SQUARE_FILL);
-        case SafeSFSymbol::_7_CIRCLE:
-          return clazz->getStaticFieldValue(field_7_CIRCLE);
-        case SafeSFSymbol::_7_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_7_CIRCLE_FILL);
-        case SafeSFSymbol::_7_SQUARE:
-          return clazz->getStaticFieldValue(field_7_SQUARE);
-        case SafeSFSymbol::_7_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_7_SQUARE_FILL);
-        case SafeSFSymbol::_8_CIRCLE:
-          return clazz->getStaticFieldValue(field_8_CIRCLE);
-        case SafeSFSymbol::_8_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_8_CIRCLE_FILL);
-        case SafeSFSymbol::_8_SQUARE:
-          return clazz->getStaticFieldValue(field_8_SQUARE);
-        case SafeSFSymbol::_8_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_8_SQUARE_FILL);
-        case SafeSFSymbol::_9_ALT_CIRCLE:
-          return clazz->getStaticFieldValue(field_9_ALT_CIRCLE);
-        case SafeSFSymbol::_9_ALT_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_9_ALT_CIRCLE_FILL);
-        case SafeSFSymbol::_9_ALT_SQUARE:
-          return clazz->getStaticFieldValue(field_9_ALT_SQUARE);
-        case SafeSFSymbol::_9_ALT_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_9_ALT_SQUARE_FILL);
-        case SafeSFSymbol::_9_CIRCLE:
-          return clazz->getStaticFieldValue(field_9_CIRCLE);
-        case SafeSFSymbol::_9_CIRCLE_FILL:
-          return clazz->getStaticFieldValue(field_9_CIRCLE_FILL);
-        case SafeSFSymbol::_9_SQUARE:
-          return clazz->getStaticFieldValue(field_9_SQUARE);
-        case SafeSFSymbol::_9_SQUARE_FILL:
-          return clazz->getStaticFieldValue(field_9_SQUARE_FILL);
         case SafeSFSymbol::A:
           return clazz->getStaticFieldValue(fieldA);
         case SafeSFSymbol::A_CIRCLE:
@@ -11581,8 +10920,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldSCISSORS_BADGE_ELLIPSIS);
         case SafeSFSymbol::STUDENTDESK:
           return clazz->getStaticFieldValue(fieldSTUDENTDESK);
-        case SafeSFSymbol::_1_MAGNIFYINGGLASS_AR:
-          return clazz->getStaticFieldValue(field_1_MAGNIFYINGGLASS_AR);
         case SafeSFSymbol::_4K_TV:
           return clazz->getStaticFieldValue(field_4K_TV);
         case SafeSFSymbol::_4K_TV_FILL:
@@ -13993,8 +13330,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldHOMEPODMINI_FILL);
         case SafeSFSymbol::RECTANGLE_TOPTHIRD_INSET_FILL:
           return clazz->getStaticFieldValue(fieldRECTANGLE_TOPTHIRD_INSET_FILL);
-        case SafeSFSymbol::_1_MAGNIFYINGGLASS_HI:
-          return clazz->getStaticFieldValue(field_1_MAGNIFYINGGLASS_HI);
         case SafeSFSymbol::_123_RECTANGLE:
           return clazz->getStaticFieldValue(field_123_RECTANGLE);
         case SafeSFSymbol::_123_RECTANGLE_AR:
@@ -17607,114 +16942,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldXBOX_LOGO);
         case SafeSFSymbol::YENSIGN:
           return clazz->getStaticFieldValue(fieldYENSIGN);
-        case SafeSFSymbol::_0_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_0_CIRCLE_AR);
-        case SafeSFSymbol::_0_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_0_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_0_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_0_SQUARE_AR);
-        case SafeSFSymbol::_0_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_0_SQUARE_FILL_AR);
-        case SafeSFSymbol::_1_BRAKESIGNAL:
-          return clazz->getStaticFieldValue(field_1_BRAKESIGNAL);
-        case SafeSFSymbol::_1_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_1_CIRCLE_AR);
-        case SafeSFSymbol::_1_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_1_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_1_LANE:
-          return clazz->getStaticFieldValue(field_1_LANE);
-        case SafeSFSymbol::_1_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_1_SQUARE_AR);
-        case SafeSFSymbol::_1_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_1_SQUARE_FILL_AR);
-        case SafeSFSymbol::_10_LANE:
-          return clazz->getStaticFieldValue(field_10_LANE);
-        case SafeSFSymbol::_11_LANE:
-          return clazz->getStaticFieldValue(field_11_LANE);
-        case SafeSFSymbol::_12_LANE:
-          return clazz->getStaticFieldValue(field_12_LANE);
-        case SafeSFSymbol::_2_BRAKESIGNAL:
-          return clazz->getStaticFieldValue(field_2_BRAKESIGNAL);
-        case SafeSFSymbol::_2_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_2_CIRCLE_AR);
-        case SafeSFSymbol::_2_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_2_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_2_LANE:
-          return clazz->getStaticFieldValue(field_2_LANE);
-        case SafeSFSymbol::_2_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_2_SQUARE_AR);
-        case SafeSFSymbol::_2_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_2_SQUARE_FILL_AR);
-        case SafeSFSymbol::_3_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_3_CIRCLE_AR);
-        case SafeSFSymbol::_3_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_3_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_3_LANE:
-          return clazz->getStaticFieldValue(field_3_LANE);
-        case SafeSFSymbol::_3_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_3_SQUARE_AR);
-        case SafeSFSymbol::_3_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_3_SQUARE_FILL_AR);
-        case SafeSFSymbol::_4_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_4_CIRCLE_AR);
-        case SafeSFSymbol::_4_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_4_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_4_LANE:
-          return clazz->getStaticFieldValue(field_4_LANE);
-        case SafeSFSymbol::_4_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_4_SQUARE_AR);
-        case SafeSFSymbol::_4_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_4_SQUARE_FILL_AR);
-        case SafeSFSymbol::_5_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_5_CIRCLE_AR);
-        case SafeSFSymbol::_5_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_5_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_5_LANE:
-          return clazz->getStaticFieldValue(field_5_LANE);
-        case SafeSFSymbol::_5_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_5_SQUARE_AR);
-        case SafeSFSymbol::_5_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_5_SQUARE_FILL_AR);
-        case SafeSFSymbol::_6_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_6_CIRCLE_AR);
-        case SafeSFSymbol::_6_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_6_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_6_LANE:
-          return clazz->getStaticFieldValue(field_6_LANE);
-        case SafeSFSymbol::_6_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_6_SQUARE_AR);
-        case SafeSFSymbol::_6_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_6_SQUARE_FILL_AR);
-        case SafeSFSymbol::_7_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_7_CIRCLE_AR);
-        case SafeSFSymbol::_7_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_7_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_7_LANE:
-          return clazz->getStaticFieldValue(field_7_LANE);
-        case SafeSFSymbol::_7_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_7_SQUARE_AR);
-        case SafeSFSymbol::_7_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_7_SQUARE_FILL_AR);
-        case SafeSFSymbol::_8_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_8_CIRCLE_AR);
-        case SafeSFSymbol::_8_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_8_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_8_LANE:
-          return clazz->getStaticFieldValue(field_8_LANE);
-        case SafeSFSymbol::_8_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_8_SQUARE_AR);
-        case SafeSFSymbol::_8_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_8_SQUARE_FILL_AR);
-        case SafeSFSymbol::_9_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_9_CIRCLE_AR);
-        case SafeSFSymbol::_9_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_9_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_9_LANE:
-          return clazz->getStaticFieldValue(field_9_LANE);
-        case SafeSFSymbol::_9_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_9_SQUARE_AR);
-        case SafeSFSymbol::_9_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_9_SQUARE_FILL_AR);
         case SafeSFSymbol::ABS:
           return clazz->getStaticFieldValue(fieldABS);
         case SafeSFSymbol::ABS_BRAKESIGNAL_SLASH:
@@ -18353,54 +17580,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldWRONGWAYSIGN);
         case SafeSFSymbol::WRONGWAYSIGN_FILL:
           return clazz->getStaticFieldValue(fieldWRONGWAYSIGN_FILL);
-        case SafeSFSymbol::_1_LANE_AR:
-          return clazz->getStaticFieldValue(field_1_LANE_AR);
-        case SafeSFSymbol::_1_LANE_HI:
-          return clazz->getStaticFieldValue(field_1_LANE_HI);
-        case SafeSFSymbol::_10_LANE_AR:
-          return clazz->getStaticFieldValue(field_10_LANE_AR);
-        case SafeSFSymbol::_10_LANE_HI:
-          return clazz->getStaticFieldValue(field_10_LANE_HI);
-        case SafeSFSymbol::_11_LANE_AR:
-          return clazz->getStaticFieldValue(field_11_LANE_AR);
-        case SafeSFSymbol::_11_LANE_HI:
-          return clazz->getStaticFieldValue(field_11_LANE_HI);
-        case SafeSFSymbol::_12_LANE_AR:
-          return clazz->getStaticFieldValue(field_12_LANE_AR);
-        case SafeSFSymbol::_12_LANE_HI:
-          return clazz->getStaticFieldValue(field_12_LANE_HI);
-        case SafeSFSymbol::_2_LANE_AR:
-          return clazz->getStaticFieldValue(field_2_LANE_AR);
-        case SafeSFSymbol::_2_LANE_HI:
-          return clazz->getStaticFieldValue(field_2_LANE_HI);
-        case SafeSFSymbol::_3_LANE_AR:
-          return clazz->getStaticFieldValue(field_3_LANE_AR);
-        case SafeSFSymbol::_3_LANE_HI:
-          return clazz->getStaticFieldValue(field_3_LANE_HI);
-        case SafeSFSymbol::_4_LANE_AR:
-          return clazz->getStaticFieldValue(field_4_LANE_AR);
-        case SafeSFSymbol::_4_LANE_HI:
-          return clazz->getStaticFieldValue(field_4_LANE_HI);
-        case SafeSFSymbol::_5_LANE_AR:
-          return clazz->getStaticFieldValue(field_5_LANE_AR);
-        case SafeSFSymbol::_5_LANE_HI:
-          return clazz->getStaticFieldValue(field_5_LANE_HI);
-        case SafeSFSymbol::_6_LANE_AR:
-          return clazz->getStaticFieldValue(field_6_LANE_AR);
-        case SafeSFSymbol::_6_LANE_HI:
-          return clazz->getStaticFieldValue(field_6_LANE_HI);
-        case SafeSFSymbol::_7_LANE_AR:
-          return clazz->getStaticFieldValue(field_7_LANE_AR);
-        case SafeSFSymbol::_7_LANE_HI:
-          return clazz->getStaticFieldValue(field_7_LANE_HI);
-        case SafeSFSymbol::_8_LANE_AR:
-          return clazz->getStaticFieldValue(field_8_LANE_AR);
-        case SafeSFSymbol::_8_LANE_HI:
-          return clazz->getStaticFieldValue(field_8_LANE_HI);
-        case SafeSFSymbol::_9_LANE_AR:
-          return clazz->getStaticFieldValue(field_9_LANE_AR);
-        case SafeSFSymbol::_9_LANE_HI:
-          return clazz->getStaticFieldValue(field_9_LANE_HI);
         case SafeSFSymbol::AXLE_2:
           return clazz->getStaticFieldValue(fieldAXLE_2);
         case SafeSFSymbol::AXLE_2_FRONT_AND_REAR_ENGAGED:
@@ -20417,14 +19596,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldZR_BUTTON_ROUNDEDTOP_HORIZONTAL);
         case SafeSFSymbol::ZR_BUTTON_ROUNDEDTOP_HORIZONTAL_FILL:
           return clazz->getStaticFieldValue(fieldZR_BUTTON_ROUNDEDTOP_HORIZONTAL_FILL);
-        case SafeSFSymbol::_0_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_0_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_0_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_0_CIRCLE_HI);
-        case SafeSFSymbol::_0_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_0_SQUARE_FILL_HI);
-        case SafeSFSymbol::_0_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_0_SQUARE_HI);
         case SafeSFSymbol::_00_CIRCLE_AR:
           return clazz->getStaticFieldValue(field_00_CIRCLE_AR);
         case SafeSFSymbol::_00_CIRCLE_FILL_AR:
@@ -20585,198 +19756,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_09_SQUARE_FILL_HI);
         case SafeSFSymbol::_09_SQUARE_HI:
           return clazz->getStaticFieldValue(field_09_SQUARE_HI);
-        case SafeSFSymbol::_1_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_1_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_1_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_1_CIRCLE_HI);
-        case SafeSFSymbol::_1_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_1_SQUARE_FILL_HI);
-        case SafeSFSymbol::_1_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_1_SQUARE_HI);
-        case SafeSFSymbol::_10_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_10_CIRCLE_AR);
-        case SafeSFSymbol::_10_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_10_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_10_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_10_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_10_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_10_CIRCLE_HI);
-        case SafeSFSymbol::_10_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_10_SQUARE_AR);
-        case SafeSFSymbol::_10_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_10_SQUARE_FILL_AR);
-        case SafeSFSymbol::_10_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_10_SQUARE_FILL_HI);
-        case SafeSFSymbol::_10_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_10_SQUARE_HI);
-        case SafeSFSymbol::_11_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_11_CIRCLE_AR);
-        case SafeSFSymbol::_11_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_11_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_11_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_11_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_11_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_11_CIRCLE_HI);
-        case SafeSFSymbol::_11_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_11_SQUARE_AR);
-        case SafeSFSymbol::_11_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_11_SQUARE_FILL_AR);
-        case SafeSFSymbol::_11_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_11_SQUARE_FILL_HI);
-        case SafeSFSymbol::_11_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_11_SQUARE_HI);
-        case SafeSFSymbol::_12_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_12_CIRCLE_AR);
-        case SafeSFSymbol::_12_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_12_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_12_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_12_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_12_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_12_CIRCLE_HI);
-        case SafeSFSymbol::_12_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_12_SQUARE_AR);
-        case SafeSFSymbol::_12_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_12_SQUARE_FILL_AR);
-        case SafeSFSymbol::_12_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_12_SQUARE_FILL_HI);
-        case SafeSFSymbol::_12_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_12_SQUARE_HI);
-        case SafeSFSymbol::_13_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_13_CIRCLE_AR);
-        case SafeSFSymbol::_13_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_13_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_13_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_13_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_13_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_13_CIRCLE_HI);
-        case SafeSFSymbol::_13_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_13_SQUARE_AR);
-        case SafeSFSymbol::_13_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_13_SQUARE_FILL_AR);
-        case SafeSFSymbol::_13_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_13_SQUARE_FILL_HI);
-        case SafeSFSymbol::_13_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_13_SQUARE_HI);
-        case SafeSFSymbol::_14_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_14_CIRCLE_AR);
-        case SafeSFSymbol::_14_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_14_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_14_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_14_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_14_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_14_CIRCLE_HI);
-        case SafeSFSymbol::_14_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_14_SQUARE_AR);
-        case SafeSFSymbol::_14_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_14_SQUARE_FILL_AR);
-        case SafeSFSymbol::_14_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_14_SQUARE_FILL_HI);
-        case SafeSFSymbol::_14_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_14_SQUARE_HI);
-        case SafeSFSymbol::_15_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_15_CIRCLE_AR);
-        case SafeSFSymbol::_15_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_15_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_15_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_15_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_15_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_15_CIRCLE_HI);
-        case SafeSFSymbol::_15_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_15_SQUARE_AR);
-        case SafeSFSymbol::_15_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_15_SQUARE_FILL_AR);
-        case SafeSFSymbol::_15_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_15_SQUARE_FILL_HI);
-        case SafeSFSymbol::_15_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_15_SQUARE_HI);
-        case SafeSFSymbol::_16_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_16_CIRCLE_AR);
-        case SafeSFSymbol::_16_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_16_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_16_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_16_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_16_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_16_CIRCLE_HI);
-        case SafeSFSymbol::_16_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_16_SQUARE_AR);
-        case SafeSFSymbol::_16_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_16_SQUARE_FILL_AR);
-        case SafeSFSymbol::_16_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_16_SQUARE_FILL_HI);
-        case SafeSFSymbol::_16_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_16_SQUARE_HI);
-        case SafeSFSymbol::_17_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_17_CIRCLE_AR);
-        case SafeSFSymbol::_17_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_17_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_17_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_17_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_17_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_17_CIRCLE_HI);
-        case SafeSFSymbol::_17_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_17_SQUARE_AR);
-        case SafeSFSymbol::_17_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_17_SQUARE_FILL_AR);
-        case SafeSFSymbol::_17_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_17_SQUARE_FILL_HI);
-        case SafeSFSymbol::_17_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_17_SQUARE_HI);
-        case SafeSFSymbol::_18_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_18_CIRCLE_AR);
-        case SafeSFSymbol::_18_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_18_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_18_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_18_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_18_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_18_CIRCLE_HI);
-        case SafeSFSymbol::_18_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_18_SQUARE_AR);
-        case SafeSFSymbol::_18_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_18_SQUARE_FILL_AR);
-        case SafeSFSymbol::_18_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_18_SQUARE_FILL_HI);
-        case SafeSFSymbol::_18_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_18_SQUARE_HI);
-        case SafeSFSymbol::_19_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_19_CIRCLE_AR);
-        case SafeSFSymbol::_19_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_19_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_19_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_19_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_19_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_19_CIRCLE_HI);
-        case SafeSFSymbol::_19_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_19_SQUARE_AR);
-        case SafeSFSymbol::_19_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_19_SQUARE_FILL_AR);
-        case SafeSFSymbol::_19_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_19_SQUARE_FILL_HI);
-        case SafeSFSymbol::_19_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_19_SQUARE_HI);
-        case SafeSFSymbol::_2_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_2_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_2_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_2_CIRCLE_HI);
-        case SafeSFSymbol::_2_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_2_SQUARE_FILL_HI);
-        case SafeSFSymbol::_2_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_2_SQUARE_HI);
-        case SafeSFSymbol::_20_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_20_CIRCLE_AR);
-        case SafeSFSymbol::_20_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_20_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_20_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_20_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_20_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_20_CIRCLE_HI);
-        case SafeSFSymbol::_20_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_20_SQUARE_AR);
-        case SafeSFSymbol::_20_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_20_SQUARE_FILL_AR);
-        case SafeSFSymbol::_20_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_20_SQUARE_FILL_HI);
-        case SafeSFSymbol::_20_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_20_SQUARE_HI);
         case SafeSFSymbol::_21_CIRCLE_AR:
           return clazz->getStaticFieldValue(field_21_CIRCLE_AR);
         case SafeSFSymbol::_21_CIRCLE_FILL_AR:
@@ -20841,22 +19820,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_24_SQUARE_FILL_HI);
         case SafeSFSymbol::_24_SQUARE_HI:
           return clazz->getStaticFieldValue(field_24_SQUARE_HI);
-        case SafeSFSymbol::_25_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_25_CIRCLE_AR);
-        case SafeSFSymbol::_25_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_25_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_25_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_25_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_25_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_25_CIRCLE_HI);
-        case SafeSFSymbol::_25_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_25_SQUARE_AR);
-        case SafeSFSymbol::_25_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_25_SQUARE_FILL_AR);
-        case SafeSFSymbol::_25_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_25_SQUARE_FILL_HI);
-        case SafeSFSymbol::_25_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_25_SQUARE_HI);
         case SafeSFSymbol::_26_CIRCLE_AR:
           return clazz->getStaticFieldValue(field_26_CIRCLE_AR);
         case SafeSFSymbol::_26_CIRCLE_FILL_AR:
@@ -20921,30 +19884,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_29_SQUARE_FILL_HI);
         case SafeSFSymbol::_29_SQUARE_HI:
           return clazz->getStaticFieldValue(field_29_SQUARE_HI);
-        case SafeSFSymbol::_3_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_3_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_3_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_3_CIRCLE_HI);
-        case SafeSFSymbol::_3_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_3_SQUARE_FILL_HI);
-        case SafeSFSymbol::_3_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_3_SQUARE_HI);
-        case SafeSFSymbol::_30_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_30_CIRCLE_AR);
-        case SafeSFSymbol::_30_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_30_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_30_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_30_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_30_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_30_CIRCLE_HI);
-        case SafeSFSymbol::_30_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_30_SQUARE_AR);
-        case SafeSFSymbol::_30_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_30_SQUARE_FILL_AR);
-        case SafeSFSymbol::_30_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_30_SQUARE_FILL_HI);
-        case SafeSFSymbol::_30_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_30_SQUARE_HI);
         case SafeSFSymbol::_31_CIRCLE_AR:
           return clazz->getStaticFieldValue(field_31_CIRCLE_AR);
         case SafeSFSymbol::_31_CIRCLE_FILL_AR:
@@ -21009,22 +19948,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_34_SQUARE_FILL_HI);
         case SafeSFSymbol::_34_SQUARE_HI:
           return clazz->getStaticFieldValue(field_34_SQUARE_HI);
-        case SafeSFSymbol::_35_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_35_CIRCLE_AR);
-        case SafeSFSymbol::_35_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_35_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_35_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_35_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_35_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_35_CIRCLE_HI);
-        case SafeSFSymbol::_35_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_35_SQUARE_AR);
-        case SafeSFSymbol::_35_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_35_SQUARE_FILL_AR);
-        case SafeSFSymbol::_35_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_35_SQUARE_FILL_HI);
-        case SafeSFSymbol::_35_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_35_SQUARE_HI);
         case SafeSFSymbol::_36_CIRCLE_AR:
           return clazz->getStaticFieldValue(field_36_CIRCLE_AR);
         case SafeSFSymbol::_36_CIRCLE_FILL_AR:
@@ -21089,30 +20012,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_39_SQUARE_FILL_HI);
         case SafeSFSymbol::_39_SQUARE_HI:
           return clazz->getStaticFieldValue(field_39_SQUARE_HI);
-        case SafeSFSymbol::_4_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_4_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_4_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_4_CIRCLE_HI);
-        case SafeSFSymbol::_4_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_4_SQUARE_FILL_HI);
-        case SafeSFSymbol::_4_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_4_SQUARE_HI);
-        case SafeSFSymbol::_40_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_40_CIRCLE_AR);
-        case SafeSFSymbol::_40_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_40_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_40_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_40_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_40_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_40_CIRCLE_HI);
-        case SafeSFSymbol::_40_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_40_SQUARE_AR);
-        case SafeSFSymbol::_40_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_40_SQUARE_FILL_AR);
-        case SafeSFSymbol::_40_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_40_SQUARE_FILL_HI);
-        case SafeSFSymbol::_40_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_40_SQUARE_HI);
         case SafeSFSymbol::_41_CIRCLE_AR:
           return clazz->getStaticFieldValue(field_41_CIRCLE_AR);
         case SafeSFSymbol::_41_CIRCLE_FILL_AR:
@@ -21177,22 +20076,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_44_SQUARE_FILL_HI);
         case SafeSFSymbol::_44_SQUARE_HI:
           return clazz->getStaticFieldValue(field_44_SQUARE_HI);
-        case SafeSFSymbol::_45_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_45_CIRCLE_AR);
-        case SafeSFSymbol::_45_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_45_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_45_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_45_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_45_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_45_CIRCLE_HI);
-        case SafeSFSymbol::_45_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_45_SQUARE_AR);
-        case SafeSFSymbol::_45_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_45_SQUARE_FILL_AR);
-        case SafeSFSymbol::_45_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_45_SQUARE_FILL_HI);
-        case SafeSFSymbol::_45_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_45_SQUARE_HI);
         case SafeSFSymbol::_46_CIRCLE_AR:
           return clazz->getStaticFieldValue(field_46_CIRCLE_AR);
         case SafeSFSymbol::_46_CIRCLE_FILL_AR:
@@ -21257,62 +20140,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_49_SQUARE_FILL_HI);
         case SafeSFSymbol::_49_SQUARE_HI:
           return clazz->getStaticFieldValue(field_49_SQUARE_HI);
-        case SafeSFSymbol::_5_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_5_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_5_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_5_CIRCLE_HI);
-        case SafeSFSymbol::_5_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_5_SQUARE_FILL_HI);
-        case SafeSFSymbol::_5_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_5_SQUARE_HI);
-        case SafeSFSymbol::_50_CIRCLE_AR:
-          return clazz->getStaticFieldValue(field_50_CIRCLE_AR);
-        case SafeSFSymbol::_50_CIRCLE_FILL_AR:
-          return clazz->getStaticFieldValue(field_50_CIRCLE_FILL_AR);
-        case SafeSFSymbol::_50_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_50_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_50_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_50_CIRCLE_HI);
-        case SafeSFSymbol::_50_SQUARE_AR:
-          return clazz->getStaticFieldValue(field_50_SQUARE_AR);
-        case SafeSFSymbol::_50_SQUARE_FILL_AR:
-          return clazz->getStaticFieldValue(field_50_SQUARE_FILL_AR);
-        case SafeSFSymbol::_50_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_50_SQUARE_FILL_HI);
-        case SafeSFSymbol::_50_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_50_SQUARE_HI);
-        case SafeSFSymbol::_6_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_6_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_6_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_6_CIRCLE_HI);
-        case SafeSFSymbol::_6_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_6_SQUARE_FILL_HI);
-        case SafeSFSymbol::_6_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_6_SQUARE_HI);
-        case SafeSFSymbol::_7_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_7_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_7_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_7_CIRCLE_HI);
-        case SafeSFSymbol::_7_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_7_SQUARE_FILL_HI);
-        case SafeSFSymbol::_7_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_7_SQUARE_HI);
-        case SafeSFSymbol::_8_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_8_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_8_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_8_CIRCLE_HI);
-        case SafeSFSymbol::_8_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_8_SQUARE_FILL_HI);
-        case SafeSFSymbol::_8_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_8_SQUARE_HI);
-        case SafeSFSymbol::_9_CIRCLE_FILL_HI:
-          return clazz->getStaticFieldValue(field_9_CIRCLE_FILL_HI);
-        case SafeSFSymbol::_9_CIRCLE_HI:
-          return clazz->getStaticFieldValue(field_9_CIRCLE_HI);
-        case SafeSFSymbol::_9_SQUARE_FILL_HI:
-          return clazz->getStaticFieldValue(field_9_SQUARE_FILL_HI);
-        case SafeSFSymbol::_9_SQUARE_HI:
-          return clazz->getStaticFieldValue(field_9_SQUARE_HI);
         case SafeSFSymbol::CHEVRON_COMPACT_BACKWARD:
           return clazz->getStaticFieldValue(fieldCHEVRON_COMPACT_BACKWARD);
         case SafeSFSymbol::CHEVRON_COMPACT_FORWARD:
@@ -21389,78 +20216,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldBEATS_SOLOBUDS_LEFT);
         case SafeSFSymbol::BEATS_SOLOBUDS_RIGHT:
           return clazz->getStaticFieldValue(fieldBEATS_SOLOBUDS_RIGHT);
-        case SafeSFSymbol::_10_ARROW_TRIANGLEHEAD_CLOCKWISE:
-          return clazz->getStaticFieldValue(field_10_ARROW_TRIANGLEHEAD_CLOCKWISE);
-        case SafeSFSymbol::_10_ARROW_TRIANGLEHEAD_CLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_10_ARROW_TRIANGLEHEAD_CLOCKWISE_AR);
-        case SafeSFSymbol::_10_ARROW_TRIANGLEHEAD_CLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_10_ARROW_TRIANGLEHEAD_CLOCKWISE_HI);
-        case SafeSFSymbol::_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE:
-          return clazz->getStaticFieldValue(field_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE);
-        case SafeSFSymbol::_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR);
-        case SafeSFSymbol::_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_10_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI);
-        case SafeSFSymbol::_15_ARROW_TRIANGLEHEAD_CLOCKWISE:
-          return clazz->getStaticFieldValue(field_15_ARROW_TRIANGLEHEAD_CLOCKWISE);
-        case SafeSFSymbol::_15_ARROW_TRIANGLEHEAD_CLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_15_ARROW_TRIANGLEHEAD_CLOCKWISE_AR);
-        case SafeSFSymbol::_15_ARROW_TRIANGLEHEAD_CLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_15_ARROW_TRIANGLEHEAD_CLOCKWISE_HI);
-        case SafeSFSymbol::_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE:
-          return clazz->getStaticFieldValue(field_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE);
-        case SafeSFSymbol::_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR);
-        case SafeSFSymbol::_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_15_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI);
-        case SafeSFSymbol::_30_ARROW_TRIANGLEHEAD_CLOCKWISE:
-          return clazz->getStaticFieldValue(field_30_ARROW_TRIANGLEHEAD_CLOCKWISE);
-        case SafeSFSymbol::_30_ARROW_TRIANGLEHEAD_CLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_30_ARROW_TRIANGLEHEAD_CLOCKWISE_AR);
-        case SafeSFSymbol::_30_ARROW_TRIANGLEHEAD_CLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_30_ARROW_TRIANGLEHEAD_CLOCKWISE_HI);
-        case SafeSFSymbol::_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE:
-          return clazz->getStaticFieldValue(field_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE);
-        case SafeSFSymbol::_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR);
-        case SafeSFSymbol::_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_30_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI);
-        case SafeSFSymbol::_45_ARROW_TRIANGLEHEAD_CLOCKWISE:
-          return clazz->getStaticFieldValue(field_45_ARROW_TRIANGLEHEAD_CLOCKWISE);
-        case SafeSFSymbol::_45_ARROW_TRIANGLEHEAD_CLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_45_ARROW_TRIANGLEHEAD_CLOCKWISE_AR);
-        case SafeSFSymbol::_45_ARROW_TRIANGLEHEAD_CLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_45_ARROW_TRIANGLEHEAD_CLOCKWISE_HI);
-        case SafeSFSymbol::_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE:
-          return clazz->getStaticFieldValue(field_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE);
-        case SafeSFSymbol::_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR);
-        case SafeSFSymbol::_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_45_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI);
-        case SafeSFSymbol::_5_ARROW_TRIANGLEHEAD_CLOCKWISE:
-          return clazz->getStaticFieldValue(field_5_ARROW_TRIANGLEHEAD_CLOCKWISE);
-        case SafeSFSymbol::_5_ARROW_TRIANGLEHEAD_CLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_5_ARROW_TRIANGLEHEAD_CLOCKWISE_AR);
-        case SafeSFSymbol::_5_ARROW_TRIANGLEHEAD_CLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_5_ARROW_TRIANGLEHEAD_CLOCKWISE_HI);
-        case SafeSFSymbol::_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE:
-          return clazz->getStaticFieldValue(field_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE);
-        case SafeSFSymbol::_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR);
-        case SafeSFSymbol::_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_5_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI);
-        case SafeSFSymbol::_60_ARROW_TRIANGLEHEAD_CLOCKWISE:
-          return clazz->getStaticFieldValue(field_60_ARROW_TRIANGLEHEAD_CLOCKWISE);
-        case SafeSFSymbol::_60_ARROW_TRIANGLEHEAD_CLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_60_ARROW_TRIANGLEHEAD_CLOCKWISE_AR);
-        case SafeSFSymbol::_60_ARROW_TRIANGLEHEAD_CLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_60_ARROW_TRIANGLEHEAD_CLOCKWISE_HI);
-        case SafeSFSymbol::_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE:
-          return clazz->getStaticFieldValue(field_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE);
-        case SafeSFSymbol::_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR);
-        case SafeSFSymbol::_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_60_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI);
         case SafeSFSymbol::_75_ARROW_TRIANGLEHEAD_CLOCKWISE:
           return clazz->getStaticFieldValue(field_75_ARROW_TRIANGLEHEAD_CLOCKWISE);
         case SafeSFSymbol::_75_ARROW_TRIANGLEHEAD_CLOCKWISE_AR:
@@ -21473,18 +20228,6 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(field_75_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR);
         case SafeSFSymbol::_75_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI:
           return clazz->getStaticFieldValue(field_75_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI);
-        case SafeSFSymbol::_90_ARROW_TRIANGLEHEAD_CLOCKWISE:
-          return clazz->getStaticFieldValue(field_90_ARROW_TRIANGLEHEAD_CLOCKWISE);
-        case SafeSFSymbol::_90_ARROW_TRIANGLEHEAD_CLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_90_ARROW_TRIANGLEHEAD_CLOCKWISE_AR);
-        case SafeSFSymbol::_90_ARROW_TRIANGLEHEAD_CLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_90_ARROW_TRIANGLEHEAD_CLOCKWISE_HI);
-        case SafeSFSymbol::_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE:
-          return clazz->getStaticFieldValue(field_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE);
-        case SafeSFSymbol::_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR:
-          return clazz->getStaticFieldValue(field_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_AR);
-        case SafeSFSymbol::_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI:
-          return clazz->getStaticFieldValue(field_90_ARROW_TRIANGLEHEAD_COUNTERCLOCKWISE_HI);
         case SafeSFSymbol::AIR_CAR_SIDE:
           return clazz->getStaticFieldValue(fieldAIR_CAR_SIDE);
         case SafeSFSymbol::AIR_CAR_SIDE_FILL:

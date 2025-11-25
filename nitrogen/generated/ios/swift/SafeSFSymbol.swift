@@ -21,14 +21,6 @@ public extension SafeSFSymbol {
         self = .number
       case "function":
         self = .function
-      case "0.circle":
-        self = .0Circle
-      case "0.circle.fill":
-        self = .0CircleFill
-      case "0.square":
-        self = .0Square
-      case "0.square.fill":
-        self = .0SquareFill
       case "00.circle":
         self = .00Circle
       case "00.circle.fill":
@@ -109,112 +101,6 @@ public extension SafeSFSymbol {
         self = .09Square
       case "09.square.fill":
         self = .09SquareFill
-      case "1.circle":
-        self = .1Circle
-      case "1.circle.fill":
-        self = .1CircleFill
-      case "1.magnifyingglass":
-        self = .1Magnifyingglass
-      case "1.square":
-        self = .1Square
-      case "1.square.fill":
-        self = .1SquareFill
-      case "10.circle":
-        self = .10Circle
-      case "10.circle.fill":
-        self = .10CircleFill
-      case "10.square":
-        self = .10Square
-      case "10.square.fill":
-        self = .10SquareFill
-      case "11.circle":
-        self = .11Circle
-      case "11.circle.fill":
-        self = .11CircleFill
-      case "11.square":
-        self = .11Square
-      case "11.square.fill":
-        self = .11SquareFill
-      case "12.circle":
-        self = .12Circle
-      case "12.circle.fill":
-        self = .12CircleFill
-      case "12.square":
-        self = .12Square
-      case "12.square.fill":
-        self = .12SquareFill
-      case "13.circle":
-        self = .13Circle
-      case "13.circle.fill":
-        self = .13CircleFill
-      case "13.square":
-        self = .13Square
-      case "13.square.fill":
-        self = .13SquareFill
-      case "14.circle":
-        self = .14Circle
-      case "14.circle.fill":
-        self = .14CircleFill
-      case "14.square":
-        self = .14Square
-      case "14.square.fill":
-        self = .14SquareFill
-      case "15.circle":
-        self = .15Circle
-      case "15.circle.fill":
-        self = .15CircleFill
-      case "15.square":
-        self = .15Square
-      case "15.square.fill":
-        self = .15SquareFill
-      case "16.circle":
-        self = .16Circle
-      case "16.circle.fill":
-        self = .16CircleFill
-      case "16.square":
-        self = .16Square
-      case "16.square.fill":
-        self = .16SquareFill
-      case "17.circle":
-        self = .17Circle
-      case "17.circle.fill":
-        self = .17CircleFill
-      case "17.square":
-        self = .17Square
-      case "17.square.fill":
-        self = .17SquareFill
-      case "18.circle":
-        self = .18Circle
-      case "18.circle.fill":
-        self = .18CircleFill
-      case "18.square":
-        self = .18Square
-      case "18.square.fill":
-        self = .18SquareFill
-      case "19.circle":
-        self = .19Circle
-      case "19.circle.fill":
-        self = .19CircleFill
-      case "19.square":
-        self = .19Square
-      case "19.square.fill":
-        self = .19SquareFill
-      case "2.circle":
-        self = .2Circle
-      case "2.circle.fill":
-        self = .2CircleFill
-      case "2.square":
-        self = .2Square
-      case "2.square.fill":
-        self = .2SquareFill
-      case "20.circle":
-        self = .20Circle
-      case "20.circle.fill":
-        self = .20CircleFill
-      case "20.square":
-        self = .20Square
-      case "20.square.fill":
-        self = .20SquareFill
       case "21.circle":
         self = .21Circle
       case "21.circle.fill":
@@ -247,14 +133,6 @@ public extension SafeSFSymbol {
         self = .24Square
       case "24.square.fill":
         self = .24SquareFill
-      case "25.circle":
-        self = .25Circle
-      case "25.circle.fill":
-        self = .25CircleFill
-      case "25.square":
-        self = .25Square
-      case "25.square.fill":
-        self = .25SquareFill
       case "26.circle":
         self = .26Circle
       case "26.circle.fill":
@@ -287,22 +165,6 @@ public extension SafeSFSymbol {
         self = .29Square
       case "29.square.fill":
         self = .29SquareFill
-      case "3.circle":
-        self = .3Circle
-      case "3.circle.fill":
-        self = .3CircleFill
-      case "3.square":
-        self = .3Square
-      case "3.square.fill":
-        self = .3SquareFill
-      case "30.circle":
-        self = .30Circle
-      case "30.circle.fill":
-        self = .30CircleFill
-      case "30.square":
-        self = .30Square
-      case "30.square.fill":
-        self = .30SquareFill
       case "31.circle":
         self = .31Circle
       case "31.circle.fill":
@@ -335,14 +197,6 @@ public extension SafeSFSymbol {
         self = .34Square
       case "34.square.fill":
         self = .34SquareFill
-      case "35.circle":
-        self = .35Circle
-      case "35.circle.fill":
-        self = .35CircleFill
-      case "35.square":
-        self = .35Square
-      case "35.square.fill":
-        self = .35SquareFill
       case "36.circle":
         self = .36Circle
       case "36.circle.fill":
@@ -375,30 +229,6 @@ public extension SafeSFSymbol {
         self = .39Square
       case "39.square.fill":
         self = .39SquareFill
-      case "4.alt.circle":
-        self = .4AltCircle
-      case "4.alt.circle.fill":
-        self = .4AltCircleFill
-      case "4.alt.square":
-        self = .4AltSquare
-      case "4.alt.square.fill":
-        self = .4AltSquareFill
-      case "4.circle":
-        self = .4Circle
-      case "4.circle.fill":
-        self = .4CircleFill
-      case "4.square":
-        self = .4Square
-      case "4.square.fill":
-        self = .4SquareFill
-      case "40.circle":
-        self = .40Circle
-      case "40.circle.fill":
-        self = .40CircleFill
-      case "40.square":
-        self = .40Square
-      case "40.square.fill":
-        self = .40SquareFill
       case "41.circle":
         self = .41Circle
       case "41.circle.fill":
@@ -431,14 +261,6 @@ public extension SafeSFSymbol {
         self = .44Square
       case "44.square.fill":
         self = .44SquareFill
-      case "45.circle":
-        self = .45Circle
-      case "45.circle.fill":
-        self = .45CircleFill
-      case "45.square":
-        self = .45Square
-      case "45.square.fill":
-        self = .45SquareFill
       case "46.circle":
         self = .46Circle
       case "46.circle.fill":
@@ -471,70 +293,6 @@ public extension SafeSFSymbol {
         self = .49Square
       case "49.square.fill":
         self = .49SquareFill
-      case "5.circle":
-        self = .5Circle
-      case "5.circle.fill":
-        self = .5CircleFill
-      case "5.square":
-        self = .5Square
-      case "5.square.fill":
-        self = .5SquareFill
-      case "50.circle":
-        self = .50Circle
-      case "50.circle.fill":
-        self = .50CircleFill
-      case "50.square":
-        self = .50Square
-      case "50.square.fill":
-        self = .50SquareFill
-      case "6.alt.circle":
-        self = .6AltCircle
-      case "6.alt.circle.fill":
-        self = .6AltCircleFill
-      case "6.alt.square":
-        self = .6AltSquare
-      case "6.alt.square.fill":
-        self = .6AltSquareFill
-      case "6.circle":
-        self = .6Circle
-      case "6.circle.fill":
-        self = .6CircleFill
-      case "6.square":
-        self = .6Square
-      case "6.square.fill":
-        self = .6SquareFill
-      case "7.circle":
-        self = .7Circle
-      case "7.circle.fill":
-        self = .7CircleFill
-      case "7.square":
-        self = .7Square
-      case "7.square.fill":
-        self = .7SquareFill
-      case "8.circle":
-        self = .8Circle
-      case "8.circle.fill":
-        self = .8CircleFill
-      case "8.square":
-        self = .8Square
-      case "8.square.fill":
-        self = .8SquareFill
-      case "9.alt.circle":
-        self = .9AltCircle
-      case "9.alt.circle.fill":
-        self = .9AltCircleFill
-      case "9.alt.square":
-        self = .9AltSquare
-      case "9.alt.square.fill":
-        self = .9AltSquareFill
-      case "9.circle":
-        self = .9Circle
-      case "9.circle.fill":
-        self = .9CircleFill
-      case "9.square":
-        self = .9Square
-      case "9.square.fill":
-        self = .9SquareFill
       case "a":
         self = .a
       case "a.circle":
@@ -3375,8 +3133,6 @@ public extension SafeSFSymbol {
         self = .scissorsBadgeEllipsis
       case "studentdesk":
         self = .studentdesk
-      case "1.magnifyingglass.ar":
-        self = .1MagnifyingglassAr
       case "4k.tv":
         self = .4kTv
       case "4k.tv.fill":
@@ -5787,8 +5543,6 @@ public extension SafeSFSymbol {
         self = .homepodminiFill
       case "rectangle.topthird.inset.fill":
         self = .rectangleTopthirdInsetFill
-      case "1.magnifyingglass.hi":
-        self = .1MagnifyingglassHi
       case "123.rectangle":
         self = .123Rectangle
       case "123.rectangle.ar":
@@ -9401,114 +9155,6 @@ public extension SafeSFSymbol {
         self = .xboxLogo
       case "yensign":
         self = .yensign
-      case "0.circle.ar":
-        self = .0CircleAr
-      case "0.circle.fill.ar":
-        self = .0CircleFillAr
-      case "0.square.ar":
-        self = .0SquareAr
-      case "0.square.fill.ar":
-        self = .0SquareFillAr
-      case "1.brakesignal":
-        self = .1Brakesignal
-      case "1.circle.ar":
-        self = .1CircleAr
-      case "1.circle.fill.ar":
-        self = .1CircleFillAr
-      case "1.lane":
-        self = .1Lane
-      case "1.square.ar":
-        self = .1SquareAr
-      case "1.square.fill.ar":
-        self = .1SquareFillAr
-      case "10.lane":
-        self = .10Lane
-      case "11.lane":
-        self = .11Lane
-      case "12.lane":
-        self = .12Lane
-      case "2.brakesignal":
-        self = .2Brakesignal
-      case "2.circle.ar":
-        self = .2CircleAr
-      case "2.circle.fill.ar":
-        self = .2CircleFillAr
-      case "2.lane":
-        self = .2Lane
-      case "2.square.ar":
-        self = .2SquareAr
-      case "2.square.fill.ar":
-        self = .2SquareFillAr
-      case "3.circle.ar":
-        self = .3CircleAr
-      case "3.circle.fill.ar":
-        self = .3CircleFillAr
-      case "3.lane":
-        self = .3Lane
-      case "3.square.ar":
-        self = .3SquareAr
-      case "3.square.fill.ar":
-        self = .3SquareFillAr
-      case "4.circle.ar":
-        self = .4CircleAr
-      case "4.circle.fill.ar":
-        self = .4CircleFillAr
-      case "4.lane":
-        self = .4Lane
-      case "4.square.ar":
-        self = .4SquareAr
-      case "4.square.fill.ar":
-        self = .4SquareFillAr
-      case "5.circle.ar":
-        self = .5CircleAr
-      case "5.circle.fill.ar":
-        self = .5CircleFillAr
-      case "5.lane":
-        self = .5Lane
-      case "5.square.ar":
-        self = .5SquareAr
-      case "5.square.fill.ar":
-        self = .5SquareFillAr
-      case "6.circle.ar":
-        self = .6CircleAr
-      case "6.circle.fill.ar":
-        self = .6CircleFillAr
-      case "6.lane":
-        self = .6Lane
-      case "6.square.ar":
-        self = .6SquareAr
-      case "6.square.fill.ar":
-        self = .6SquareFillAr
-      case "7.circle.ar":
-        self = .7CircleAr
-      case "7.circle.fill.ar":
-        self = .7CircleFillAr
-      case "7.lane":
-        self = .7Lane
-      case "7.square.ar":
-        self = .7SquareAr
-      case "7.square.fill.ar":
-        self = .7SquareFillAr
-      case "8.circle.ar":
-        self = .8CircleAr
-      case "8.circle.fill.ar":
-        self = .8CircleFillAr
-      case "8.lane":
-        self = .8Lane
-      case "8.square.ar":
-        self = .8SquareAr
-      case "8.square.fill.ar":
-        self = .8SquareFillAr
-      case "9.circle.ar":
-        self = .9CircleAr
-      case "9.circle.fill.ar":
-        self = .9CircleFillAr
-      case "9.lane":
-        self = .9Lane
-      case "9.square.ar":
-        self = .9SquareAr
-      case "9.square.fill.ar":
-        self = .9SquareFillAr
       case "abs":
         self = .abs
       case "abs.brakesignal.slash":
@@ -10147,54 +9793,6 @@ public extension SafeSFSymbol {
         self = .wrongwaysign
       case "wrongwaysign.fill":
         self = .wrongwaysignFill
-      case "1.lane.ar":
-        self = .1LaneAr
-      case "1.lane.hi":
-        self = .1LaneHi
-      case "10.lane.ar":
-        self = .10LaneAr
-      case "10.lane.hi":
-        self = .10LaneHi
-      case "11.lane.ar":
-        self = .11LaneAr
-      case "11.lane.hi":
-        self = .11LaneHi
-      case "12.lane.ar":
-        self = .12LaneAr
-      case "12.lane.hi":
-        self = .12LaneHi
-      case "2.lane.ar":
-        self = .2LaneAr
-      case "2.lane.hi":
-        self = .2LaneHi
-      case "3.lane.ar":
-        self = .3LaneAr
-      case "3.lane.hi":
-        self = .3LaneHi
-      case "4.lane.ar":
-        self = .4LaneAr
-      case "4.lane.hi":
-        self = .4LaneHi
-      case "5.lane.ar":
-        self = .5LaneAr
-      case "5.lane.hi":
-        self = .5LaneHi
-      case "6.lane.ar":
-        self = .6LaneAr
-      case "6.lane.hi":
-        self = .6LaneHi
-      case "7.lane.ar":
-        self = .7LaneAr
-      case "7.lane.hi":
-        self = .7LaneHi
-      case "8.lane.ar":
-        self = .8LaneAr
-      case "8.lane.hi":
-        self = .8LaneHi
-      case "9.lane.ar":
-        self = .9LaneAr
-      case "9.lane.hi":
-        self = .9LaneHi
       case "axle.2":
         self = .axle2
       case "axle.2.front.and.rear.engaged":
@@ -12211,14 +11809,6 @@ public extension SafeSFSymbol {
         self = .zrButtonRoundedtopHorizontal
       case "zr.button.roundedtop.horizontal.fill":
         self = .zrButtonRoundedtopHorizontalFill
-      case "0.circle.fill.hi":
-        self = .0CircleFillHi
-      case "0.circle.hi":
-        self = .0CircleHi
-      case "0.square.fill.hi":
-        self = .0SquareFillHi
-      case "0.square.hi":
-        self = .0SquareHi
       case "00.circle.ar":
         self = .00CircleAr
       case "00.circle.fill.ar":
@@ -12379,198 +11969,6 @@ public extension SafeSFSymbol {
         self = .09SquareFillHi
       case "09.square.hi":
         self = .09SquareHi
-      case "1.circle.fill.hi":
-        self = .1CircleFillHi
-      case "1.circle.hi":
-        self = .1CircleHi
-      case "1.square.fill.hi":
-        self = .1SquareFillHi
-      case "1.square.hi":
-        self = .1SquareHi
-      case "10.circle.ar":
-        self = .10CircleAr
-      case "10.circle.fill.ar":
-        self = .10CircleFillAr
-      case "10.circle.fill.hi":
-        self = .10CircleFillHi
-      case "10.circle.hi":
-        self = .10CircleHi
-      case "10.square.ar":
-        self = .10SquareAr
-      case "10.square.fill.ar":
-        self = .10SquareFillAr
-      case "10.square.fill.hi":
-        self = .10SquareFillHi
-      case "10.square.hi":
-        self = .10SquareHi
-      case "11.circle.ar":
-        self = .11CircleAr
-      case "11.circle.fill.ar":
-        self = .11CircleFillAr
-      case "11.circle.fill.hi":
-        self = .11CircleFillHi
-      case "11.circle.hi":
-        self = .11CircleHi
-      case "11.square.ar":
-        self = .11SquareAr
-      case "11.square.fill.ar":
-        self = .11SquareFillAr
-      case "11.square.fill.hi":
-        self = .11SquareFillHi
-      case "11.square.hi":
-        self = .11SquareHi
-      case "12.circle.ar":
-        self = .12CircleAr
-      case "12.circle.fill.ar":
-        self = .12CircleFillAr
-      case "12.circle.fill.hi":
-        self = .12CircleFillHi
-      case "12.circle.hi":
-        self = .12CircleHi
-      case "12.square.ar":
-        self = .12SquareAr
-      case "12.square.fill.ar":
-        self = .12SquareFillAr
-      case "12.square.fill.hi":
-        self = .12SquareFillHi
-      case "12.square.hi":
-        self = .12SquareHi
-      case "13.circle.ar":
-        self = .13CircleAr
-      case "13.circle.fill.ar":
-        self = .13CircleFillAr
-      case "13.circle.fill.hi":
-        self = .13CircleFillHi
-      case "13.circle.hi":
-        self = .13CircleHi
-      case "13.square.ar":
-        self = .13SquareAr
-      case "13.square.fill.ar":
-        self = .13SquareFillAr
-      case "13.square.fill.hi":
-        self = .13SquareFillHi
-      case "13.square.hi":
-        self = .13SquareHi
-      case "14.circle.ar":
-        self = .14CircleAr
-      case "14.circle.fill.ar":
-        self = .14CircleFillAr
-      case "14.circle.fill.hi":
-        self = .14CircleFillHi
-      case "14.circle.hi":
-        self = .14CircleHi
-      case "14.square.ar":
-        self = .14SquareAr
-      case "14.square.fill.ar":
-        self = .14SquareFillAr
-      case "14.square.fill.hi":
-        self = .14SquareFillHi
-      case "14.square.hi":
-        self = .14SquareHi
-      case "15.circle.ar":
-        self = .15CircleAr
-      case "15.circle.fill.ar":
-        self = .15CircleFillAr
-      case "15.circle.fill.hi":
-        self = .15CircleFillHi
-      case "15.circle.hi":
-        self = .15CircleHi
-      case "15.square.ar":
-        self = .15SquareAr
-      case "15.square.fill.ar":
-        self = .15SquareFillAr
-      case "15.square.fill.hi":
-        self = .15SquareFillHi
-      case "15.square.hi":
-        self = .15SquareHi
-      case "16.circle.ar":
-        self = .16CircleAr
-      case "16.circle.fill.ar":
-        self = .16CircleFillAr
-      case "16.circle.fill.hi":
-        self = .16CircleFillHi
-      case "16.circle.hi":
-        self = .16CircleHi
-      case "16.square.ar":
-        self = .16SquareAr
-      case "16.square.fill.ar":
-        self = .16SquareFillAr
-      case "16.square.fill.hi":
-        self = .16SquareFillHi
-      case "16.square.hi":
-        self = .16SquareHi
-      case "17.circle.ar":
-        self = .17CircleAr
-      case "17.circle.fill.ar":
-        self = .17CircleFillAr
-      case "17.circle.fill.hi":
-        self = .17CircleFillHi
-      case "17.circle.hi":
-        self = .17CircleHi
-      case "17.square.ar":
-        self = .17SquareAr
-      case "17.square.fill.ar":
-        self = .17SquareFillAr
-      case "17.square.fill.hi":
-        self = .17SquareFillHi
-      case "17.square.hi":
-        self = .17SquareHi
-      case "18.circle.ar":
-        self = .18CircleAr
-      case "18.circle.fill.ar":
-        self = .18CircleFillAr
-      case "18.circle.fill.hi":
-        self = .18CircleFillHi
-      case "18.circle.hi":
-        self = .18CircleHi
-      case "18.square.ar":
-        self = .18SquareAr
-      case "18.square.fill.ar":
-        self = .18SquareFillAr
-      case "18.square.fill.hi":
-        self = .18SquareFillHi
-      case "18.square.hi":
-        self = .18SquareHi
-      case "19.circle.ar":
-        self = .19CircleAr
-      case "19.circle.fill.ar":
-        self = .19CircleFillAr
-      case "19.circle.fill.hi":
-        self = .19CircleFillHi
-      case "19.circle.hi":
-        self = .19CircleHi
-      case "19.square.ar":
-        self = .19SquareAr
-      case "19.square.fill.ar":
-        self = .19SquareFillAr
-      case "19.square.fill.hi":
-        self = .19SquareFillHi
-      case "19.square.hi":
-        self = .19SquareHi
-      case "2.circle.fill.hi":
-        self = .2CircleFillHi
-      case "2.circle.hi":
-        self = .2CircleHi
-      case "2.square.fill.hi":
-        self = .2SquareFillHi
-      case "2.square.hi":
-        self = .2SquareHi
-      case "20.circle.ar":
-        self = .20CircleAr
-      case "20.circle.fill.ar":
-        self = .20CircleFillAr
-      case "20.circle.fill.hi":
-        self = .20CircleFillHi
-      case "20.circle.hi":
-        self = .20CircleHi
-      case "20.square.ar":
-        self = .20SquareAr
-      case "20.square.fill.ar":
-        self = .20SquareFillAr
-      case "20.square.fill.hi":
-        self = .20SquareFillHi
-      case "20.square.hi":
-        self = .20SquareHi
       case "21.circle.ar":
         self = .21CircleAr
       case "21.circle.fill.ar":
@@ -12635,22 +12033,6 @@ public extension SafeSFSymbol {
         self = .24SquareFillHi
       case "24.square.hi":
         self = .24SquareHi
-      case "25.circle.ar":
-        self = .25CircleAr
-      case "25.circle.fill.ar":
-        self = .25CircleFillAr
-      case "25.circle.fill.hi":
-        self = .25CircleFillHi
-      case "25.circle.hi":
-        self = .25CircleHi
-      case "25.square.ar":
-        self = .25SquareAr
-      case "25.square.fill.ar":
-        self = .25SquareFillAr
-      case "25.square.fill.hi":
-        self = .25SquareFillHi
-      case "25.square.hi":
-        self = .25SquareHi
       case "26.circle.ar":
         self = .26CircleAr
       case "26.circle.fill.ar":
@@ -12715,30 +12097,6 @@ public extension SafeSFSymbol {
         self = .29SquareFillHi
       case "29.square.hi":
         self = .29SquareHi
-      case "3.circle.fill.hi":
-        self = .3CircleFillHi
-      case "3.circle.hi":
-        self = .3CircleHi
-      case "3.square.fill.hi":
-        self = .3SquareFillHi
-      case "3.square.hi":
-        self = .3SquareHi
-      case "30.circle.ar":
-        self = .30CircleAr
-      case "30.circle.fill.ar":
-        self = .30CircleFillAr
-      case "30.circle.fill.hi":
-        self = .30CircleFillHi
-      case "30.circle.hi":
-        self = .30CircleHi
-      case "30.square.ar":
-        self = .30SquareAr
-      case "30.square.fill.ar":
-        self = .30SquareFillAr
-      case "30.square.fill.hi":
-        self = .30SquareFillHi
-      case "30.square.hi":
-        self = .30SquareHi
       case "31.circle.ar":
         self = .31CircleAr
       case "31.circle.fill.ar":
@@ -12803,22 +12161,6 @@ public extension SafeSFSymbol {
         self = .34SquareFillHi
       case "34.square.hi":
         self = .34SquareHi
-      case "35.circle.ar":
-        self = .35CircleAr
-      case "35.circle.fill.ar":
-        self = .35CircleFillAr
-      case "35.circle.fill.hi":
-        self = .35CircleFillHi
-      case "35.circle.hi":
-        self = .35CircleHi
-      case "35.square.ar":
-        self = .35SquareAr
-      case "35.square.fill.ar":
-        self = .35SquareFillAr
-      case "35.square.fill.hi":
-        self = .35SquareFillHi
-      case "35.square.hi":
-        self = .35SquareHi
       case "36.circle.ar":
         self = .36CircleAr
       case "36.circle.fill.ar":
@@ -12883,30 +12225,6 @@ public extension SafeSFSymbol {
         self = .39SquareFillHi
       case "39.square.hi":
         self = .39SquareHi
-      case "4.circle.fill.hi":
-        self = .4CircleFillHi
-      case "4.circle.hi":
-        self = .4CircleHi
-      case "4.square.fill.hi":
-        self = .4SquareFillHi
-      case "4.square.hi":
-        self = .4SquareHi
-      case "40.circle.ar":
-        self = .40CircleAr
-      case "40.circle.fill.ar":
-        self = .40CircleFillAr
-      case "40.circle.fill.hi":
-        self = .40CircleFillHi
-      case "40.circle.hi":
-        self = .40CircleHi
-      case "40.square.ar":
-        self = .40SquareAr
-      case "40.square.fill.ar":
-        self = .40SquareFillAr
-      case "40.square.fill.hi":
-        self = .40SquareFillHi
-      case "40.square.hi":
-        self = .40SquareHi
       case "41.circle.ar":
         self = .41CircleAr
       case "41.circle.fill.ar":
@@ -12971,22 +12289,6 @@ public extension SafeSFSymbol {
         self = .44SquareFillHi
       case "44.square.hi":
         self = .44SquareHi
-      case "45.circle.ar":
-        self = .45CircleAr
-      case "45.circle.fill.ar":
-        self = .45CircleFillAr
-      case "45.circle.fill.hi":
-        self = .45CircleFillHi
-      case "45.circle.hi":
-        self = .45CircleHi
-      case "45.square.ar":
-        self = .45SquareAr
-      case "45.square.fill.ar":
-        self = .45SquareFillAr
-      case "45.square.fill.hi":
-        self = .45SquareFillHi
-      case "45.square.hi":
-        self = .45SquareHi
       case "46.circle.ar":
         self = .46CircleAr
       case "46.circle.fill.ar":
@@ -13051,62 +12353,6 @@ public extension SafeSFSymbol {
         self = .49SquareFillHi
       case "49.square.hi":
         self = .49SquareHi
-      case "5.circle.fill.hi":
-        self = .5CircleFillHi
-      case "5.circle.hi":
-        self = .5CircleHi
-      case "5.square.fill.hi":
-        self = .5SquareFillHi
-      case "5.square.hi":
-        self = .5SquareHi
-      case "50.circle.ar":
-        self = .50CircleAr
-      case "50.circle.fill.ar":
-        self = .50CircleFillAr
-      case "50.circle.fill.hi":
-        self = .50CircleFillHi
-      case "50.circle.hi":
-        self = .50CircleHi
-      case "50.square.ar":
-        self = .50SquareAr
-      case "50.square.fill.ar":
-        self = .50SquareFillAr
-      case "50.square.fill.hi":
-        self = .50SquareFillHi
-      case "50.square.hi":
-        self = .50SquareHi
-      case "6.circle.fill.hi":
-        self = .6CircleFillHi
-      case "6.circle.hi":
-        self = .6CircleHi
-      case "6.square.fill.hi":
-        self = .6SquareFillHi
-      case "6.square.hi":
-        self = .6SquareHi
-      case "7.circle.fill.hi":
-        self = .7CircleFillHi
-      case "7.circle.hi":
-        self = .7CircleHi
-      case "7.square.fill.hi":
-        self = .7SquareFillHi
-      case "7.square.hi":
-        self = .7SquareHi
-      case "8.circle.fill.hi":
-        self = .8CircleFillHi
-      case "8.circle.hi":
-        self = .8CircleHi
-      case "8.square.fill.hi":
-        self = .8SquareFillHi
-      case "8.square.hi":
-        self = .8SquareHi
-      case "9.circle.fill.hi":
-        self = .9CircleFillHi
-      case "9.circle.hi":
-        self = .9CircleHi
-      case "9.square.fill.hi":
-        self = .9SquareFillHi
-      case "9.square.hi":
-        self = .9SquareHi
       case "chevron.compact.backward":
         self = .chevronCompactBackward
       case "chevron.compact.forward":
@@ -13183,78 +12429,6 @@ public extension SafeSFSymbol {
         self = .beatsSolobudsLeft
       case "beats.solobuds.right":
         self = .beatsSolobudsRight
-      case "10.arrow.trianglehead.clockwise":
-        self = .10ArrowTriangleheadClockwise
-      case "10.arrow.trianglehead.clockwise.ar":
-        self = .10ArrowTriangleheadClockwiseAr
-      case "10.arrow.trianglehead.clockwise.hi":
-        self = .10ArrowTriangleheadClockwiseHi
-      case "10.arrow.trianglehead.counterclockwise":
-        self = .10ArrowTriangleheadCounterclockwise
-      case "10.arrow.trianglehead.counterclockwise.ar":
-        self = .10ArrowTriangleheadCounterclockwiseAr
-      case "10.arrow.trianglehead.counterclockwise.hi":
-        self = .10ArrowTriangleheadCounterclockwiseHi
-      case "15.arrow.trianglehead.clockwise":
-        self = .15ArrowTriangleheadClockwise
-      case "15.arrow.trianglehead.clockwise.ar":
-        self = .15ArrowTriangleheadClockwiseAr
-      case "15.arrow.trianglehead.clockwise.hi":
-        self = .15ArrowTriangleheadClockwiseHi
-      case "15.arrow.trianglehead.counterclockwise":
-        self = .15ArrowTriangleheadCounterclockwise
-      case "15.arrow.trianglehead.counterclockwise.ar":
-        self = .15ArrowTriangleheadCounterclockwiseAr
-      case "15.arrow.trianglehead.counterclockwise.hi":
-        self = .15ArrowTriangleheadCounterclockwiseHi
-      case "30.arrow.trianglehead.clockwise":
-        self = .30ArrowTriangleheadClockwise
-      case "30.arrow.trianglehead.clockwise.ar":
-        self = .30ArrowTriangleheadClockwiseAr
-      case "30.arrow.trianglehead.clockwise.hi":
-        self = .30ArrowTriangleheadClockwiseHi
-      case "30.arrow.trianglehead.counterclockwise":
-        self = .30ArrowTriangleheadCounterclockwise
-      case "30.arrow.trianglehead.counterclockwise.ar":
-        self = .30ArrowTriangleheadCounterclockwiseAr
-      case "30.arrow.trianglehead.counterclockwise.hi":
-        self = .30ArrowTriangleheadCounterclockwiseHi
-      case "45.arrow.trianglehead.clockwise":
-        self = .45ArrowTriangleheadClockwise
-      case "45.arrow.trianglehead.clockwise.ar":
-        self = .45ArrowTriangleheadClockwiseAr
-      case "45.arrow.trianglehead.clockwise.hi":
-        self = .45ArrowTriangleheadClockwiseHi
-      case "45.arrow.trianglehead.counterclockwise":
-        self = .45ArrowTriangleheadCounterclockwise
-      case "45.arrow.trianglehead.counterclockwise.ar":
-        self = .45ArrowTriangleheadCounterclockwiseAr
-      case "45.arrow.trianglehead.counterclockwise.hi":
-        self = .45ArrowTriangleheadCounterclockwiseHi
-      case "5.arrow.trianglehead.clockwise":
-        self = .5ArrowTriangleheadClockwise
-      case "5.arrow.trianglehead.clockwise.ar":
-        self = .5ArrowTriangleheadClockwiseAr
-      case "5.arrow.trianglehead.clockwise.hi":
-        self = .5ArrowTriangleheadClockwiseHi
-      case "5.arrow.trianglehead.counterclockwise":
-        self = .5ArrowTriangleheadCounterclockwise
-      case "5.arrow.trianglehead.counterclockwise.ar":
-        self = .5ArrowTriangleheadCounterclockwiseAr
-      case "5.arrow.trianglehead.counterclockwise.hi":
-        self = .5ArrowTriangleheadCounterclockwiseHi
-      case "60.arrow.trianglehead.clockwise":
-        self = .60ArrowTriangleheadClockwise
-      case "60.arrow.trianglehead.clockwise.ar":
-        self = .60ArrowTriangleheadClockwiseAr
-      case "60.arrow.trianglehead.clockwise.hi":
-        self = .60ArrowTriangleheadClockwiseHi
-      case "60.arrow.trianglehead.counterclockwise":
-        self = .60ArrowTriangleheadCounterclockwise
-      case "60.arrow.trianglehead.counterclockwise.ar":
-        self = .60ArrowTriangleheadCounterclockwiseAr
-      case "60.arrow.trianglehead.counterclockwise.hi":
-        self = .60ArrowTriangleheadCounterclockwiseHi
       case "75.arrow.trianglehead.clockwise":
         self = .75ArrowTriangleheadClockwise
       case "75.arrow.trianglehead.clockwise.ar":
@@ -13267,18 +12441,6 @@ public extension SafeSFSymbol {
         self = .75ArrowTriangleheadCounterclockwiseAr
       case "75.arrow.trianglehead.counterclockwise.hi":
         self = .75ArrowTriangleheadCounterclockwiseHi
-      case "90.arrow.trianglehead.clockwise":
-        self = .90ArrowTriangleheadClockwise
-      case "90.arrow.trianglehead.clockwise.ar":
-        self = .90ArrowTriangleheadClockwiseAr
-      case "90.arrow.trianglehead.clockwise.hi":
-        self = .90ArrowTriangleheadClockwiseHi
-      case "90.arrow.trianglehead.counterclockwise":
-        self = .90ArrowTriangleheadCounterclockwise
-      case "90.arrow.trianglehead.counterclockwise.ar":
-        self = .90ArrowTriangleheadCounterclockwiseAr
-      case "90.arrow.trianglehead.counterclockwise.hi":
-        self = .90ArrowTriangleheadCounterclockwiseHi
       case "air.car.side":
         self = .airCarSide
       case "air.car.side.fill":
@@ -16391,14 +15553,6 @@ public extension SafeSFSymbol {
         return "number"
       case .function:
         return "function"
-      case .0Circle:
-        return "0.circle"
-      case .0CircleFill:
-        return "0.circle.fill"
-      case .0Square:
-        return "0.square"
-      case .0SquareFill:
-        return "0.square.fill"
       case .00Circle:
         return "00.circle"
       case .00CircleFill:
@@ -16479,112 +15633,6 @@ public extension SafeSFSymbol {
         return "09.square"
       case .09SquareFill:
         return "09.square.fill"
-      case .1Circle:
-        return "1.circle"
-      case .1CircleFill:
-        return "1.circle.fill"
-      case .1Magnifyingglass:
-        return "1.magnifyingglass"
-      case .1Square:
-        return "1.square"
-      case .1SquareFill:
-        return "1.square.fill"
-      case .10Circle:
-        return "10.circle"
-      case .10CircleFill:
-        return "10.circle.fill"
-      case .10Square:
-        return "10.square"
-      case .10SquareFill:
-        return "10.square.fill"
-      case .11Circle:
-        return "11.circle"
-      case .11CircleFill:
-        return "11.circle.fill"
-      case .11Square:
-        return "11.square"
-      case .11SquareFill:
-        return "11.square.fill"
-      case .12Circle:
-        return "12.circle"
-      case .12CircleFill:
-        return "12.circle.fill"
-      case .12Square:
-        return "12.square"
-      case .12SquareFill:
-        return "12.square.fill"
-      case .13Circle:
-        return "13.circle"
-      case .13CircleFill:
-        return "13.circle.fill"
-      case .13Square:
-        return "13.square"
-      case .13SquareFill:
-        return "13.square.fill"
-      case .14Circle:
-        return "14.circle"
-      case .14CircleFill:
-        return "14.circle.fill"
-      case .14Square:
-        return "14.square"
-      case .14SquareFill:
-        return "14.square.fill"
-      case .15Circle:
-        return "15.circle"
-      case .15CircleFill:
-        return "15.circle.fill"
-      case .15Square:
-        return "15.square"
-      case .15SquareFill:
-        return "15.square.fill"
-      case .16Circle:
-        return "16.circle"
-      case .16CircleFill:
-        return "16.circle.fill"
-      case .16Square:
-        return "16.square"
-      case .16SquareFill:
-        return "16.square.fill"
-      case .17Circle:
-        return "17.circle"
-      case .17CircleFill:
-        return "17.circle.fill"
-      case .17Square:
-        return "17.square"
-      case .17SquareFill:
-        return "17.square.fill"
-      case .18Circle:
-        return "18.circle"
-      case .18CircleFill:
-        return "18.circle.fill"
-      case .18Square:
-        return "18.square"
-      case .18SquareFill:
-        return "18.square.fill"
-      case .19Circle:
-        return "19.circle"
-      case .19CircleFill:
-        return "19.circle.fill"
-      case .19Square:
-        return "19.square"
-      case .19SquareFill:
-        return "19.square.fill"
-      case .2Circle:
-        return "2.circle"
-      case .2CircleFill:
-        return "2.circle.fill"
-      case .2Square:
-        return "2.square"
-      case .2SquareFill:
-        return "2.square.fill"
-      case .20Circle:
-        return "20.circle"
-      case .20CircleFill:
-        return "20.circle.fill"
-      case .20Square:
-        return "20.square"
-      case .20SquareFill:
-        return "20.square.fill"
       case .21Circle:
         return "21.circle"
       case .21CircleFill:
@@ -16617,14 +15665,6 @@ public extension SafeSFSymbol {
         return "24.square"
       case .24SquareFill:
         return "24.square.fill"
-      case .25Circle:
-        return "25.circle"
-      case .25CircleFill:
-        return "25.circle.fill"
-      case .25Square:
-        return "25.square"
-      case .25SquareFill:
-        return "25.square.fill"
       case .26Circle:
         return "26.circle"
       case .26CircleFill:
@@ -16657,22 +15697,6 @@ public extension SafeSFSymbol {
         return "29.square"
       case .29SquareFill:
         return "29.square.fill"
-      case .3Circle:
-        return "3.circle"
-      case .3CircleFill:
-        return "3.circle.fill"
-      case .3Square:
-        return "3.square"
-      case .3SquareFill:
-        return "3.square.fill"
-      case .30Circle:
-        return "30.circle"
-      case .30CircleFill:
-        return "30.circle.fill"
-      case .30Square:
-        return "30.square"
-      case .30SquareFill:
-        return "30.square.fill"
       case .31Circle:
         return "31.circle"
       case .31CircleFill:
@@ -16705,14 +15729,6 @@ public extension SafeSFSymbol {
         return "34.square"
       case .34SquareFill:
         return "34.square.fill"
-      case .35Circle:
-        return "35.circle"
-      case .35CircleFill:
-        return "35.circle.fill"
-      case .35Square:
-        return "35.square"
-      case .35SquareFill:
-        return "35.square.fill"
       case .36Circle:
         return "36.circle"
       case .36CircleFill:
@@ -16745,30 +15761,6 @@ public extension SafeSFSymbol {
         return "39.square"
       case .39SquareFill:
         return "39.square.fill"
-      case .4AltCircle:
-        return "4.alt.circle"
-      case .4AltCircleFill:
-        return "4.alt.circle.fill"
-      case .4AltSquare:
-        return "4.alt.square"
-      case .4AltSquareFill:
-        return "4.alt.square.fill"
-      case .4Circle:
-        return "4.circle"
-      case .4CircleFill:
-        return "4.circle.fill"
-      case .4Square:
-        return "4.square"
-      case .4SquareFill:
-        return "4.square.fill"
-      case .40Circle:
-        return "40.circle"
-      case .40CircleFill:
-        return "40.circle.fill"
-      case .40Square:
-        return "40.square"
-      case .40SquareFill:
-        return "40.square.fill"
       case .41Circle:
         return "41.circle"
       case .41CircleFill:
@@ -16801,14 +15793,6 @@ public extension SafeSFSymbol {
         return "44.square"
       case .44SquareFill:
         return "44.square.fill"
-      case .45Circle:
-        return "45.circle"
-      case .45CircleFill:
-        return "45.circle.fill"
-      case .45Square:
-        return "45.square"
-      case .45SquareFill:
-        return "45.square.fill"
       case .46Circle:
         return "46.circle"
       case .46CircleFill:
@@ -16841,70 +15825,6 @@ public extension SafeSFSymbol {
         return "49.square"
       case .49SquareFill:
         return "49.square.fill"
-      case .5Circle:
-        return "5.circle"
-      case .5CircleFill:
-        return "5.circle.fill"
-      case .5Square:
-        return "5.square"
-      case .5SquareFill:
-        return "5.square.fill"
-      case .50Circle:
-        return "50.circle"
-      case .50CircleFill:
-        return "50.circle.fill"
-      case .50Square:
-        return "50.square"
-      case .50SquareFill:
-        return "50.square.fill"
-      case .6AltCircle:
-        return "6.alt.circle"
-      case .6AltCircleFill:
-        return "6.alt.circle.fill"
-      case .6AltSquare:
-        return "6.alt.square"
-      case .6AltSquareFill:
-        return "6.alt.square.fill"
-      case .6Circle:
-        return "6.circle"
-      case .6CircleFill:
-        return "6.circle.fill"
-      case .6Square:
-        return "6.square"
-      case .6SquareFill:
-        return "6.square.fill"
-      case .7Circle:
-        return "7.circle"
-      case .7CircleFill:
-        return "7.circle.fill"
-      case .7Square:
-        return "7.square"
-      case .7SquareFill:
-        return "7.square.fill"
-      case .8Circle:
-        return "8.circle"
-      case .8CircleFill:
-        return "8.circle.fill"
-      case .8Square:
-        return "8.square"
-      case .8SquareFill:
-        return "8.square.fill"
-      case .9AltCircle:
-        return "9.alt.circle"
-      case .9AltCircleFill:
-        return "9.alt.circle.fill"
-      case .9AltSquare:
-        return "9.alt.square"
-      case .9AltSquareFill:
-        return "9.alt.square.fill"
-      case .9Circle:
-        return "9.circle"
-      case .9CircleFill:
-        return "9.circle.fill"
-      case .9Square:
-        return "9.square"
-      case .9SquareFill:
-        return "9.square.fill"
       case .a:
         return "a"
       case .aCircle:
@@ -19745,8 +18665,6 @@ public extension SafeSFSymbol {
         return "scissors.badge.ellipsis"
       case .studentdesk:
         return "studentdesk"
-      case .1MagnifyingglassAr:
-        return "1.magnifyingglass.ar"
       case .4kTv:
         return "4k.tv"
       case .4kTvFill:
@@ -22157,8 +21075,6 @@ public extension SafeSFSymbol {
         return "homepodmini.fill"
       case .rectangleTopthirdInsetFill:
         return "rectangle.topthird.inset.fill"
-      case .1MagnifyingglassHi:
-        return "1.magnifyingglass.hi"
       case .123Rectangle:
         return "123.rectangle"
       case .123RectangleAr:
@@ -25771,114 +24687,6 @@ public extension SafeSFSymbol {
         return "xbox.logo"
       case .yensign:
         return "yensign"
-      case .0CircleAr:
-        return "0.circle.ar"
-      case .0CircleFillAr:
-        return "0.circle.fill.ar"
-      case .0SquareAr:
-        return "0.square.ar"
-      case .0SquareFillAr:
-        return "0.square.fill.ar"
-      case .1Brakesignal:
-        return "1.brakesignal"
-      case .1CircleAr:
-        return "1.circle.ar"
-      case .1CircleFillAr:
-        return "1.circle.fill.ar"
-      case .1Lane:
-        return "1.lane"
-      case .1SquareAr:
-        return "1.square.ar"
-      case .1SquareFillAr:
-        return "1.square.fill.ar"
-      case .10Lane:
-        return "10.lane"
-      case .11Lane:
-        return "11.lane"
-      case .12Lane:
-        return "12.lane"
-      case .2Brakesignal:
-        return "2.brakesignal"
-      case .2CircleAr:
-        return "2.circle.ar"
-      case .2CircleFillAr:
-        return "2.circle.fill.ar"
-      case .2Lane:
-        return "2.lane"
-      case .2SquareAr:
-        return "2.square.ar"
-      case .2SquareFillAr:
-        return "2.square.fill.ar"
-      case .3CircleAr:
-        return "3.circle.ar"
-      case .3CircleFillAr:
-        return "3.circle.fill.ar"
-      case .3Lane:
-        return "3.lane"
-      case .3SquareAr:
-        return "3.square.ar"
-      case .3SquareFillAr:
-        return "3.square.fill.ar"
-      case .4CircleAr:
-        return "4.circle.ar"
-      case .4CircleFillAr:
-        return "4.circle.fill.ar"
-      case .4Lane:
-        return "4.lane"
-      case .4SquareAr:
-        return "4.square.ar"
-      case .4SquareFillAr:
-        return "4.square.fill.ar"
-      case .5CircleAr:
-        return "5.circle.ar"
-      case .5CircleFillAr:
-        return "5.circle.fill.ar"
-      case .5Lane:
-        return "5.lane"
-      case .5SquareAr:
-        return "5.square.ar"
-      case .5SquareFillAr:
-        return "5.square.fill.ar"
-      case .6CircleAr:
-        return "6.circle.ar"
-      case .6CircleFillAr:
-        return "6.circle.fill.ar"
-      case .6Lane:
-        return "6.lane"
-      case .6SquareAr:
-        return "6.square.ar"
-      case .6SquareFillAr:
-        return "6.square.fill.ar"
-      case .7CircleAr:
-        return "7.circle.ar"
-      case .7CircleFillAr:
-        return "7.circle.fill.ar"
-      case .7Lane:
-        return "7.lane"
-      case .7SquareAr:
-        return "7.square.ar"
-      case .7SquareFillAr:
-        return "7.square.fill.ar"
-      case .8CircleAr:
-        return "8.circle.ar"
-      case .8CircleFillAr:
-        return "8.circle.fill.ar"
-      case .8Lane:
-        return "8.lane"
-      case .8SquareAr:
-        return "8.square.ar"
-      case .8SquareFillAr:
-        return "8.square.fill.ar"
-      case .9CircleAr:
-        return "9.circle.ar"
-      case .9CircleFillAr:
-        return "9.circle.fill.ar"
-      case .9Lane:
-        return "9.lane"
-      case .9SquareAr:
-        return "9.square.ar"
-      case .9SquareFillAr:
-        return "9.square.fill.ar"
       case .abs:
         return "abs"
       case .absBrakesignalSlash:
@@ -26517,54 +25325,6 @@ public extension SafeSFSymbol {
         return "wrongwaysign"
       case .wrongwaysignFill:
         return "wrongwaysign.fill"
-      case .1LaneAr:
-        return "1.lane.ar"
-      case .1LaneHi:
-        return "1.lane.hi"
-      case .10LaneAr:
-        return "10.lane.ar"
-      case .10LaneHi:
-        return "10.lane.hi"
-      case .11LaneAr:
-        return "11.lane.ar"
-      case .11LaneHi:
-        return "11.lane.hi"
-      case .12LaneAr:
-        return "12.lane.ar"
-      case .12LaneHi:
-        return "12.lane.hi"
-      case .2LaneAr:
-        return "2.lane.ar"
-      case .2LaneHi:
-        return "2.lane.hi"
-      case .3LaneAr:
-        return "3.lane.ar"
-      case .3LaneHi:
-        return "3.lane.hi"
-      case .4LaneAr:
-        return "4.lane.ar"
-      case .4LaneHi:
-        return "4.lane.hi"
-      case .5LaneAr:
-        return "5.lane.ar"
-      case .5LaneHi:
-        return "5.lane.hi"
-      case .6LaneAr:
-        return "6.lane.ar"
-      case .6LaneHi:
-        return "6.lane.hi"
-      case .7LaneAr:
-        return "7.lane.ar"
-      case .7LaneHi:
-        return "7.lane.hi"
-      case .8LaneAr:
-        return "8.lane.ar"
-      case .8LaneHi:
-        return "8.lane.hi"
-      case .9LaneAr:
-        return "9.lane.ar"
-      case .9LaneHi:
-        return "9.lane.hi"
       case .axle2:
         return "axle.2"
       case .axle2FrontAndRearEngaged:
@@ -28581,14 +27341,6 @@ public extension SafeSFSymbol {
         return "zr.button.roundedtop.horizontal"
       case .zrButtonRoundedtopHorizontalFill:
         return "zr.button.roundedtop.horizontal.fill"
-      case .0CircleFillHi:
-        return "0.circle.fill.hi"
-      case .0CircleHi:
-        return "0.circle.hi"
-      case .0SquareFillHi:
-        return "0.square.fill.hi"
-      case .0SquareHi:
-        return "0.square.hi"
       case .00CircleAr:
         return "00.circle.ar"
       case .00CircleFillAr:
@@ -28749,198 +27501,6 @@ public extension SafeSFSymbol {
         return "09.square.fill.hi"
       case .09SquareHi:
         return "09.square.hi"
-      case .1CircleFillHi:
-        return "1.circle.fill.hi"
-      case .1CircleHi:
-        return "1.circle.hi"
-      case .1SquareFillHi:
-        return "1.square.fill.hi"
-      case .1SquareHi:
-        return "1.square.hi"
-      case .10CircleAr:
-        return "10.circle.ar"
-      case .10CircleFillAr:
-        return "10.circle.fill.ar"
-      case .10CircleFillHi:
-        return "10.circle.fill.hi"
-      case .10CircleHi:
-        return "10.circle.hi"
-      case .10SquareAr:
-        return "10.square.ar"
-      case .10SquareFillAr:
-        return "10.square.fill.ar"
-      case .10SquareFillHi:
-        return "10.square.fill.hi"
-      case .10SquareHi:
-        return "10.square.hi"
-      case .11CircleAr:
-        return "11.circle.ar"
-      case .11CircleFillAr:
-        return "11.circle.fill.ar"
-      case .11CircleFillHi:
-        return "11.circle.fill.hi"
-      case .11CircleHi:
-        return "11.circle.hi"
-      case .11SquareAr:
-        return "11.square.ar"
-      case .11SquareFillAr:
-        return "11.square.fill.ar"
-      case .11SquareFillHi:
-        return "11.square.fill.hi"
-      case .11SquareHi:
-        return "11.square.hi"
-      case .12CircleAr:
-        return "12.circle.ar"
-      case .12CircleFillAr:
-        return "12.circle.fill.ar"
-      case .12CircleFillHi:
-        return "12.circle.fill.hi"
-      case .12CircleHi:
-        return "12.circle.hi"
-      case .12SquareAr:
-        return "12.square.ar"
-      case .12SquareFillAr:
-        return "12.square.fill.ar"
-      case .12SquareFillHi:
-        return "12.square.fill.hi"
-      case .12SquareHi:
-        return "12.square.hi"
-      case .13CircleAr:
-        return "13.circle.ar"
-      case .13CircleFillAr:
-        return "13.circle.fill.ar"
-      case .13CircleFillHi:
-        return "13.circle.fill.hi"
-      case .13CircleHi:
-        return "13.circle.hi"
-      case .13SquareAr:
-        return "13.square.ar"
-      case .13SquareFillAr:
-        return "13.square.fill.ar"
-      case .13SquareFillHi:
-        return "13.square.fill.hi"
-      case .13SquareHi:
-        return "13.square.hi"
-      case .14CircleAr:
-        return "14.circle.ar"
-      case .14CircleFillAr:
-        return "14.circle.fill.ar"
-      case .14CircleFillHi:
-        return "14.circle.fill.hi"
-      case .14CircleHi:
-        return "14.circle.hi"
-      case .14SquareAr:
-        return "14.square.ar"
-      case .14SquareFillAr:
-        return "14.square.fill.ar"
-      case .14SquareFillHi:
-        return "14.square.fill.hi"
-      case .14SquareHi:
-        return "14.square.hi"
-      case .15CircleAr:
-        return "15.circle.ar"
-      case .15CircleFillAr:
-        return "15.circle.fill.ar"
-      case .15CircleFillHi:
-        return "15.circle.fill.hi"
-      case .15CircleHi:
-        return "15.circle.hi"
-      case .15SquareAr:
-        return "15.square.ar"
-      case .15SquareFillAr:
-        return "15.square.fill.ar"
-      case .15SquareFillHi:
-        return "15.square.fill.hi"
-      case .15SquareHi:
-        return "15.square.hi"
-      case .16CircleAr:
-        return "16.circle.ar"
-      case .16CircleFillAr:
-        return "16.circle.fill.ar"
-      case .16CircleFillHi:
-        return "16.circle.fill.hi"
-      case .16CircleHi:
-        return "16.circle.hi"
-      case .16SquareAr:
-        return "16.square.ar"
-      case .16SquareFillAr:
-        return "16.square.fill.ar"
-      case .16SquareFillHi:
-        return "16.square.fill.hi"
-      case .16SquareHi:
-        return "16.square.hi"
-      case .17CircleAr:
-        return "17.circle.ar"
-      case .17CircleFillAr:
-        return "17.circle.fill.ar"
-      case .17CircleFillHi:
-        return "17.circle.fill.hi"
-      case .17CircleHi:
-        return "17.circle.hi"
-      case .17SquareAr:
-        return "17.square.ar"
-      case .17SquareFillAr:
-        return "17.square.fill.ar"
-      case .17SquareFillHi:
-        return "17.square.fill.hi"
-      case .17SquareHi:
-        return "17.square.hi"
-      case .18CircleAr:
-        return "18.circle.ar"
-      case .18CircleFillAr:
-        return "18.circle.fill.ar"
-      case .18CircleFillHi:
-        return "18.circle.fill.hi"
-      case .18CircleHi:
-        return "18.circle.hi"
-      case .18SquareAr:
-        return "18.square.ar"
-      case .18SquareFillAr:
-        return "18.square.fill.ar"
-      case .18SquareFillHi:
-        return "18.square.fill.hi"
-      case .18SquareHi:
-        return "18.square.hi"
-      case .19CircleAr:
-        return "19.circle.ar"
-      case .19CircleFillAr:
-        return "19.circle.fill.ar"
-      case .19CircleFillHi:
-        return "19.circle.fill.hi"
-      case .19CircleHi:
-        return "19.circle.hi"
-      case .19SquareAr:
-        return "19.square.ar"
-      case .19SquareFillAr:
-        return "19.square.fill.ar"
-      case .19SquareFillHi:
-        return "19.square.fill.hi"
-      case .19SquareHi:
-        return "19.square.hi"
-      case .2CircleFillHi:
-        return "2.circle.fill.hi"
-      case .2CircleHi:
-        return "2.circle.hi"
-      case .2SquareFillHi:
-        return "2.square.fill.hi"
-      case .2SquareHi:
-        return "2.square.hi"
-      case .20CircleAr:
-        return "20.circle.ar"
-      case .20CircleFillAr:
-        return "20.circle.fill.ar"
-      case .20CircleFillHi:
-        return "20.circle.fill.hi"
-      case .20CircleHi:
-        return "20.circle.hi"
-      case .20SquareAr:
-        return "20.square.ar"
-      case .20SquareFillAr:
-        return "20.square.fill.ar"
-      case .20SquareFillHi:
-        return "20.square.fill.hi"
-      case .20SquareHi:
-        return "20.square.hi"
       case .21CircleAr:
         return "21.circle.ar"
       case .21CircleFillAr:
@@ -29005,22 +27565,6 @@ public extension SafeSFSymbol {
         return "24.square.fill.hi"
       case .24SquareHi:
         return "24.square.hi"
-      case .25CircleAr:
-        return "25.circle.ar"
-      case .25CircleFillAr:
-        return "25.circle.fill.ar"
-      case .25CircleFillHi:
-        return "25.circle.fill.hi"
-      case .25CircleHi:
-        return "25.circle.hi"
-      case .25SquareAr:
-        return "25.square.ar"
-      case .25SquareFillAr:
-        return "25.square.fill.ar"
-      case .25SquareFillHi:
-        return "25.square.fill.hi"
-      case .25SquareHi:
-        return "25.square.hi"
       case .26CircleAr:
         return "26.circle.ar"
       case .26CircleFillAr:
@@ -29085,30 +27629,6 @@ public extension SafeSFSymbol {
         return "29.square.fill.hi"
       case .29SquareHi:
         return "29.square.hi"
-      case .3CircleFillHi:
-        return "3.circle.fill.hi"
-      case .3CircleHi:
-        return "3.circle.hi"
-      case .3SquareFillHi:
-        return "3.square.fill.hi"
-      case .3SquareHi:
-        return "3.square.hi"
-      case .30CircleAr:
-        return "30.circle.ar"
-      case .30CircleFillAr:
-        return "30.circle.fill.ar"
-      case .30CircleFillHi:
-        return "30.circle.fill.hi"
-      case .30CircleHi:
-        return "30.circle.hi"
-      case .30SquareAr:
-        return "30.square.ar"
-      case .30SquareFillAr:
-        return "30.square.fill.ar"
-      case .30SquareFillHi:
-        return "30.square.fill.hi"
-      case .30SquareHi:
-        return "30.square.hi"
       case .31CircleAr:
         return "31.circle.ar"
       case .31CircleFillAr:
@@ -29173,22 +27693,6 @@ public extension SafeSFSymbol {
         return "34.square.fill.hi"
       case .34SquareHi:
         return "34.square.hi"
-      case .35CircleAr:
-        return "35.circle.ar"
-      case .35CircleFillAr:
-        return "35.circle.fill.ar"
-      case .35CircleFillHi:
-        return "35.circle.fill.hi"
-      case .35CircleHi:
-        return "35.circle.hi"
-      case .35SquareAr:
-        return "35.square.ar"
-      case .35SquareFillAr:
-        return "35.square.fill.ar"
-      case .35SquareFillHi:
-        return "35.square.fill.hi"
-      case .35SquareHi:
-        return "35.square.hi"
       case .36CircleAr:
         return "36.circle.ar"
       case .36CircleFillAr:
@@ -29253,30 +27757,6 @@ public extension SafeSFSymbol {
         return "39.square.fill.hi"
       case .39SquareHi:
         return "39.square.hi"
-      case .4CircleFillHi:
-        return "4.circle.fill.hi"
-      case .4CircleHi:
-        return "4.circle.hi"
-      case .4SquareFillHi:
-        return "4.square.fill.hi"
-      case .4SquareHi:
-        return "4.square.hi"
-      case .40CircleAr:
-        return "40.circle.ar"
-      case .40CircleFillAr:
-        return "40.circle.fill.ar"
-      case .40CircleFillHi:
-        return "40.circle.fill.hi"
-      case .40CircleHi:
-        return "40.circle.hi"
-      case .40SquareAr:
-        return "40.square.ar"
-      case .40SquareFillAr:
-        return "40.square.fill.ar"
-      case .40SquareFillHi:
-        return "40.square.fill.hi"
-      case .40SquareHi:
-        return "40.square.hi"
       case .41CircleAr:
         return "41.circle.ar"
       case .41CircleFillAr:
@@ -29341,22 +27821,6 @@ public extension SafeSFSymbol {
         return "44.square.fill.hi"
       case .44SquareHi:
         return "44.square.hi"
-      case .45CircleAr:
-        return "45.circle.ar"
-      case .45CircleFillAr:
-        return "45.circle.fill.ar"
-      case .45CircleFillHi:
-        return "45.circle.fill.hi"
-      case .45CircleHi:
-        return "45.circle.hi"
-      case .45SquareAr:
-        return "45.square.ar"
-      case .45SquareFillAr:
-        return "45.square.fill.ar"
-      case .45SquareFillHi:
-        return "45.square.fill.hi"
-      case .45SquareHi:
-        return "45.square.hi"
       case .46CircleAr:
         return "46.circle.ar"
       case .46CircleFillAr:
@@ -29421,62 +27885,6 @@ public extension SafeSFSymbol {
         return "49.square.fill.hi"
       case .49SquareHi:
         return "49.square.hi"
-      case .5CircleFillHi:
-        return "5.circle.fill.hi"
-      case .5CircleHi:
-        return "5.circle.hi"
-      case .5SquareFillHi:
-        return "5.square.fill.hi"
-      case .5SquareHi:
-        return "5.square.hi"
-      case .50CircleAr:
-        return "50.circle.ar"
-      case .50CircleFillAr:
-        return "50.circle.fill.ar"
-      case .50CircleFillHi:
-        return "50.circle.fill.hi"
-      case .50CircleHi:
-        return "50.circle.hi"
-      case .50SquareAr:
-        return "50.square.ar"
-      case .50SquareFillAr:
-        return "50.square.fill.ar"
-      case .50SquareFillHi:
-        return "50.square.fill.hi"
-      case .50SquareHi:
-        return "50.square.hi"
-      case .6CircleFillHi:
-        return "6.circle.fill.hi"
-      case .6CircleHi:
-        return "6.circle.hi"
-      case .6SquareFillHi:
-        return "6.square.fill.hi"
-      case .6SquareHi:
-        return "6.square.hi"
-      case .7CircleFillHi:
-        return "7.circle.fill.hi"
-      case .7CircleHi:
-        return "7.circle.hi"
-      case .7SquareFillHi:
-        return "7.square.fill.hi"
-      case .7SquareHi:
-        return "7.square.hi"
-      case .8CircleFillHi:
-        return "8.circle.fill.hi"
-      case .8CircleHi:
-        return "8.circle.hi"
-      case .8SquareFillHi:
-        return "8.square.fill.hi"
-      case .8SquareHi:
-        return "8.square.hi"
-      case .9CircleFillHi:
-        return "9.circle.fill.hi"
-      case .9CircleHi:
-        return "9.circle.hi"
-      case .9SquareFillHi:
-        return "9.square.fill.hi"
-      case .9SquareHi:
-        return "9.square.hi"
       case .chevronCompactBackward:
         return "chevron.compact.backward"
       case .chevronCompactForward:
@@ -29553,78 +27961,6 @@ public extension SafeSFSymbol {
         return "beats.solobuds.left"
       case .beatsSolobudsRight:
         return "beats.solobuds.right"
-      case .10ArrowTriangleheadClockwise:
-        return "10.arrow.trianglehead.clockwise"
-      case .10ArrowTriangleheadClockwiseAr:
-        return "10.arrow.trianglehead.clockwise.ar"
-      case .10ArrowTriangleheadClockwiseHi:
-        return "10.arrow.trianglehead.clockwise.hi"
-      case .10ArrowTriangleheadCounterclockwise:
-        return "10.arrow.trianglehead.counterclockwise"
-      case .10ArrowTriangleheadCounterclockwiseAr:
-        return "10.arrow.trianglehead.counterclockwise.ar"
-      case .10ArrowTriangleheadCounterclockwiseHi:
-        return "10.arrow.trianglehead.counterclockwise.hi"
-      case .15ArrowTriangleheadClockwise:
-        return "15.arrow.trianglehead.clockwise"
-      case .15ArrowTriangleheadClockwiseAr:
-        return "15.arrow.trianglehead.clockwise.ar"
-      case .15ArrowTriangleheadClockwiseHi:
-        return "15.arrow.trianglehead.clockwise.hi"
-      case .15ArrowTriangleheadCounterclockwise:
-        return "15.arrow.trianglehead.counterclockwise"
-      case .15ArrowTriangleheadCounterclockwiseAr:
-        return "15.arrow.trianglehead.counterclockwise.ar"
-      case .15ArrowTriangleheadCounterclockwiseHi:
-        return "15.arrow.trianglehead.counterclockwise.hi"
-      case .30ArrowTriangleheadClockwise:
-        return "30.arrow.trianglehead.clockwise"
-      case .30ArrowTriangleheadClockwiseAr:
-        return "30.arrow.trianglehead.clockwise.ar"
-      case .30ArrowTriangleheadClockwiseHi:
-        return "30.arrow.trianglehead.clockwise.hi"
-      case .30ArrowTriangleheadCounterclockwise:
-        return "30.arrow.trianglehead.counterclockwise"
-      case .30ArrowTriangleheadCounterclockwiseAr:
-        return "30.arrow.trianglehead.counterclockwise.ar"
-      case .30ArrowTriangleheadCounterclockwiseHi:
-        return "30.arrow.trianglehead.counterclockwise.hi"
-      case .45ArrowTriangleheadClockwise:
-        return "45.arrow.trianglehead.clockwise"
-      case .45ArrowTriangleheadClockwiseAr:
-        return "45.arrow.trianglehead.clockwise.ar"
-      case .45ArrowTriangleheadClockwiseHi:
-        return "45.arrow.trianglehead.clockwise.hi"
-      case .45ArrowTriangleheadCounterclockwise:
-        return "45.arrow.trianglehead.counterclockwise"
-      case .45ArrowTriangleheadCounterclockwiseAr:
-        return "45.arrow.trianglehead.counterclockwise.ar"
-      case .45ArrowTriangleheadCounterclockwiseHi:
-        return "45.arrow.trianglehead.counterclockwise.hi"
-      case .5ArrowTriangleheadClockwise:
-        return "5.arrow.trianglehead.clockwise"
-      case .5ArrowTriangleheadClockwiseAr:
-        return "5.arrow.trianglehead.clockwise.ar"
-      case .5ArrowTriangleheadClockwiseHi:
-        return "5.arrow.trianglehead.clockwise.hi"
-      case .5ArrowTriangleheadCounterclockwise:
-        return "5.arrow.trianglehead.counterclockwise"
-      case .5ArrowTriangleheadCounterclockwiseAr:
-        return "5.arrow.trianglehead.counterclockwise.ar"
-      case .5ArrowTriangleheadCounterclockwiseHi:
-        return "5.arrow.trianglehead.counterclockwise.hi"
-      case .60ArrowTriangleheadClockwise:
-        return "60.arrow.trianglehead.clockwise"
-      case .60ArrowTriangleheadClockwiseAr:
-        return "60.arrow.trianglehead.clockwise.ar"
-      case .60ArrowTriangleheadClockwiseHi:
-        return "60.arrow.trianglehead.clockwise.hi"
-      case .60ArrowTriangleheadCounterclockwise:
-        return "60.arrow.trianglehead.counterclockwise"
-      case .60ArrowTriangleheadCounterclockwiseAr:
-        return "60.arrow.trianglehead.counterclockwise.ar"
-      case .60ArrowTriangleheadCounterclockwiseHi:
-        return "60.arrow.trianglehead.counterclockwise.hi"
       case .75ArrowTriangleheadClockwise:
         return "75.arrow.trianglehead.clockwise"
       case .75ArrowTriangleheadClockwiseAr:
@@ -29637,18 +27973,6 @@ public extension SafeSFSymbol {
         return "75.arrow.trianglehead.counterclockwise.ar"
       case .75ArrowTriangleheadCounterclockwiseHi:
         return "75.arrow.trianglehead.counterclockwise.hi"
-      case .90ArrowTriangleheadClockwise:
-        return "90.arrow.trianglehead.clockwise"
-      case .90ArrowTriangleheadClockwiseAr:
-        return "90.arrow.trianglehead.clockwise.ar"
-      case .90ArrowTriangleheadClockwiseHi:
-        return "90.arrow.trianglehead.clockwise.hi"
-      case .90ArrowTriangleheadCounterclockwise:
-        return "90.arrow.trianglehead.counterclockwise"
-      case .90ArrowTriangleheadCounterclockwiseAr:
-        return "90.arrow.trianglehead.counterclockwise.ar"
-      case .90ArrowTriangleheadCounterclockwiseHi:
-        return "90.arrow.trianglehead.counterclockwise.hi"
       case .airCarSide:
         return "air.car.side"
       case .airCarSideFill:
