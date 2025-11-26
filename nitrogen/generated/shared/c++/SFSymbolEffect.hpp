@@ -32,11 +32,12 @@ namespace margelo::nitro::nitrosymbols {
     BOUNCE      SWIFT_NAME(bounce) = 0,
     PULSE      SWIFT_NAME(pulse) = 1,
     DRAWON      SWIFT_NAME(drawon) = 2,
-    SCALE      SWIFT_NAME(scale) = 3,
-    VARIABLECOLOR      SWIFT_NAME(variablecolor) = 4,
-    WIGGLE      SWIFT_NAME(wiggle) = 5,
-    BREATHE      SWIFT_NAME(breathe) = 6,
-    ROTATE      SWIFT_NAME(rotate) = 7,
+    SCALEUP      SWIFT_NAME(scaleup) = 3,
+    SCALEDOWN      SWIFT_NAME(scaledown) = 4,
+    VARIABLECOLOR      SWIFT_NAME(variablecolor) = 5,
+    WIGGLE      SWIFT_NAME(wiggle) = 6,
+    BREATHE      SWIFT_NAME(breathe) = 7,
+    ROTATE      SWIFT_NAME(rotate) = 8,
   } CLOSED_ENUM;
 
 } // namespace margelo::nitro::nitrosymbols
@@ -52,7 +53,8 @@ namespace margelo::nitro {
         case hashString("bounce"): return margelo::nitro::nitrosymbols::SFSymbolEffect::BOUNCE;
         case hashString("pulse"): return margelo::nitro::nitrosymbols::SFSymbolEffect::PULSE;
         case hashString("drawon"): return margelo::nitro::nitrosymbols::SFSymbolEffect::DRAWON;
-        case hashString("scale"): return margelo::nitro::nitrosymbols::SFSymbolEffect::SCALE;
+        case hashString("scaleup"): return margelo::nitro::nitrosymbols::SFSymbolEffect::SCALEUP;
+        case hashString("scaledown"): return margelo::nitro::nitrosymbols::SFSymbolEffect::SCALEDOWN;
         case hashString("variablecolor"): return margelo::nitro::nitrosymbols::SFSymbolEffect::VARIABLECOLOR;
         case hashString("wiggle"): return margelo::nitro::nitrosymbols::SFSymbolEffect::WIGGLE;
         case hashString("breathe"): return margelo::nitro::nitrosymbols::SFSymbolEffect::BREATHE;
@@ -66,7 +68,8 @@ namespace margelo::nitro {
         case margelo::nitro::nitrosymbols::SFSymbolEffect::BOUNCE: return JSIConverter<std::string>::toJSI(runtime, "bounce");
         case margelo::nitro::nitrosymbols::SFSymbolEffect::PULSE: return JSIConverter<std::string>::toJSI(runtime, "pulse");
         case margelo::nitro::nitrosymbols::SFSymbolEffect::DRAWON: return JSIConverter<std::string>::toJSI(runtime, "drawon");
-        case margelo::nitro::nitrosymbols::SFSymbolEffect::SCALE: return JSIConverter<std::string>::toJSI(runtime, "scale");
+        case margelo::nitro::nitrosymbols::SFSymbolEffect::SCALEUP: return JSIConverter<std::string>::toJSI(runtime, "scaleup");
+        case margelo::nitro::nitrosymbols::SFSymbolEffect::SCALEDOWN: return JSIConverter<std::string>::toJSI(runtime, "scaledown");
         case margelo::nitro::nitrosymbols::SFSymbolEffect::VARIABLECOLOR: return JSIConverter<std::string>::toJSI(runtime, "variablecolor");
         case margelo::nitro::nitrosymbols::SFSymbolEffect::WIGGLE: return JSIConverter<std::string>::toJSI(runtime, "wiggle");
         case margelo::nitro::nitrosymbols::SFSymbolEffect::BREATHE: return JSIConverter<std::string>::toJSI(runtime, "breathe");
@@ -85,7 +88,8 @@ namespace margelo::nitro {
         case hashString("bounce"):
         case hashString("pulse"):
         case hashString("drawon"):
-        case hashString("scale"):
+        case hashString("scaleup"):
+        case hashString("scaledown"):
         case hashString("variablecolor"):
         case hashString("wiggle"):
         case hashString("breathe"):

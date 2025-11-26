@@ -44,7 +44,8 @@ namespace margelo::nitro::nitrosymbols {
       static const auto fieldBOUNCE = clazz->getStaticField<JSFSymbolEffect>("BOUNCE");
       static const auto fieldPULSE = clazz->getStaticField<JSFSymbolEffect>("PULSE");
       static const auto fieldDRAWON = clazz->getStaticField<JSFSymbolEffect>("DRAWON");
-      static const auto fieldSCALE = clazz->getStaticField<JSFSymbolEffect>("SCALE");
+      static const auto fieldSCALEUP = clazz->getStaticField<JSFSymbolEffect>("SCALEUP");
+      static const auto fieldSCALEDOWN = clazz->getStaticField<JSFSymbolEffect>("SCALEDOWN");
       static const auto fieldVARIABLECOLOR = clazz->getStaticField<JSFSymbolEffect>("VARIABLECOLOR");
       static const auto fieldWIGGLE = clazz->getStaticField<JSFSymbolEffect>("WIGGLE");
       static const auto fieldBREATHE = clazz->getStaticField<JSFSymbolEffect>("BREATHE");
@@ -57,8 +58,10 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldPULSE);
         case SFSymbolEffect::DRAWON:
           return clazz->getStaticFieldValue(fieldDRAWON);
-        case SFSymbolEffect::SCALE:
-          return clazz->getStaticFieldValue(fieldSCALE);
+        case SFSymbolEffect::SCALEUP:
+          return clazz->getStaticFieldValue(fieldSCALEUP);
+        case SFSymbolEffect::SCALEDOWN:
+          return clazz->getStaticFieldValue(fieldSCALEDOWN);
         case SFSymbolEffect::VARIABLECOLOR:
           return clazz->getStaticFieldValue(fieldVARIABLECOLOR);
         case SFSymbolEffect::WIGGLE:

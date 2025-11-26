@@ -23,8 +23,10 @@ public extension SFSymbolEffect {
         self = .pulse
       case "drawon":
         self = .drawon
-      case "scale":
-        self = .scale
+      case "scaleup":
+        self = .scaleup
+      case "scaledown":
+        self = .scaledown
       case "variablecolor":
         self = .variablecolor
       case "wiggle":
@@ -49,8 +51,10 @@ public extension SFSymbolEffect {
         return "pulse"
       case .drawon:
         return "drawon"
-      case .scale:
-        return "scale"
+      case .scaleup:
+        return "scaleup"
+      case .scaledown:
+        return "scaledown"
       case .variablecolor:
         return "variablecolor"
       case .wiggle:
