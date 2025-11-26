@@ -3,7 +3,7 @@
 
 export type SymbolWeight = 'ultralight' | 'thin' | 'light' | 'regular' | 'medium' | 'semibold' | 'bold' | 'heavy' | 'black';
 export type SymbolScale = 'small' | 'medium' | 'large';
-export type SFSymbolEffect = 'bounce' | 'pulse' | 'drawon' | 'scale' | 'variablecolor';
+export type SFSymbolEffect = 'bounce' | 'pulse' | 'drawon' | 'scale' | 'variablecolor' | 'wiggle' | 'breathe' | 'rotate'
 export type SymbolRenderingMode = 'monochrome' | 'hierarchical' | 'palette' | 'multicolor';
 export type SymbolVariant = 'fill' | 'slash' | 'rectangle' | 'circle' | 'square';
 

@@ -20,5 +20,8 @@ enum class SFSymbolEffect(@DoNotStrip @Keep val value: Int) {
   PULSE(1),
   DRAWON(2),
   SCALE(3),
-  VARIABLECOLOR(4);
+  VARIABLECOLOR(4),
+  WIGGLE(5),
+  BREATHE(6),
+  ROTATE(7);
 }

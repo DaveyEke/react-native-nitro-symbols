@@ -34,6 +34,9 @@ namespace margelo::nitro::nitrosymbols {
     DRAWON      SWIFT_NAME(drawon) = 2,
     SCALE      SWIFT_NAME(scale) = 3,
     VARIABLECOLOR      SWIFT_NAME(variablecolor) = 4,
+    WIGGLE      SWIFT_NAME(wiggle) = 5,
+    BREATHE      SWIFT_NAME(breathe) = 6,
+    ROTATE      SWIFT_NAME(rotate) = 7,
   } CLOSED_ENUM;
 
 } // namespace margelo::nitro::nitrosymbols
@@ -51,6 +54,9 @@ namespace margelo::nitro {
         case hashString("drawon"): return margelo::nitro::nitrosymbols::SFSymbolEffect::DRAWON;
         case hashString("scale"): return margelo::nitro::nitrosymbols::SFSymbolEffect::SCALE;
         case hashString("variablecolor"): return margelo::nitro::nitrosymbols::SFSymbolEffect::VARIABLECOLOR;
+        case hashString("wiggle"): return margelo::nitro::nitrosymbols::SFSymbolEffect::WIGGLE;
+        case hashString("breathe"): return margelo::nitro::nitrosymbols::SFSymbolEffect::BREATHE;
+        case hashString("rotate"): return margelo::nitro::nitrosymbols::SFSymbolEffect::ROTATE;
         default: [[unlikely]]
           throw std::invalid_argument("Cannot convert \"" + unionValue + "\" to enum SFSymbolEffect - invalid value!");
       }
@@ -62,6 +68,9 @@ namespace margelo::nitro {
         case margelo::nitro::nitrosymbols::SFSymbolEffect::DRAWON: return JSIConverter<std::string>::toJSI(runtime, "drawon");
         case margelo::nitro::nitrosymbols::SFSymbolEffect::SCALE: return JSIConverter<std::string>::toJSI(runtime, "scale");
         case margelo::nitro::nitrosymbols::SFSymbolEffect::VARIABLECOLOR: return JSIConverter<std::string>::toJSI(runtime, "variablecolor");
+        case margelo::nitro::nitrosymbols::SFSymbolEffect::WIGGLE: return JSIConverter<std::string>::toJSI(runtime, "wiggle");
+        case margelo::nitro::nitrosymbols::SFSymbolEffect::BREATHE: return JSIConverter<std::string>::toJSI(runtime, "breathe");
+        case margelo::nitro::nitrosymbols::SFSymbolEffect::ROTATE: return JSIConverter<std::string>::toJSI(runtime, "rotate");
         default: [[unlikely]]
           throw std::invalid_argument("Cannot convert SFSymbolEffect to JS - invalid value: "
                                     + std::to_string(static_cast<int>(arg)) + "!");
@@ -78,6 +87,9 @@ namespace margelo::nitro {
         case hashString("drawon"):
         case hashString("scale"):
         case hashString("variablecolor"):
+        case hashString("wiggle"):
+        case hashString("breathe"):
+        case hashString("rotate"):
           return true;
         default:
           return false;

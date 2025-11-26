@@ -46,6 +46,9 @@ namespace margelo::nitro::nitrosymbols {
       static const auto fieldDRAWON = clazz->getStaticField<JSFSymbolEffect>("DRAWON");
       static const auto fieldSCALE = clazz->getStaticField<JSFSymbolEffect>("SCALE");
       static const auto fieldVARIABLECOLOR = clazz->getStaticField<JSFSymbolEffect>("VARIABLECOLOR");
+      static const auto fieldWIGGLE = clazz->getStaticField<JSFSymbolEffect>("WIGGLE");
+      static const auto fieldBREATHE = clazz->getStaticField<JSFSymbolEffect>("BREATHE");
+      static const auto fieldROTATE = clazz->getStaticField<JSFSymbolEffect>("ROTATE");
       
       switch (value) {
         case SFSymbolEffect::BOUNCE:
@@ -58,6 +61,12 @@ namespace margelo::nitro::nitrosymbols {
           return clazz->getStaticFieldValue(fieldSCALE);
         case SFSymbolEffect::VARIABLECOLOR:
           return clazz->getStaticFieldValue(fieldVARIABLECOLOR);
+        case SFSymbolEffect::WIGGLE:
+          return clazz->getStaticFieldValue(fieldWIGGLE);
+        case SFSymbolEffect::BREATHE:
+          return clazz->getStaticFieldValue(fieldBREATHE);
+        case SFSymbolEffect::ROTATE:
+          return clazz->getStaticFieldValue(fieldROTATE);
         default:
           std::string stringValue = std::to_string(static_cast<int>(value));
           throw std::invalid_argument("Invalid enum value (" + stringValue + "!");

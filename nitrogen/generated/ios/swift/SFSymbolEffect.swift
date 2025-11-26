@@ -27,6 +27,12 @@ public extension SFSymbolEffect {
         self = .scale
       case "variablecolor":
         self = .variablecolor
+      case "wiggle":
+        self = .wiggle
+      case "breathe":
+        self = .breathe
+      case "rotate":
+        self = .rotate
       default:
         return nil
     }
@@ -47,6 +53,12 @@ public extension SFSymbolEffect {
         return "scale"
       case .variablecolor:
         return "variablecolor"
+      case .wiggle:
+        return "wiggle"
+      case .breathe:
+        return "breathe"
+      case .rotate:
+        return "rotate"
     }
   }
 }
