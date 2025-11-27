@@ -17,9 +17,10 @@ enum SymbolEffectType {
     case wiggle
     case replace
     case appear
-    case breathe
+    case rotate
     case scaleUp
     case scaleDown
+    case breathe
     //case replace
     // TO-DO: Add others as needed
 }
@@ -77,6 +78,26 @@ struct NativeSymbolSwiftUIView: View {
         case .scaleDown:
             if #available(iOS 18.0, *) {
                 view.symbolEffect(.scale.down, isActive: isAnimating)
+            }
+        case .wiggle:
+            if #available(iOS 18.0, *) {
+                view.symbolEffect(.wiggle, isActive: isAnimating)
+            }
+        case .breathe:
+            if #available(iOS 18.0, *) {
+                view.symbolEffect(.breathe, isActive: isAnimating)
+            }
+        case .rotate:
+            if #available(iOS 18.0, *) {
+                view.symbolEffect(.rotate, isActive: isAnimating)
+            }
+        case .appear:
+            if #available(iOS 18.0, *) {
+                view.symbolEffect(.appear, isActive: isAnimating)
+            }
+        case .replace:
+            if #available(iOS 18.0, *) {
+                view.symbolEffect(.replace, isActive: isAnimating)
             }
         case .none:
             view

@@ -35,6 +35,10 @@ public extension SFSymbolEffect {
         self = .breathe
       case "rotate":
         self = .rotate
+      case "replace":
+        self = .replace
+      case "appear":
+        self = .appear
       default:
         return nil
     }
@@ -63,6 +67,10 @@ public extension SFSymbolEffect {
         return "breathe"
       case .rotate:
         return "rotate"
+      case .replace:
+        return "replace"
+      case .appear:
+        return "appear"
     }
   }
 }

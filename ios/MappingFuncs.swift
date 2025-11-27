@@ -14,16 +14,16 @@ func mapEffect(_ value: SFSymbolEffect?) -> SymbolEffectType {
     case .bounce: return .bounce
     case .pulse: return .pulse
     case .drawon: return .drawOn
-    case .scaleup: return .scale.up
+    case .scaleup: return .scaleUp
     case .variablecolor: return .variableColor
     case .scaledown:
-        code
+        return .scaleDown
     case .wiggle:
         return .wiggle
     case .breathe:
         return .breathe
     case .rotate:
-        return
+        return .rotate
     }
 }
 

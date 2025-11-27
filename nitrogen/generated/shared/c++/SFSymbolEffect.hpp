@@ -38,6 +38,8 @@ namespace margelo::nitro::nitrosymbols {
     WIGGLE      SWIFT_NAME(wiggle) = 6,
     BREATHE      SWIFT_NAME(breathe) = 7,
     ROTATE      SWIFT_NAME(rotate) = 8,
+    REPLACE      SWIFT_NAME(replace) = 9,
+    APPEAR      SWIFT_NAME(appear) = 10,
   } CLOSED_ENUM;
 
 } // namespace margelo::nitro::nitrosymbols
@@ -59,6 +61,8 @@ namespace margelo::nitro {
         case hashString("wiggle"): return margelo::nitro::nitrosymbols::SFSymbolEffect::WIGGLE;
         case hashString("breathe"): return margelo::nitro::nitrosymbols::SFSymbolEffect::BREATHE;
         case hashString("rotate"): return margelo::nitro::nitrosymbols::SFSymbolEffect::ROTATE;
+        case hashString("replace"): return margelo::nitro::nitrosymbols::SFSymbolEffect::REPLACE;
+        case hashString("appear"): return margelo::nitro::nitrosymbols::SFSymbolEffect::APPEAR;
         default: [[unlikely]]
           throw std::invalid_argument("Cannot convert \"" + unionValue + "\" to enum SFSymbolEffect - invalid value!");
       }
@@ -74,6 +78,8 @@ namespace margelo::nitro {
         case margelo::nitro::nitrosymbols::SFSymbolEffect::WIGGLE: return JSIConverter<std::string>::toJSI(runtime, "wiggle");
         case margelo::nitro::nitrosymbols::SFSymbolEffect::BREATHE: return JSIConverter<std::string>::toJSI(runtime, "breathe");
         case margelo::nitro::nitrosymbols::SFSymbolEffect::ROTATE: return JSIConverter<std::string>::toJSI(runtime, "rotate");
+        case margelo::nitro::nitrosymbols::SFSymbolEffect::REPLACE: return JSIConverter<std::string>::toJSI(runtime, "replace");
+        case margelo::nitro::nitrosymbols::SFSymbolEffect::APPEAR: return JSIConverter<std::string>::toJSI(runtime, "appear");
         default: [[unlikely]]
           throw std::invalid_argument("Cannot convert SFSymbolEffect to JS - invalid value: "
                                     + std::to_string(static_cast<int>(arg)) + "!");
@@ -94,6 +100,8 @@ namespace margelo::nitro {
         case hashString("wiggle"):
         case hashString("breathe"):
         case hashString("rotate"):
+        case hashString("replace"):
+        case hashString("appear"):
           return true;
         default:
           return false;
