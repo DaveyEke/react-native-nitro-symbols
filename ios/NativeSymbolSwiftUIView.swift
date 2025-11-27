@@ -45,7 +45,7 @@ struct NativeSymbolSwiftUIView: View {
             .symbolRenderingMode(renderingMode)
             .symbolVariant(variant)
             .applyForegroundStyle(colors: colors, tintColor: tintColor)
-        applyEffect(to: baseImage)
+            applyEffect(to: baseImage)
     }
     
     @ViewBuilder
@@ -53,7 +53,7 @@ struct NativeSymbolSwiftUIView: View {
         switch effect {
         case .bounce:
             if #available(iOS 18.0, *) {
-                view.symbolEffect(.bounce, isActive: isAnimating)
+                view.symbolEffect(.bounce, value: isAnimating)
             } else {
                 // Fallback on earlier versions
             }
@@ -66,41 +66,36 @@ struct NativeSymbolSwiftUIView: View {
                 // Fallback on earlier versions
             }
         case .variableColor:
-            if #available(iOS 18.0, *) {
                 view.symbolEffect(.variableColor, isActive: isAnimating)
-            } else {
-                // Fallback on earlier versions
-            }
         case .scaleUp:
-            if #available(iOS 18.0, *) {
                 view.symbolEffect(.scale.up, isActive: isAnimating)
-            }
         case .scaleDown:
-            if #available(iOS 18.0, *) {
                 view.symbolEffect(.scale.down, isActive: isAnimating)
-            }
+
         case .wiggle:
             if #available(iOS 18.0, *) {
-                view.symbolEffect(.wiggle, isActive: isAnimating)
+                view.symbolEffect(.wiggle, value: isAnimating)
+            } else {
+                // Fallback on earlier versions
             }
         case .breathe:
             if #available(iOS 18.0, *) {
                 view.symbolEffect(.breathe, isActive: isAnimating)
+            } else {
+                // Fallback on earlier versions
             }
         case .rotate:
             if #available(iOS 18.0, *) {
-                view.symbolEffect(.rotate, isActive: isAnimating)
+                view.symbolEffect(.rotate, value: isAnimating)
+            } else {
+                // Fallback on earlier versions
             }
         case .appear:
-            if #available(iOS 18.0, *) {
+            if isVisible {
                 view.transition(.symbolEffect(.appear))
-                    .animation(.snappy, value: isVisible)
             }
         case .replace:
-            if #available(iOS 18.0, *) {
                 view.contentTransition(.symbolEffect(.replace))
-                .animation(.snappy, value: symbolName)
-            }
         case .none:
             view
         }
