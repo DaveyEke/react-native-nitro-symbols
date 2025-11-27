@@ -13,8 +13,13 @@ enum SymbolEffectType {
     case bounce
     case pulse
     case drawOn
-    case scale
     case variableColor
+    case wiggle
+    case replace
+    case appear
+    case breathe
+    case scaleUp
+    case scaleDown
     //case replace
     // TO-DO: Add others as needed
 }
@@ -65,9 +70,13 @@ struct NativeSymbolSwiftUIView: View {
             } else {
                 // Fallback on earlier versions
             }
-        case .scale:
+        case .scaleUp:
             if #available(iOS 18.0, *) {
-                view.symbolEffect(.scale, isActive: isAnimating)
+                view.symbolEffect(.scale.up, isActive: isAnimating)
+            }
+        case .scaleDown:
+            if #available(iOS 18.0, *) {
+                view.symbolEffect(.scale.down, isActive: isAnimating)
             }
         case .none:
             view
