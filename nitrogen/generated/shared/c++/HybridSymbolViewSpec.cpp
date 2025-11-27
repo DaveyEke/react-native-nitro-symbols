@@ -24,6 +24,8 @@ namespace margelo::nitro::nitrosymbols {
       prototype.registerHybridSetter("tintColor", &HybridSymbolViewSpec::setTintColor);
       prototype.registerHybridGetter("isAnimating", &HybridSymbolViewSpec::getIsAnimating);
       prototype.registerHybridSetter("isAnimating", &HybridSymbolViewSpec::setIsAnimating);
+      prototype.registerHybridGetter("isVisible", &HybridSymbolViewSpec::getIsVisible);
+      prototype.registerHybridSetter("isVisible", &HybridSymbolViewSpec::setIsVisible);
       prototype.registerHybridGetter("scale", &HybridSymbolViewSpec::getScale);
       prototype.registerHybridSetter("scale", &HybridSymbolViewSpec::setScale);
       prototype.registerHybridGetter("effect", &HybridSymbolViewSpec::getEffect);

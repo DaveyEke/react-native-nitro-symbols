@@ -24,6 +24,10 @@ func mapEffect(_ value: SFSymbolEffect?) -> SymbolEffectType {
         return .breathe
     case .rotate:
         return .rotate
+    case .replace:
+        return .replace
+    case .appear:
+        return .appear
     }
 }
 

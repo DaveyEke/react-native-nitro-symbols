@@ -70,6 +70,8 @@ namespace margelo::nitro::nitrosymbols {
       virtual void setTintColor(const std::optional<std::string>& tintColor) = 0;
       virtual std::optional<bool> getIsAnimating() = 0;
       virtual void setIsAnimating(std::optional<bool> isAnimating) = 0;
+      virtual std::optional<bool> getIsVisible() = 0;
+      virtual void setIsVisible(std::optional<bool> isVisible) = 0;
       virtual std::optional<SymbolScale> getScale() = 0;
       virtual void setScale(std::optional<SymbolScale> scale) = 0;
       virtual std::optional<SFSymbolEffect> getEffect() = 0;

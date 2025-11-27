@@ -96,6 +96,11 @@ using namespace margelo::nitro::nitrosymbols::views;
     swiftPart.setIsAnimating(newViewProps.isAnimating.value);
     newViewProps.isAnimating.isDirty = false;
   }
+  // isVisible: optional
+  if (newViewProps.isVisible.isDirty) {
+    swiftPart.setIsVisible(newViewProps.isVisible.value);
+    newViewProps.isVisible.isDirty = false;
+  }
   // scale: optional
   if (newViewProps.scale.isDirty) {
     swiftPart.setScale(newViewProps.scale.value);

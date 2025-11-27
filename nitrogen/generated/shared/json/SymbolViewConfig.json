@@ -9,6 +9,7 @@
     "weight": true,
     "tintColor": true,
     "isAnimating": true,
+    "isVisible": true,
     "scale": true,
     "effect": true,
     "colors": true,

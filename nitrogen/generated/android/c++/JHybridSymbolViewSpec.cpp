@@ -106,6 +106,15 @@ namespace margelo::nitro::nitrosymbols {
     static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JBoolean> /* isAnimating */)>("setIsAnimating");
     method(_javaPart, isAnimating.has_value() ? jni::JBoolean::valueOf(isAnimating.value()) : nullptr);
   }
+  std::optional<bool> JHybridSymbolViewSpec::getIsVisible() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JBoolean>()>("getIsVisible");
+    auto __result = method(_javaPart);
+    return __result != nullptr ? std::make_optional(static_cast<bool>(__result->value())) : std::nullopt;
+  }
+  void JHybridSymbolViewSpec::setIsVisible(std::optional<bool> isVisible) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JBoolean> /* isVisible */)>("setIsVisible");
+    method(_javaPart, isVisible.has_value() ? jni::JBoolean::valueOf(isVisible.value()) : nullptr);
+  }
   std::optional<SymbolScale> JHybridSymbolViewSpec::getScale() {
     static const auto method = javaClassStatic()->getMethod<jni::local_ref<JSymbolScale>()>("getScale");
     auto __result = method(_javaPart);

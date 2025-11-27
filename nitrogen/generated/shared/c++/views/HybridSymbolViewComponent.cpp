@@ -75,6 +75,16 @@ namespace margelo::nitro::nitrosymbols::views {
         throw std::runtime_error(std::string("SymbolView.isAnimating: ") + exc.what());
       }
     }()),
+    isVisible([&]() -> CachedProp<std::optional<bool>> {
+      try {
+        const react::RawValue* rawValue = rawProps.at("isVisible", nullptr, nullptr);
+        if (rawValue == nullptr) return sourceProps.isVisible;
+        const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
+        return CachedProp<std::optional<bool>>::fromRawValue(*runtime, value, sourceProps.isVisible);
+      } catch (const std::exception& exc) {
+        throw std::runtime_error(std::string("SymbolView.isVisible: ") + exc.what());
+      }
+    }()),
     scale([&]() -> CachedProp<std::optional<SymbolScale>> {
       try {
         const react::RawValue* rawValue = rawProps.at("scale", nullptr, nullptr);
@@ -143,6 +153,7 @@ namespace margelo::nitro::nitrosymbols::views {
     weight(other.weight),
     tintColor(other.tintColor),
     isAnimating(other.isAnimating),
+    isVisible(other.isVisible),
     scale(other.scale),
     effect(other.effect),
     colors(other.colors),
@@ -157,6 +168,7 @@ namespace margelo::nitro::nitrosymbols::views {
       case hashString("weight"): return true;
       case hashString("tintColor"): return true;
       case hashString("isAnimating"): return true;
+      case hashString("isVisible"): return true;
       case hashString("scale"): return true;
       case hashString("effect"): return true;
       case hashString("colors"): return true;

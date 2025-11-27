@@ -16,6 +16,7 @@ public protocol HybridSymbolViewSpec_protocol: HybridObject, HybridView {
   var weight: SymbolWeight? { get set }
   var tintColor: String? { get set }
   var isAnimating: Bool? { get set }
+  var isVisible: Bool? { get set }
   var scale: SymbolScale? { get set }
   var effect: SFSymbolEffect? { get set }
   var colors: [String]? { get set }

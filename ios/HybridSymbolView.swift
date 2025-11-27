@@ -32,6 +32,7 @@ class HybridSymbolView: HybridSymbolViewSpec {
                 weight: .regular,
                 scale: .medium,
                 isAnimating: false,
+                isVisible: false,
                 effect: .none
             )
             
@@ -64,6 +65,10 @@ class HybridSymbolView: HybridSymbolViewSpec {
     
     var isAnimating: Bool? {
         didSet { if oldValue != isAnimating { updateSwiftUIView() } }
+    }
+    
+    var isVisible: Bool? {
+        didSet { if oldValue != isVisible { updateSwiftUIView() } }
     }
     
     var scale: SymbolScale? {
@@ -100,6 +105,7 @@ class HybridSymbolView: HybridSymbolViewSpec {
                 weight: mapWeight(weight),
                 scale: mapScale(scale),
                 isAnimating: isAnimating ?? false,
+                isVisible: isVisible ?? false,
                 effect: mapEffect(effect)
             )
             

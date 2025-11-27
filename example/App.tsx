@@ -6,6 +6,7 @@ import { SymbolView } from 'react-native-nitro-symbols';
 export default function App() {
   const [isPulsing, setIsPulsing] = useState(true);
   const [isScaling, setIsScaling] = useState(false);
+  const [isPresented, setIsPresented] = useState(false);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -105,13 +106,13 @@ export default function App() {
           <Text style={styles.label}>Slash Variant</Text>
           <View style={styles.symbolWrapper}>
             <SymbolView
-              symbolName="bell"
-              variant="slash"
-              renderingMode="monochrome"
-              tintColor="#8E8E93"
+              symbolName={isPresented ? "checkmark.circle.fill" : "faceid"}
               pointSize={55}
-              weight="light"
             />
+             <Button
+            title={isPresented ? "Reset" : "Draw Signature"}
+            onPress={() => setIsPresented(!isPresented)}
+          />
           </View>
           <Text style={styles.caption}>Muted notification (slashed)</Text>
         </View>

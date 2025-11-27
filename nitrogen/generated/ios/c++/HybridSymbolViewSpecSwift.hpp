@@ -107,6 +107,13 @@ namespace margelo::nitro::nitrosymbols {
     inline void setIsAnimating(std::optional<bool> isAnimating) noexcept override {
       _swiftPart.setIsAnimating(isAnimating);
     }
+    inline std::optional<bool> getIsVisible() noexcept override {
+      auto __result = _swiftPart.getIsVisible();
+      return __result;
+    }
+    inline void setIsVisible(std::optional<bool> isVisible) noexcept override {
+      _swiftPart.setIsVisible(isVisible);
+    }
     inline std::optional<SymbolScale> getScale() noexcept override {
       auto __result = _swiftPart.getScale();
       return __result;

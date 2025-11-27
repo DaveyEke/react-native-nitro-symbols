@@ -56,6 +56,10 @@ void JHybridSymbolViewStateUpdater::updateViewProps(jni::alias_ref<jni::JClass> 
     view->setIsAnimating(props.isAnimating.value);
     // TODO: Set isDirty = false
   }
+  if (props.isVisible.isDirty) {
+    view->setIsVisible(props.isVisible.value);
+    // TODO: Set isDirty = false
+  }
   if (props.scale.isDirty) {
     view->setScale(props.scale.value);
     // TODO: Set isDirty = false

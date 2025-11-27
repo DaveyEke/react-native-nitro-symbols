@@ -54,6 +54,7 @@ namespace margelo::nitro::nitrosymbols::views {
     CachedProp<std::optional<SymbolWeight>> weight;
     CachedProp<std::optional<std::string>> tintColor;
     CachedProp<std::optional<bool>> isAnimating;
+    CachedProp<std::optional<bool>> isVisible;
     CachedProp<std::optional<SymbolScale>> scale;
     CachedProp<std::optional<SFSymbolEffect>> effect;
     CachedProp<std::optional<std::vector<std::string>>> colors;

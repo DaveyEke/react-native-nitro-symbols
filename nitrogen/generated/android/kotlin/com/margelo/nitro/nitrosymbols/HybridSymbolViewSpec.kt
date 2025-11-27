@@ -76,6 +76,12 @@ abstract class HybridSymbolViewSpec: HybridView() {
   @get:Keep
   @set:DoNotStrip
   @set:Keep
+  abstract var isVisible: Boolean?
+  
+  @get:DoNotStrip
+  @get:Keep
+  @set:DoNotStrip
+  @set:Keep
   abstract var scale: SymbolScale?
   
   @get:DoNotStrip

@@ -21,7 +21,6 @@ enum SymbolEffectType {
     case scaleUp
     case scaleDown
     case breathe
-    //case replace
     // TO-DO: Add others as needed
 }
 
@@ -36,6 +35,7 @@ struct NativeSymbolSwiftUIView: View {
     let weight: Font.Weight
     let scale: Image.Scale
     let isAnimating: Bool
+    let isVisible:Bool
     let effect: SymbolEffectType
     
     var body: some View {
@@ -93,11 +93,13 @@ struct NativeSymbolSwiftUIView: View {
             }
         case .appear:
             if #available(iOS 18.0, *) {
-                view.symbolEffect(.appear, isActive: isAnimating)
+                view.transition(.symbolEffect(.appear))
+                    .animation(.snappy, value: isVisible)
             }
         case .replace:
             if #available(iOS 18.0, *) {
-                view.symbolEffect(.replace, isActive: isAnimating)
+                view.contentTransition(.symbolEffect(.replace))
+                .animation(.snappy, value: symbolName)
             }
         case .none:
             view

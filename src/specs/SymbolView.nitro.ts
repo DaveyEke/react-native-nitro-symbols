@@ -15,6 +15,7 @@ export interface SymbolProps extends HybridViewProps {
   weight?: SymbolWeight;
   tintColor?: string;
   isAnimating?: boolean;
+  isVisible?: boolean;
   scale?: SymbolScale;
   effect?: SFSymbolEffect;
   colors?: string[];
