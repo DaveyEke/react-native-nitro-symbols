@@ -14,6 +14,7 @@ Render native iOS SF Symbols with animation support, multiple rendering modes, a
 - 🎭 **Symbol Variants** – Fill, slash, circle, square, and rectangle variants
 - 🔤 **Typography Control** – Full control over weight (9 options) and scale (3 options)
 - 🎨 **Multi-Color Support** – Use up to 3 colors with palette rendering mode
+- 🌈 **Flexible Color Formats** – Supports named colors, hex, RGB, RGBA, and HSL color strings
 - 📝 **Full TypeScript Support** – Complete autocomplete for all SF Symbol names and props
 
 ---
@@ -80,8 +81,8 @@ export default function App() {
 | `pointSize`     | `number`              | `24`           | Font size of the symbol in points                                                                       |
 | `weight`        | `SymbolWeight`        | `"regular"`    | Symbol weight: `ultralight`, `thin`, `light`, `regular`, `medium`, `semibold`, `bold`, `heavy`, `black` |
 | `scale`         | `SymbolScale`         | `"medium"`     | Image scale: `small`, `medium`, `large`                                                                 |
-| `tintColor`     | `string`              | `undefined`    | Hex color for monochrome rendering (e.g., `"#FF0000"`)                                                  |
-| `colors`        | `string[]`            | `undefined`    | Array of hex colors for palette rendering (up to 3 colors)                                              |
+| `tintColor`     | `ColorValue`          | `undefined`    | Color for monochrome rendering. Supports named colors (`"red"`), hex (`"#FF0000"`), RGB, RGBA, HSL      |
+| `colors`        | `ColorValue[]`        | `undefined`    | Array of colors for palette rendering (up to 3 colors). Supports all React Native color formats         |
 | `renderingMode` | `SymbolRenderingMode` | `"monochrome"` | Rendering mode: `monochrome`, `hierarchical`, `palette`, `multicolor`                                   |
 | `variant`       | `SymbolVariant`       | `undefined`    | Symbol variant: `fill`, `slash`, `circle`, `square`, `rectangle`                                        |
 | `effect`        | `SFSymbolEffect`      | `undefined`    | Animation effect. See Animation Effects below.                                                          |
@@ -97,7 +98,7 @@ export default function App() {
 ```tsx
 <SymbolView
   symbolName="star.fill"
-  tintColor="#FFD700"
+  tintColor="gold" // Named color
   pointSize={60}
   weight="bold"
 />
@@ -109,7 +110,7 @@ export default function App() {
 <SymbolView
   symbolName="theatermasks"
   renderingMode="palette"
-  colors={['#AF52DE', '#8E8E93']}
+  colors={['purple', '#8E8E93']} // Mix named colors and hex
   pointSize={60}
   weight="bold"
 />
@@ -129,7 +130,7 @@ export function NotificationBell() {
     <TouchableOpacity onPress={() => setTrigger(!trigger)}>
       <SymbolView
         symbolName="bell.badge.fill"
-        colors={['#FF3B30', '#000000']}
+        colors={['red', 'black']} // Named colors
         renderingMode="palette"
         pointSize={80}
         effect="wiggle"
@@ -147,7 +148,7 @@ Set `isAnimating` to `true` to loop forever.
 ```tsx
 <SymbolView
   symbolName="lungs.fill"
-  tintColor="#32ADE6"
+  tintColor="rgba(50, 173, 230, 1)" // RGBA format
   pointSize={80}
   effect="breathe"
   isAnimating={true}
@@ -162,7 +163,7 @@ Simply change the `symbolName` while `effect="replace"` is active.
 <SymbolView
   symbolName={isAuthenticated ? 'checkmark.circle.fill' : 'faceid'}
   effect="replace"
-  tintColor={isAuthenticated ? '#34C759' : '#000000'}
+  tintColor={isAuthenticated ? 'green' : 'black'} // Named colors
   pointSize={80}
 />
 ```
@@ -246,7 +247,7 @@ npx expo run:ios
 
 ### "Invariant Violation: View config getter callback..."
 
-Ensure `react-native-nitro-modules` is installed and the app has been rebuilt.
+Ensure you do not have two instaces of react-native running at the same time.
 
 ### Animations not playing
 

@@ -1,25 +1,24 @@
-// Learn more https://docs.expo.io/guides/customizing-metro
-const { getDefaultConfig } = require('expo/metro-config');
 const path = require('path');
+const { getDefaultConfig } = require('expo/metro-config');
 
-/** @type {import('expo/metro-config').MetroConfig} */
-const config = getDefaultConfig(__dirname);
+const projectRoot = __dirname;
+const workspaceRoot = path.resolve(projectRoot, '..');
 
-// Point to the parent library
-const libraryRoot = path.resolve(__dirname, '..');
+const config = getDefaultConfig(projectRoot);
 
-// Watch the library folder
-config.watchFolders = [libraryRoot];
+// Watch the parent workspace
+config.watchFolders = [workspaceRoot];
 
-// Resolve modules from library
-config.resolver.nodeModulesPaths = [
-  path.resolve(__dirname, 'node_modules'),
-  path.resolve(libraryRoot, 'node_modules'),
+// Block react-native from parent node_modules to prevent duplicates
+config.resolver.blockList = [
+  new RegExp(`${workspaceRoot}/node_modules/react-native/.*`),
+  new RegExp(`${workspaceRoot}/node_modules/react/.*`),
 ];
 
-// Resolve the library package
+// Force react-native to resolve from example's node_modules only
 config.resolver.extraNodeModules = {
-  'react-native-nitro-symbols': libraryRoot,
+  'react-native': path.resolve(projectRoot, 'node_modules/react-native'),
+  'react': path.resolve(projectRoot, 'node_modules/react'),
 };
 
 module.exports = config;

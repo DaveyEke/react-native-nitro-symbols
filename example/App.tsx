@@ -44,7 +44,7 @@ export default function App() {
             <SymbolView
               symbolName={isAuthenticated ? 'checkmark.circle.fill' : 'faceid'}
               effect="replace"
-              tintColor={isAuthenticated ? '#34C759' : '#000000'}
+              tintColor={isAuthenticated ? 'green' : 'black'}  // Named colors
               pointSize={80}
             />
           </View>
@@ -73,7 +73,7 @@ export default function App() {
             <SymbolView
               symbolName="swift"
               pointSize={80}
-              tintColor="#F05138"
+              tintColor="orange"  // Named color
               isVisible={isVisible}
               effect="appear"
             />
@@ -107,10 +107,9 @@ export default function App() {
           <View style={styles.symbolWrapper}>
             <SymbolView
               symbolName="magnifyingglass"
-              tintColor="#007AFF"
+              tintColor="blue"  // Named color
               pointSize={60}
               weight="medium"
-           // New Prop Types:
               effect="scaleup"
               isAnimating={isScalingUp}
             />
@@ -128,13 +127,13 @@ export default function App() {
           </TouchableOpacity>
         </View>
 
-        {/* 5. Scale Down Effect (Replaces Variable Color) */}
+        {/* 5. Scale Down Effect  */}
         <View style={styles.card}>
           <Text style={styles.label}>Scale Down Effect</Text>
           <View style={styles.symbolWrapper}>
             <SymbolView
               symbolName="arrow.down.circle.fill"
-              tintColor="#34C759"
+              tintColor="green"
               pointSize={80}
               weight="regular"
               scale="large"
@@ -165,7 +164,7 @@ export default function App() {
             <SymbolView
               symbolName="bell.badge.fill"
               renderingMode="palette"
-              colors={['#FF3B30', '#000000']}
+              colors={['red', 'black']}  // Named colors
               pointSize={80}
               effect="wiggle"
               isAnimating={wiggleTrigger}
@@ -188,7 +187,7 @@ export default function App() {
               symbolName="bell"
               variant="slash"
               renderingMode="monochrome"
-              tintColor="#8E8E93"
+              tintColor="gray"  // Named color
               pointSize={55}
               weight="light"
             />
@@ -218,7 +217,7 @@ export default function App() {
           <View style={styles.symbolWrapper}>
             <SymbolView
               symbolName="signature"
-              tintColor="#007AFF"
+              tintColor="rgba(0, 122, 255, 1)"  // RGBA format
               pointSize={65}
               weight="medium"
               scale="large"
@@ -241,7 +240,7 @@ export default function App() {
             <SymbolView
               symbolName="lungs.fill"
               renderingMode="hierarchical"
-              tintColor="#32ADE6"
+              tintColor="cyan"  // Named color
               pointSize={80}
               effect="breathe"
               isAnimating={isBreathing}
@@ -310,7 +309,7 @@ const styles = StyleSheet.create({
     height: 120,
     width: '100%',
     alignItems: 'center',
-    justifyContent: 'center', // This centers the SYMBOL
+    justifyContent: 'center', 
     backgroundColor: '#F9F9F9',
     borderRadius: 16,
     marginBottom: 16,
