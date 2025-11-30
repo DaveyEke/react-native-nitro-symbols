@@ -55,12 +55,12 @@ namespace margelo::nitro::nitrosymbols::views {
         throw std::runtime_error(std::string("SymbolView.weight: ") + exc.what());
       }
     }()),
-    tintColor([&]() -> CachedProp<std::optional<std::string>> {
+    tintColor([&]() -> CachedProp<std::optional<double>> {
       try {
         const react::RawValue* rawValue = rawProps.at("tintColor", nullptr, nullptr);
         if (rawValue == nullptr) return sourceProps.tintColor;
         const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
-        return CachedProp<std::optional<std::string>>::fromRawValue(*runtime, value, sourceProps.tintColor);
+        return CachedProp<std::optional<double>>::fromRawValue(*runtime, value, sourceProps.tintColor);
       } catch (const std::exception& exc) {
         throw std::runtime_error(std::string("SymbolView.tintColor: ") + exc.what());
       }
@@ -105,12 +105,12 @@ namespace margelo::nitro::nitrosymbols::views {
         throw std::runtime_error(std::string("SymbolView.effect: ") + exc.what());
       }
     }()),
-    colors([&]() -> CachedProp<std::optional<std::vector<std::string>>> {
+    colors([&]() -> CachedProp<std::optional<std::vector<double>>> {
       try {
         const react::RawValue* rawValue = rawProps.at("colors", nullptr, nullptr);
         if (rawValue == nullptr) return sourceProps.colors;
         const auto& [runtime, value] = (std::pair<jsi::Runtime*, jsi::Value>)*rawValue;
-        return CachedProp<std::optional<std::vector<std::string>>>::fromRawValue(*runtime, value, sourceProps.colors);
+        return CachedProp<std::optional<std::vector<double>>>::fromRawValue(*runtime, value, sourceProps.colors);
       } catch (const std::exception& exc) {
         throw std::runtime_error(std::string("SymbolView.colors: ") + exc.what());
       }

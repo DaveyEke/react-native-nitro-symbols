@@ -159,12 +159,12 @@ open class HybridSymbolViewSpec_cxx {
     }
   }
   
-  public final var tintColor: bridge.std__optional_std__string_ {
+  public final var tintColor: bridge.std__optional_double_ {
     @inline(__always)
     get {
-      return { () -> bridge.std__optional_std__string_ in
+      return { () -> bridge.std__optional_double_ in
         if let __unwrappedValue = self.__implementation.tintColor {
-          return bridge.create_std__optional_std__string_(std.string(__unwrappedValue))
+          return bridge.create_std__optional_double_(__unwrappedValue)
         } else {
           return .init()
         }
@@ -172,14 +172,7 @@ open class HybridSymbolViewSpec_cxx {
     }
     @inline(__always)
     set {
-      self.__implementation.tintColor = { () -> String? in
-        if bridge.has_value_std__optional_std__string_(newValue) {
-          let __unwrapped = bridge.get_std__optional_std__string_(newValue)
-          return String(__unwrapped)
-        } else {
-          return nil
-        }
-      }()
+      self.__implementation.tintColor = newValue.value
     }
   }
   
@@ -265,15 +258,15 @@ open class HybridSymbolViewSpec_cxx {
     }
   }
   
-  public final var colors: bridge.std__optional_std__vector_std__string__ {
+  public final var colors: bridge.std__optional_std__vector_double__ {
     @inline(__always)
     get {
-      return { () -> bridge.std__optional_std__vector_std__string__ in
+      return { () -> bridge.std__optional_std__vector_double__ in
         if let __unwrappedValue = self.__implementation.colors {
-          return bridge.create_std__optional_std__vector_std__string__({ () -> bridge.std__vector_std__string_ in
-            var __vector = bridge.create_std__vector_std__string_(__unwrappedValue.count)
+          return bridge.create_std__optional_std__vector_double__({ () -> bridge.std__vector_double_ in
+            var __vector = bridge.create_std__vector_double_(__unwrappedValue.count)
             for __item in __unwrappedValue {
-              __vector.push_back(std.string(__item))
+              __vector.push_back(__item)
             }
             return __vector
           }())
@@ -284,10 +277,10 @@ open class HybridSymbolViewSpec_cxx {
     }
     @inline(__always)
     set {
-      self.__implementation.colors = { () -> [String]? in
-        if bridge.has_value_std__optional_std__vector_std__string__(newValue) {
-          let __unwrapped = bridge.get_std__optional_std__vector_std__string__(newValue)
-          return __unwrapped.map({ __item in String(__item) })
+      self.__implementation.colors = { () -> [Double]? in
+        if bridge.has_value_std__optional_std__vector_double__(newValue) {
+          let __unwrapped = bridge.get_std__optional_std__vector_double__(newValue)
+          return __unwrapped.map({ __item in __item })
         } else {
           return nil
         }

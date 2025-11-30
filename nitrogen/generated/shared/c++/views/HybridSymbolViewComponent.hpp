@@ -52,12 +52,12 @@ namespace margelo::nitro::nitrosymbols::views {
     CachedProp<std::string> symbolName;
     CachedProp<std::optional<double>> pointSize;
     CachedProp<std::optional<SymbolWeight>> weight;
-    CachedProp<std::optional<std::string>> tintColor;
+    CachedProp<std::optional<double>> tintColor;
     CachedProp<std::optional<bool>> isAnimating;
     CachedProp<std::optional<bool>> isVisible;
     CachedProp<std::optional<SymbolScale>> scale;
     CachedProp<std::optional<SFSymbolEffect>> effect;
-    CachedProp<std::optional<std::vector<std::string>>> colors;
+    CachedProp<std::optional<std::vector<double>>> colors;
     CachedProp<std::optional<SymbolVariant>> variant;
     CachedProp<std::optional<SymbolRenderingMode>> renderingMode;
     CachedProp<std::optional<std::function<void(const std::shared_ptr<HybridSymbolViewSpec>& /* ref */)>>> hybridRef;

@@ -76,18 +76,14 @@ func mapVariant(_ value: SymbolVariant?) -> SymbolVariants {
     }
 }
 
-func mapColors(_ values: [String]?) -> [Color] {
+func mapColors(_ values: [Double]?) -> [Color] {
     guard let values = values else { return [] }
-    return values.compactMap { mapHexToColor(hex: $0) }
+    return values.compactMap { mapARGBToColor(argb: $0) }
 }
 
-// Simple Hex String to SwiftUI Color Mapper
-func mapHexToColor(hex: String?) -> Color? {
-    guard let hex = hex else { return nil }
-    // Simple shim to convert hex string
-    if let uiColor = UIColor(hexString: hex) {
-        return Color(uiColor)
-    }
-    return nil
+func mapARGBToColor(argb: Double?) -> Color? {
+    guard let argb = argb else {return nil}
+    let argbValue = UInt32(argb)
+        return Color(reactNativeARGB: argbValue)
 }
 

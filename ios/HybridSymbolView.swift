@@ -59,7 +59,7 @@ class HybridSymbolView: HybridSymbolViewSpec {
         didSet { if oldValue != weight { updateSwiftUIView() } }
     }
     
-    var tintColor: String? {
+    var tintColor: Double? {
         didSet { if oldValue != tintColor { updateSwiftUIView() } }
     }
     
@@ -79,7 +79,7 @@ class HybridSymbolView: HybridSymbolViewSpec {
         didSet { if oldValue != effect { updateSwiftUIView() } }
     }
     
-    var colors: [String]? {
+    var colors: [Double]? {
         didSet { if oldValue != colors { updateSwiftUIView() } }
     }
     
@@ -97,7 +97,7 @@ class HybridSymbolView: HybridSymbolViewSpec {
             
             let newRootView = NativeSymbolSwiftUIView(
                 symbolName: symbolName,
-                tintColor: mapHexToColor(hex: tintColor),
+                tintColor: mapARGBToColor(argb: tintColor),
                 colors: mapColors(colors),
                 renderingMode: mapRenderingMode(renderingMode),
                 variant: mapVariant(variant),

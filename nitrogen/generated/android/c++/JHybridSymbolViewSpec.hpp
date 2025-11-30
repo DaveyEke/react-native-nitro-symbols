@@ -56,8 +56,8 @@ namespace margelo::nitro::nitrosymbols {
     void setPointSize(std::optional<double> pointSize) override;
     std::optional<SymbolWeight> getWeight() override;
     void setWeight(std::optional<SymbolWeight> weight) override;
-    std::optional<std::string> getTintColor() override;
-    void setTintColor(const std::optional<std::string>& tintColor) override;
+    std::optional<double> getTintColor() override;
+    void setTintColor(std::optional<double> tintColor) override;
     std::optional<bool> getIsAnimating() override;
     void setIsAnimating(std::optional<bool> isAnimating) override;
     std::optional<bool> getIsVisible() override;
@@ -66,8 +66,8 @@ namespace margelo::nitro::nitrosymbols {
     void setScale(std::optional<SymbolScale> scale) override;
     std::optional<SFSymbolEffect> getEffect() override;
     void setEffect(std::optional<SFSymbolEffect> effect) override;
-    std::optional<std::vector<std::string>> getColors() override;
-    void setColors(const std::optional<std::vector<std::string>>& colors) override;
+    std::optional<std::vector<double>> getColors() override;
+    void setColors(const std::optional<std::vector<double>>& colors) override;
     std::optional<SymbolVariant> getVariant() override;
     void setVariant(std::optional<SymbolVariant> variant) override;
     std::optional<SymbolRenderingMode> getRenderingMode() override;

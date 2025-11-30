@@ -93,11 +93,11 @@ namespace margelo::nitro::nitrosymbols {
     inline void setWeight(std::optional<SymbolWeight> weight) noexcept override {
       _swiftPart.setWeight(weight);
     }
-    inline std::optional<std::string> getTintColor() noexcept override {
+    inline std::optional<double> getTintColor() noexcept override {
       auto __result = _swiftPart.getTintColor();
       return __result;
     }
-    inline void setTintColor(const std::optional<std::string>& tintColor) noexcept override {
+    inline void setTintColor(std::optional<double> tintColor) noexcept override {
       _swiftPart.setTintColor(tintColor);
     }
     inline std::optional<bool> getIsAnimating() noexcept override {
@@ -128,11 +128,11 @@ namespace margelo::nitro::nitrosymbols {
     inline void setEffect(std::optional<SFSymbolEffect> effect) noexcept override {
       _swiftPart.setEffect(effect);
     }
-    inline std::optional<std::vector<std::string>> getColors() noexcept override {
+    inline std::optional<std::vector<double>> getColors() noexcept override {
       auto __result = _swiftPart.getColors();
       return __result;
     }
-    inline void setColors(const std::optional<std::vector<std::string>>& colors) noexcept override {
+    inline void setColors(const std::optional<std::vector<double>>& colors) noexcept override {
       _swiftPart.setColors(colors);
     }
     inline std::optional<SymbolVariant> getVariant() noexcept override {

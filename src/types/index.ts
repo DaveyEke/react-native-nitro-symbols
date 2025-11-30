@@ -1,4 +1,3 @@
-// types.ts
 
 
 export type SymbolWeight = 'ultralight' | 'thin' | 'light' | 'regular' | 'medium' | 'semibold' | 'bold' | 'heavy' | 'black';

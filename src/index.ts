@@ -1,5 +1,4 @@
 import { SymbolView } from "./views/SymbolView";
-
 // Export the component
 export { SymbolView }
 

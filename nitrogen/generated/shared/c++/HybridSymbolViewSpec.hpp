@@ -66,8 +66,8 @@ namespace margelo::nitro::nitrosymbols {
       virtual void setPointSize(std::optional<double> pointSize) = 0;
       virtual std::optional<SymbolWeight> getWeight() = 0;
       virtual void setWeight(std::optional<SymbolWeight> weight) = 0;
-      virtual std::optional<std::string> getTintColor() = 0;
-      virtual void setTintColor(const std::optional<std::string>& tintColor) = 0;
+      virtual std::optional<double> getTintColor() = 0;
+      virtual void setTintColor(std::optional<double> tintColor) = 0;
       virtual std::optional<bool> getIsAnimating() = 0;
       virtual void setIsAnimating(std::optional<bool> isAnimating) = 0;
       virtual std::optional<bool> getIsVisible() = 0;
@@ -76,8 +76,8 @@ namespace margelo::nitro::nitrosymbols {
       virtual void setScale(std::optional<SymbolScale> scale) = 0;
       virtual std::optional<SFSymbolEffect> getEffect() = 0;
       virtual void setEffect(std::optional<SFSymbolEffect> effect) = 0;
-      virtual std::optional<std::vector<std::string>> getColors() = 0;
-      virtual void setColors(const std::optional<std::vector<std::string>>& colors) = 0;
+      virtual std::optional<std::vector<double>> getColors() = 0;
+      virtual void setColors(const std::optional<std::vector<double>>& colors) = 0;
       virtual std::optional<SymbolVariant> getVariant() = 0;
       virtual void setVariant(std::optional<SymbolVariant> variant) = 0;
       virtual std::optional<SymbolRenderingMode> getRenderingMode() = 0;

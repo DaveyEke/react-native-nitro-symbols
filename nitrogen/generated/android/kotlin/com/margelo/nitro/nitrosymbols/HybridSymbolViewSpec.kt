@@ -64,7 +64,7 @@ abstract class HybridSymbolViewSpec: HybridView() {
   @get:Keep
   @set:DoNotStrip
   @set:Keep
-  abstract var tintColor: String?
+  abstract var tintColor: Double?
   
   @get:DoNotStrip
   @get:Keep
@@ -94,7 +94,7 @@ abstract class HybridSymbolViewSpec: HybridView() {
   @get:Keep
   @set:DoNotStrip
   @set:Keep
-  abstract var colors: Array<String>?
+  abstract var colors: DoubleArray?
   
   @get:DoNotStrip
   @get:Keep

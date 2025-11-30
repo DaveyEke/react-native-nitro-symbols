@@ -88,14 +88,14 @@ namespace margelo::nitro::nitrosymbols {
     static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSymbolWeight> /* weight */)>("setWeight");
     method(_javaPart, weight.has_value() ? JSymbolWeight::fromCpp(weight.value()) : nullptr);
   }
-  std::optional<std::string> JHybridSymbolViewSpec::getTintColor() {
-    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JString>()>("getTintColor");
+  std::optional<double> JHybridSymbolViewSpec::getTintColor() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JDouble>()>("getTintColor");
     auto __result = method(_javaPart);
-    return __result != nullptr ? std::make_optional(__result->toStdString()) : std::nullopt;
+    return __result != nullptr ? std::make_optional(__result->value()) : std::nullopt;
   }
-  void JHybridSymbolViewSpec::setTintColor(const std::optional<std::string>& tintColor) {
-    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JString> /* tintColor */)>("setTintColor");
-    method(_javaPart, tintColor.has_value() ? jni::make_jstring(tintColor.value()) : nullptr);
+  void JHybridSymbolViewSpec::setTintColor(std::optional<double> tintColor) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JDouble> /* tintColor */)>("setTintColor");
+    method(_javaPart, tintColor.has_value() ? jni::JDouble::valueOf(tintColor.value()) : nullptr);
   }
   std::optional<bool> JHybridSymbolViewSpec::getIsAnimating() {
     static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JBoolean>()>("getIsAnimating");
@@ -133,30 +133,22 @@ namespace margelo::nitro::nitrosymbols {
     static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<JSFSymbolEffect> /* effect */)>("setEffect");
     method(_javaPart, effect.has_value() ? JSFSymbolEffect::fromCpp(effect.value()) : nullptr);
   }
-  std::optional<std::vector<std::string>> JHybridSymbolViewSpec::getColors() {
-    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JArrayClass<jni::JString>>()>("getColors");
+  std::optional<std::vector<double>> JHybridSymbolViewSpec::getColors() {
+    static const auto method = javaClassStatic()->getMethod<jni::local_ref<jni::JArrayDouble>()>("getColors");
     auto __result = method(_javaPart);
     return __result != nullptr ? std::make_optional([&]() {
       size_t __size = __result->size();
-      std::vector<std::string> __vector;
-      __vector.reserve(__size);
-      for (size_t __i = 0; __i < __size; __i++) {
-        auto __element = __result->getElement(__i);
-        __vector.push_back(__element->toStdString());
-      }
+      std::vector<double> __vector(__size);
+      __result->getRegion(0, __size, __vector.data());
       return __vector;
     }()) : std::nullopt;
   }
-  void JHybridSymbolViewSpec::setColors(const std::optional<std::vector<std::string>>& colors) {
-    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JArrayClass<jni::JString>> /* colors */)>("setColors");
+  void JHybridSymbolViewSpec::setColors(const std::optional<std::vector<double>>& colors) {
+    static const auto method = javaClassStatic()->getMethod<void(jni::alias_ref<jni::JArrayDouble> /* colors */)>("setColors");
     method(_javaPart, colors.has_value() ? [&]() {
       size_t __size = colors.value().size();
-      jni::local_ref<jni::JArrayClass<jni::JString>> __array = jni::JArrayClass<jni::JString>::newArray(__size);
-      for (size_t __i = 0; __i < __size; __i++) {
-        const auto& __element = colors.value()[__i];
-        auto __elementJni = jni::make_jstring(__element);
-        __array->setElement(__i, *__elementJni);
-      }
+      jni::local_ref<jni::JArrayDouble> __array = jni::JArrayDouble::newArray(__size);
+      __array->setRegion(0, __size, colors.value().data());
       return __array;
     }() : nullptr);
   }
