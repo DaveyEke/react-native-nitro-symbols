@@ -1,0 +1,295 @@
+› Skipping dev server
+› Building app...
+Configuration on demand is an incubating feature.
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:processResources NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin-shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileKotlin UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-settings-plugin:jar UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-module-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-module-gradle-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:compileJava NO-SOURCE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :expo-gradle-plugin:expo-autolinking-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+> Task :expo-module-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :expo-module-gradle-plugin:compileJava NO-SOURCE
+> Task :expo-module-gradle-plugin:classes UP-TO-DATE
+> Task :expo-module-gradle-plugin:jar UP-TO-DATE
+
+> Configure project :
+[32m[ExpoRootProject][0m Using the following versions:
+  - buildTools:  [32m36.0.0[0m
+  - minSdk:      [32m24[0m
+  - compileSdk:  [32m36[0m
+  - targetSdk:   [32m36[0m
+  - ndk:         [32m27.1.12297006[0m
+  - kotlin:      [32m2.1.20[0m
+  - ksp:         [32m2.1.20-2.0.1[0m
+
+> Configure project :expo
+
+Using expo modules
+  - [32mexpo-constants[0m (18.0.10)
+  - [32mexpo-modules-core[0m (3.0.26)
+  - [33m[📦][0m [32mexpo-asset[0m (12.0.10)
+  - [33m[📦][0m [32mexpo-file-system[0m (19.0.19)
+  - [33m[📦][0m [32mexpo-font[0m (14.0.9)
+  - [33m[📦][0m [32mexpo-keep-awake[0m (15.0.7)
+
+
+> Configure project :react-native-nitro-modules
+[NitroModules] 🔥 Your app is boosted by nitro modules!
+
+> Configure project :react-native-nitro-symbols
+[NitroModules] 🔥 NitroSymbols is boosted by nitro!
+
+> Task :expo-modules-core:preBuild UP-TO-DATE
+> Task :expo-modules-core:preDebugBuild UP-TO-DATE
+> Task :expo-modules-core:writeDebugAarMetadata
+> Task :app:generateAutolinkingNewArchitectureFiles
+> Task :expo-modules-core:generateDebugResValues FROM-CACHE
+> Task :app:generateAutolinkingPackageList
+> Task :expo-modules-core:generateDebugResources FROM-CACHE
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:generateReactNativeEntryPoint
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-modules-core:packageDebugResources FROM-CACHE
+> Task :app:generateDebugBuildConfig FROM-CACHE
+> Task :expo-modules-core:extractDeepLinksDebug FROM-CACHE
+> Task :app:generateDebugResValues FROM-CACHE
+> Task :app:generateDebugResources FROM-CACHE
+> Task :expo-modules-core:processDebugManifest FROM-CACHE
+> Task :expo-modules-core:compileDebugLibraryResources FROM-CACHE
+> Task :app:packageDebugResources FROM-CACHE
+> Task :expo-constants:createExpoConfig
+> Task :expo-constants:preBuild
+> Task :expo-constants:preDebugBuild
+> Task :expo-constants:writeDebugAarMetadata
+> Task :expo-constants:generateDebugResValues FROM-CACHE
+> Task :expo-constants:generateDebugResources FROM-CACHE
+> Task :expo-constants:packageDebugResources FROM-CACHE
+> Task :app:parseDebugLocalResources FROM-CACHE
+> Task :expo-modules-core:parseDebugLocalResources FROM-CACHE
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug FROM-CACHE
+> Task :expo-modules-core:generateDebugRFile FROM-CACHE
+> Task :expo-modules-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:javaPreCompileDebug FROM-CACHE
+> Task :expo-modules-core:generateDebugBuildConfig FROM-CACHE
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies FROM-CACHE
+> Task :react-native-nitro-modules:generateCodegenSchemaFromJavaScript
+> Task :expo:generatePackagesList
+> Task :expo:preBuild
+> Task :expo:preDebugBuild
+> Task :expo:generateDebugResValues FROM-CACHE
+> Task :expo:writeDebugAarMetadata
+> Task :expo:generateDebugResources FROM-CACHE
+> Task :app:mergeDebugJniLibFolders
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :expo:packageDebugResources FROM-CACHE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:writeDebugSigningConfigVersions
+> Task :expo:extractDeepLinksDebug FROM-CACHE
+> Task :expo:processDebugManifest FROM-CACHE
+> Task :expo:compileDebugLibraryResources FROM-CACHE
+> Task :expo:parseDebugLocalResources FROM-CACHE
+> Task :expo:generateDebugRFile FROM-CACHE
+> Task :expo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo:generateDebugBuildConfig FROM-CACHE
+> Task :expo:javaPreCompileDebug FROM-CACHE
+> Task :expo:mergeDebugShaders
+> Task :expo:compileDebugShaders NO-SOURCE
+> Task :expo:generateDebugAssets UP-TO-DATE
+> Task :expo:mergeDebugAssets
+> Task :react-native-nitro-modules:generateCodegenArtifactsFromSchema
+> Task :app:mergeExtDexDebug FROM-CACHE
+> Task :expo-modules-core:compileDebugKotlin FROM-CACHE
+> Task :expo-modules-core:javaPreCompileDebug FROM-CACHE
+> Task :expo-modules-core:compileDebugJavaWithJavac FROM-CACHE
+> Task :expo-modules-core:mergeDebugShaders
+> Task :expo-modules-core:compileDebugShaders NO-SOURCE
+> Task :expo-modules-core:generateDebugAssets UP-TO-DATE
+> Task :expo-modules-core:mergeDebugAssets
+> Task :expo-modules-core:processDebugJavaRes
+> Task :expo-modules-core:bundleLibCompileToJarDebug
+> Task :expo-modules-core:bundleLibRuntimeToJarDebug
+> Task :expo-modules-core:configureCMakeDebug[arm64-v8a]
+> Task :expo-modules-core:bundleLibRuntimeToDirDebug
+> Task :expo-constants:extractDeepLinksDebug FROM-CACHE
+> Task :expo:mergeDebugJniLibFolders
+> Task :expo:mergeDebugNativeLibs NO-SOURCE
+> Task :expo-constants:processDebugManifest FROM-CACHE
+> Task :expo:copyDebugJniLibsProjectOnly
+> Task :expo-constants:compileDebugLibraryResources FROM-CACHE
+> Task :expo-constants:parseDebugLocalResources FROM-CACHE
+> Task :expo-constants:generateDebugRFile FROM-CACHE
+> Task :expo-constants:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-constants:generateDebugBuildConfig FROM-CACHE
+> Task :expo-constants:compileDebugKotlin FROM-CACHE
+> Task :expo-constants:javaPreCompileDebug FROM-CACHE
+> Task :react-native-nitro-modules:prepareHeaders
+> Task :react-native-nitro-modules:preBuild
+> Task :react-native-nitro-modules:preDebugBuild
+> Task :react-native-nitro-modules:writeDebugAarMetadata
+> Task :react-native-nitro-modules:generateDebugResValues FROM-CACHE
+> Task :react-native-nitro-modules:generateDebugResources FROM-CACHE
+> Task :expo-constants:compileDebugJavaWithJavac FROM-CACHE
+> Task :react-native-nitro-modules:packageDebugResources FROM-CACHE
+> Task :react-native-nitro-modules:extractDeepLinksDebug FROM-CACHE
+> Task :expo-constants:mergeDebugShaders
+> Task :expo-constants:bundleLibCompileToJarDebug
+> Task :expo-constants:compileDebugShaders NO-SOURCE
+> Task :expo-constants:generateDebugAssets UP-TO-DATE
+> Task :react-native-nitro-modules:processDebugManifest FROM-CACHE
+> Task :expo-constants:mergeDebugAssets
+> Task :react-native-nitro-modules:compileDebugLibraryResources FROM-CACHE
+> Task :react-native-nitro-modules:parseDebugLocalResources FROM-CACHE
+> Task :expo-constants:bundleLibRuntimeToJarDebug
+> Task :react-native-nitro-modules:generateDebugRFile FROM-CACHE
+> Task :react-native-nitro-modules:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :expo-constants:processDebugJavaRes
+> Task :react-native-nitro-modules:generateDebugBuildConfig FROM-CACHE
+> Task :expo-constants:mergeDebugJniLibFolders
+> Task :expo-constants:mergeDebugNativeLibs NO-SOURCE
+> Task :expo-constants:bundleLibRuntimeToDirDebug
+> Task :expo-constants:copyDebugJniLibsProjectOnly
+> Task :react-native-nitro-modules:compileDebugKotlin FROM-CACHE
+> Task :react-native-nitro-modules:javaPreCompileDebug FROM-CACHE
+> Task :react-native-nitro-modules:compileDebugJavaWithJavac FROM-CACHE
+> Task :react-native-nitro-modules:bundleLibCompileToJarDebug
+> Task :react-native-nitro-modules:mergeDebugShaders
+> Task :react-native-nitro-modules:compileDebugShaders NO-SOURCE
+> Task :react-native-nitro-modules:generateDebugAssets UP-TO-DATE
+> Task :react-native-nitro-modules:mergeDebugAssets
+> Task :react-native-nitro-modules:bundleLibRuntimeToJarDebug
+> Task :react-native-nitro-modules:processDebugJavaRes
+> Task :expo:compileDebugKotlin FROM-CACHE
+> Task :expo:compileDebugJavaWithJavac FROM-CACHE
+> Task :expo:bundleLibCompileToJarDebug
+> Task :expo:bundleLibRuntimeToJarDebug
+> Task :expo:processDebugJavaRes
+> Task :react-native-nitro-modules:bundleLibRuntimeToDirDebug
+> Task :expo:bundleLibRuntimeToDirDebug
+> Task :react-native-nitro-modules:configureCMakeDebug[arm64-v8a]
+> Task :react-native-nitro-symbols:generateCodegenSchemaFromJavaScript
+> Task :react-native-nitro-symbols:generateCodegenArtifactsFromSchema
+> Task :react-native-nitro-symbols:preBuild
+> Task :react-native-nitro-symbols:preDebugBuild
+> Task :react-native-nitro-symbols:writeDebugAarMetadata
+> Task :react-native-nitro-symbols:generateDebugResValues FROM-CACHE
+> Task :react-native-nitro-symbols:generateDebugResources FROM-CACHE
+> Task :react-native-nitro-symbols:packageDebugResources FROM-CACHE
+> Task :react-native-nitro-symbols:extractDeepLinksDebug FROM-CACHE
+> Task :app:mapDebugSourceSetPaths
+> Task :react-native-nitro-symbols:processDebugManifest FROM-CACHE
+> Task :app:checkDebugAarMetadata
+> Task :react-native-nitro-symbols:compileDebugLibraryResources FROM-CACHE
+> Task :react-native-nitro-symbols:parseDebugLocalResources FROM-CACHE
+> Task :react-native-nitro-symbols:generateDebugRFile FROM-CACHE
+> Task :react-native-nitro-symbols:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :react-native-nitro-symbols:generateDebugBuildConfig FROM-CACHE
+> Task :react-native-nitro-symbols:compileDebugKotlin FROM-CACHE
+> Task :react-native-nitro-symbols:javaPreCompileDebug FROM-CACHE
+> Task :app:mergeDebugResources FROM-CACHE
+> Task :app:processDebugMainManifest FROM-CACHE
+> Task :app:processDebugManifest FROM-CACHE
+> Task :app:processDebugManifestForPackage FROM-CACHE
+> Task :react-native-nitro-symbols:compileDebugJavaWithJavac FROM-CACHE
+> Task :react-native-nitro-symbols:mergeDebugShaders
+> Task :react-native-nitro-symbols:bundleLibCompileToJarDebug
+> Task :react-native-nitro-symbols:compileDebugShaders NO-SOURCE
+> Task :react-native-nitro-symbols:generateDebugAssets UP-TO-DATE
+> Task :react-native-nitro-symbols:mergeDebugAssets
+> Task :react-native-nitro-symbols:processDebugJavaRes
+> Task :react-native-nitro-symbols:bundleLibRuntimeToJarDebug
+> Task :app:processDebugResources FROM-CACHE
+> Task :react-native-nitro-symbols:mergeDebugJniLibFolders
+> Task :app:compileDebugKotlin FROM-CACHE
+> Task :react-native-nitro-symbols:bundleLibRuntimeToDirDebug
+> Task :app:compileDebugJavaWithJavac FROM-CACHE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets FROM-CACHE
+> Task :app:dexBuilderDebug FROM-CACHE
+> Task :app:mergeDebugGlobalSynthetics FROM-CACHE
+> Task :app:processDebugJavaRes
+> Task :app:mergeProjectDexDebug FROM-CACHE
+> Task :expo-modules-core:buildCMakeDebug[arm64-v8a]
+> Task :expo-modules-core:mergeDebugJniLibFolders
+> Task :expo-modules-core:mergeDebugNativeLibs
+> Task :expo-modules-core:copyDebugJniLibsProjectOnly
+> Task :app:mergeDebugJavaResource
+> Task :app:mergeLibDexDebug FROM-CACHE
+> Task :react-native-nitro-modules:buildCMakeDebug[arm64-v8a]
+> Task :react-native-nitro-modules:externalNativeBuildDebug
+> Task :react-native-nitro-modules:generateJsonModelDebug
+> Task :react-native-nitro-modules:prefabDebugConfigurePackage
+> Task :react-native-nitro-modules:prefabDebugPackage
+> Task :react-native-nitro-modules:mergeDebugJniLibFolders
+> Task :react-native-nitro-modules:mergeDebugNativeLibs
+> Task :react-native-nitro-modules:copyDebugJniLibsProjectOnly
+> Task :react-native-nitro-symbols:configureCMakeDebug[arm64-v8a]
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :react-native-nitro-symbols:buildCMakeDebug[arm64-v8a]
+> Task :react-native-nitro-symbols:mergeDebugNativeLibs
+> Task :react-native-nitro-symbols:copyDebugJniLibsProjectOnly
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+[Incubating] Problems report is available at: file:///Users/a0000/Desktop/projects/nitro-symbols/react-native-nitro-symbols/example/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 31s
+190 actionable tasks: 85 executed, 81 from cache, 24 up-to-date
+Waiting on http://localhost:8081
+› Installing /Users/a0000/Desktop/projects/nitro-symbols/react-native-nitro-symbols/example/android/app/build/outputs/apk/debug/app-debug.apk
+› Opening com.daveyeke.example/.MainActivity on Medium_Phone_API_36.1

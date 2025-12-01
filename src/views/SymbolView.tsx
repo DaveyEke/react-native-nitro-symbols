@@ -1,5 +1,5 @@
 import React from 'react'
-import { processColor, type ColorValue } from 'react-native'
+import { processColor, type ColorValue, Platform } from 'react-native'
 import { getHostComponent } from 'react-native-nitro-modules'
 import type { SFSymbol } from 'sf-symbols-typescript'
 import type { SymbolProps, SymbolPropsMethods } from '../specs/SymbolView.nitro'
@@ -16,10 +16,16 @@ export type SymbolViewProps = Omit<SymbolProps, 'symbolName' | 'tintColor' | 'co
     symbolName: SFSymbol;
     tintColor?: ColorValue; 
     colors?: ColorValue[];
+    fallback?:React.ReactNode
+
 }
 
 export const SymbolView: React.FC<SymbolViewProps> = (props) => {
-    const { tintColor, colors, ...restProps } = props
+    const { tintColor, colors, fallback, ...restProps } = props
+
+    if (Platform.OS != "ios" && fallback) {
+        return <>{fallback}</>
+    }
     
     const processedTintColor = processColor(tintColor) as number | undefined
     
