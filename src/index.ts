@@ -1,8 +1,6 @@
 import { SymbolView } from "./views/SymbolView";
-// Export the component
 export { SymbolView }
 
-// Export all types for autocomplete and type safety
 export type {
     SymbolWeight,
     SymbolScale,

@@ -88,6 +88,7 @@ export default function App() {
 | `effect`        | `SFSymbolEffect`      | `undefined`    | Animation effect. See Animation Effects below.                                                          |
 | `isAnimating`   | `boolean`             | `false`        | Trigger for discrete effects (change value to trigger) or toggle for indefinite loops.                  |
 | `isVisible`     | `boolean`             | `true`         | Required for the appear effect to trigger exit animations correctly.                                    |
+| `fallback`      | `ReactNode`           | `undefined`    | **(Android/Web only)** React node to render on non-iOS platforms (e.g. Ionicons, Text).                 |
 
 ---
 
@@ -222,6 +223,28 @@ Controlled by specific props.
 | `replace` | `symbolName`  | Morphs the vector paths when the name changes   |
 | `appear`  | `isVisible`   | Scales/Fades in and out when visibility changes |
 | `drawon`  | `isAnimating` | Draws the symbol path (writing effect)          |
+
+---
+
+## 🌍 Cross-Platform Support (Android/Web)
+
+Since SF Symbols are Apple-proprietary, this library is **iOS-only**. However, you can use the `fallback` prop to gracefully handle other platforms.
+
+The `fallback` prop accepts any React Node, allowing you to render alternative icons (like `react-native-vector-icons` or `lucide-react-native`) on Android and Web.
+
+```tsx
+import { SymbolView } from 'react-native-nitro-symbols'
+import Ionicons from '@expo/vector-icons/Ionicons'
+
+;<SymbolView
+  symbolName="star.fill"
+  tintColor="gold"
+  fallback={<Ionicons name="star" size={24} color="gold" />}
+/>
+```
+
+For a complete example of how to build a cross-platform icon component, check out:
+[FallbackDemo.tsx](example/FallbackDemo.tsx)
 
 ---
 

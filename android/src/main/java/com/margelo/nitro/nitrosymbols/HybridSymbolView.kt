@@ -30,4 +30,12 @@ class HybridSymbolView(context: Context) : HybridSymbolViewSpec() {
     
     override fun beforeUpdate() {}
     override fun afterUpdate() {}
+
+    // Shim methods to resolve Nitrogen JNI mismatch for boolean properties starting with 'is'
+    // C++ expects setIsVisible/setIsAnimating, but Kotlin generates setVisible/setAnimating
+    @Suppress("unused")
+    fun setIsVisible(value: Boolean?) { isVisible = value }
+    
+    @Suppress("unused")
+    fun setIsAnimating(value: Boolean?) { isAnimating = value }
 }
