@@ -45,7 +45,7 @@ struct NativeSymbolSwiftUIView: View {
             .symbolRenderingMode(renderingMode)
             .symbolVariant(variant)
             .applyForegroundStyle(colors: colors, tintColor: tintColor)
-            applyEffect(to: baseImage)
+        applyEffect(to: baseImage)
     }
     
     @ViewBuilder

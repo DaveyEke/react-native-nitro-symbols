@@ -40,7 +40,7 @@ export type SymbolViewProps = Omit<SymbolProps, 'symbolName' | 'tintColor' | 'co
 }
 
 export const SymbolView: React.FC<SymbolViewProps> = (props) => {
-    const { tintColor, colors, fallback, ...restProps } = props
+    const { tintColor, colors, fallback, style, ...restProps } = props
 
     if (Platform.OS !== 'ios') {
         return fallback ? <>{fallback}</> : null
@@ -56,11 +56,16 @@ export const SymbolView: React.FC<SymbolViewProps> = (props) => {
         ? (colors.map(c => processColor(c)) as number[])
         : undefined
 
+    // Default size based on pointSize if no explicit width/height provided
+    const pointSize = restProps.pointSize ?? 24
+    const defaultStyle = { width: pointSize, height: pointSize }
+
     return (
         <SymbolViewNative 
             {...restProps} 
             tintColor={processedTintColor}
             colors={processedColors}
+            style={[defaultStyle, style]}
         />
     )
 }
