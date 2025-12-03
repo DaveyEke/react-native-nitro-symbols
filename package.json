@@ -1,6 +1,6 @@
 {
   "name": "react-native-nitro-symbols",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "react-native-nitro-symbols",
   "main": "lib/index",
   "module": "lib/index",
@@ -109,6 +109,6 @@
     "semi": false
   },
   "dependencies": {
-    "sf-symbols-typescript": "^2.1.0"
+    "sf-symbols-typescript": "^2.2.0"
   }
 }

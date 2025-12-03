@@ -1,3 +1,6 @@
+import './global.css'
+
+
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native'
 import { SymbolView } from 'react-native-nitro-symbols'

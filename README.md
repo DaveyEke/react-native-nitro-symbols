@@ -52,6 +52,36 @@ npx expo run:ios
 
 ---
 
+## 🎨 Uniwind Integration (Optional)
+
+This library works seamlessly with [Uniwind](https://docs.uniwind.dev), bringing Tailwind CSS utility classes to React Native.
+
+To use Tailwind classes with `SymbolView`, follow the [Uniwind Quickstart](https://docs.uniwind.dev/quickstart) to set up your project.
+
+
+ **Wrap Components** (for custom components like `SymbolView`):
+   ```tsx
+   import { withUniwind } from 'uniwind';
+   import { SymbolView } from 'react-native-nitro-symbols';
+
+   const StyledSymbolView = withUniwind(SymbolView);
+   ```
+
+ **Use Tailwind Classes**:
+   ```tsx
+   <StyledSymbolView
+     symbolName="heart.fill"
+     className="w-12 h-12 text-red-500"
+   />
+   ```
+
+For an example of how to use Uniwind with the component, check out:
+[UniwindDemo.tsx](example/UniwindDemo.tsx) 
+
+For complete setup instructions, see the [Uniwind Quickstart](https://docs.uniwind.dev/quickstart).
+
+
+
 ## 🚀 Quick Start
 
 ```tsx
@@ -68,6 +98,8 @@ export default function App() {
   )
 }
 ```
+
+
 
 ---
 

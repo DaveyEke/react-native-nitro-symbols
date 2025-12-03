@@ -1,5 +1,6 @@
 const path = require('path');
 const { getDefaultConfig } = require('expo/metro-config');
+const { withUniwindConfig } = require('uniwind/metro'); 
 
 const projectRoot = __dirname;
 const workspaceRoot = path.resolve(projectRoot, '..');
@@ -21,4 +22,16 @@ config.resolver.extraNodeModules = {
   'react': path.resolve(projectRoot, 'node_modules/react'),
 };
 
-module.exports = config;
+// Add nodeModulesPaths to ensure library resolves from example's node_modules
+config.resolver.nodeModulesPaths = [
+  path.resolve(projectRoot, 'node_modules'),
+];
+
+// Apply uniwind config and export
+module.exports = withUniwindConfig(config, {  
+  // relative path to your global.css file (from previous step)
+  cssEntryFile: './global.css',
+  // (optional) path where we gonna auto-generate typings
+  // defaults to project's root
+  dtsFile: './uniwind-types.d.ts'
+});

@@ -14,7 +14,9 @@
     "react": "19.1.0",
     "react-native": "0.81.5",
     "react-native-nitro-modules": "^0.31.9",
-    "react-native-nitro-symbols": "file:.."
+    "react-native-nitro-symbols": "file:..",
+    "tailwindcss": "^4.1.17",
+    "uniwind": "^1.0.5"
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
